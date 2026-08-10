@@ -1,0 +1,41 @@
+# Khao recipe FINDER — the free, central harvester.
+#
+# Deploy: copy this file to the khao-catalog repo at .github/workflows/harvest.yml,
+# and harvest.py to the repo root. Then it runs itself — no server, no cost.
+#
+# It fetches real recipes from public sources, derives allergens from the ingredient
+# list, drops anything unsafe, merges into catalog.json, bumps the feed version, and
+# commits. Every Khao app then pulls the bigger feed for free; the phone does the
+# per-user ranking. GitHub Actions' free tier covers this many times over.
+name: Harvest recipes into the Khao feed
+
+on:
+  schedule:
+    - cron: "0 4 * * 0"      # 09:30 IST every Sunday
+  workflow_dispatch: {}       # and a manual "Run workflow" button
+
+permissions:
+  contents: write             # so the job can commit catalog.json back
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Prove the safety pipeline before touching the feed
+        run: python3 harvest.py --selftest
+      - name: Find new recipes and grow the feed
+        run: python3 harvest.py --catalog catalog.json
+      - name: Publish if the feed changed
+        run: |
+          if git diff --quiet catalog.json; then
+            echo "no new recipes this run"; exit 0
+          fi
+          git config user.name  "Khao Harvester"
+          git config user.email "actions@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Harvest: grow the recipe feed (automated)"
+          git push
