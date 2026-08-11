@@ -64,16 +64,36 @@ def _keys(ings):
     return {i["key"].lower() for i in ings}
 
 
-def derive_allergens(ings):
+def _hits(ings, vocab):
+    """Does any ingredient contain any word in `vocab`?
+
+    ⚠️ SUBSTRING, NOT SET-INTERSECTION — and this is a SAFETY FIX, not a tidy-up.
+    The first version used `keys & vocab`, i.e. exact equality. Real source data does
+    not say "butter", it says "melted butter", "unsalted butter", "corn arepa filled
+    with mozarella cheese". Every one of those missed, so the 11 Aug 2026 harvest put
+    126 dishes into the live feed with UNDECLARED DAIRY — including an "Apple cake"
+    made with melted butter, marked vegan. That is the one bug in this app that can
+    put someone in hospital. Match on containment, in both directions, and accept the
+    false positives: a wrongly-excluded dish costs somebody a dinner, a missed allergen
+    costs them far more.
+    """
     ks = _keys(ings)
-    return sorted(a for a, kk in ALLERGEN_KEYS.items() if ks & kk)
+    for k in ks:
+        for v in vocab:
+            if v in k or k in v:
+                return True
+    return False
+
+
+def derive_allergens(ings):
+    return sorted(a for a, kk in ALLERGEN_KEYS.items() if _hits(ings, kk))
 
 
 def derive_flags(ings, diet):
-    ks = _keys(ings)
-    vegan = diet == "veg" and not (ks & DAIRY or ks & EGG or ks & FLESH or ks & OTHER_ANIMAL)
-    noog = not (ks & OG)
-    jain = diet == "veg" and noog and not (ks & ROOT)
+    vegan = diet == "veg" and not (_hits(ings, DAIRY) or _hits(ings, EGG)
+                                   or _hits(ings, FLESH) or _hits(ings, OTHER_ANIMAL))
+    noog = not _hits(ings, OG)
+    jain = diet == "veg" and noog and not _hits(ings, ROOT)
     return vegan, jain, noog
 
 
@@ -81,13 +101,13 @@ def derive_flags(ings, diet):
 def is_safe(dish):
     if not dish["id"] or not dish["name"]:
         return False, "empty id/name"
-    ks = _keys(dish["ingredients"])
+    ings = dish["ingredients"]
     for allergen, kk in ALLERGEN_KEYS.items():
-        if (ks & kk) and allergen not in dish["allergens"]:
+        if _hits(ings, kk) and allergen not in dish["allergens"]:
             return False, f"undeclared {allergen}"           # the one bug that can hurt
-    if dish["vegan"] and (ks & DAIRY or ks & EGG or ks & FLESH):
+    if dish["vegan"] and (_hits(ings, DAIRY) or _hits(ings, EGG) or _hits(ings, FLESH)):
         return False, "vegan flag contradicts ingredients"
-    if dish["diet"] == "veg" and (ks & FLESH or ks & EGG):
+    if dish["diet"] == "veg" and (_hits(ings, FLESH) or _hits(ings, EGG)):
         return False, "veg flag contradicts ingredients"
     if len(dish["name"]) > 80 or any(len(s) > 400 for s in dish["steps"]):
         return False, "text too long"
@@ -219,7 +239,27 @@ def selftest():
     # a record missing its allergen token must be caught
     bad2 = dict(d, allergens=[])
     assert not is_safe(bad2)[0], "undeclared allergen not caught"
-    print("SELFTEST OK — normalise + derive + gate all correct")
+
+    # ⚠️ REGRESSION CASES FROM THE REAL 11 Aug 2026 FAILURE. These exact dishes reached
+    # the LIVE feed with undeclared dairy because matching was exact-equality: the
+    # source says "melted butter", never "butter". Each of these must now be caught.
+    for label, ing_name, key in [
+        ("Apple cake", "Melted butter", "melted butter"),
+        ("Apple pie pops", "Unsalted butter", "unsalted butter"),
+        ("Arepa Pabellón", "Corn arepa filled with mozarella cheese",
+         "corn arepa filled with mozarella cheese"),
+        ("Aubergine couscous salad", "Oats cheese", "oats cheese"),
+        ("Amok Trey", "Coconut milk", "coconut milk"),
+    ]:
+        rec = {"strMeal": label, "strArea": "Test",
+               "strInstructions": "Mix.", "strIngredient1": ing_name, "strMeasure1": "1"}
+        dd = normalise(rec)
+        assert dd is not None, f"{label}: normalise failed"
+        assert "dairy" in dd["allergens"], f"{label}: '{key}' did not derive dairy"
+        assert not dd["vegan"], f"{label}: marked vegan despite '{key}'"
+        ok2, why2 = is_safe(dd)
+        assert ok2, f"{label}: correctly-derived dish rejected ({why2})"
+    print("SELFTEST OK — normalise + derive + gate correct, incl. the 11 Aug dairy regressions")
 
 
 def main():
