@@ -64,33 +64,84 @@ def _keys(ings):
     return {i["key"].lower() for i in ings}
 
 
-def _hits(ings, vocab):
-    """Does any ingredient contain any word in `vocab`?
+# Compounds that borrow a dairy word but contain no dairy. Without these, containment
+# matching flags "coconut milk" and "peanut butter" as dairy — 52 dishes in the shipped
+# catalogue, nearly all of them the vegan options. Mirrors CatalogUpdater.dairyImposters
+# in the app; the two must stay in step or the feed and the gate will disagree.
+DAIRY_IMPOSTERS = {
+    "coconut milk", "coconutmilk", "coconut cream", "coconut butter",
+    "almond milk", "almondmilk", "soy milk", "soymilk", "soya milk",
+    "oat milk", "oatmilk", "rice milk", "cashew milk", "peanut butter",
+    "almond butter", "cashew butter", "cocoa butter", "apple butter",
+    "butter beans", "butterbeans", "butternut", "beancurd", "bean curd",
+    "fermented bean curd", "shea butter", "nut butter", "milk thistle",
+    "cream of tartar", "creamed corn", "coconut yogurt", "soy yogurt", "creamer",
+}
 
-    ⚠️ SUBSTRING, NOT SET-INTERSECTION — and this is a SAFETY FIX, not a tidy-up.
-    The first version used `keys & vocab`, i.e. exact equality. Real source data does
-    not say "butter", it says "melted butter", "unsalted butter", "corn arepa filled
-    with mozarella cheese". Every one of those missed, so the 11 Aug 2026 harvest put
-    126 dishes into the live feed with UNDECLARED DAIRY — including an "Apple cake"
-    made with melted butter, marked vegan. That is the one bug in this app that can
-    put someone in hospital. Match on containment, in both directions, and accept the
-    false positives: a wrongly-excluded dish costs somebody a dinner, a missed allergen
-    costs them far more.
+
+def _hits(ings, vocab, imposters=frozenset()):
+    """Does any ingredient actually contain something from `vocab`?
+
+    ⚠️ WHOLE-WORD, NOT SUBSTRING. Two wrong versions preceded this one, and both
+    directions of the error are recorded because each looks reasonable in isolation:
+      • exact equality  → "melted butter" never matched "butter". 126 dishes reached
+        the live feed with undeclared dairy (11 Aug 2026).
+      • loose substring → "til" matched TORTILLA, "egg" matched EGGPLANT, "rai" matched
+        RAISINS, "butter" matched the vocab entry "peanut butter". 442 bundled dishes
+        were wrongly flagged.
+    A word is the unit that carries the meaning: "melted butter" contains the WORD
+    butter; "eggplant" does not contain the WORD egg. Multi-word vocabulary terms are
+    matched as a contiguous run of words.
     """
-    ks = _keys(ings)
-    for k in ks:
+    for k in _keys(ings):
+        if any(imp in k for imp in imposters):
+            continue
+        words = re.findall(r"[a-z]+", k)
+        joined = " ".join(words)
         for v in vocab:
-            if v in k or k in v:
+            vw = v.split()
+            if len(vw) == 1:
+                if vw[0] in words:
+                    return True
+            elif f" {' '.join(vw)} " in f" {joined} ":
                 return True
     return False
 
 
+# Gluten has imposters too: rice noodles / rice paper are the staple gluten-free
+# noodle, and flagging them would strip half of South-East Asia from coeliac users.
+GLUTEN_IMPOSTERS = {
+    "rice noodles", "rice noodle", "rice vermicelli", "rice paper", "rice flour",
+    "glass noodles", "mung bean noodles", "sweet potato noodles", "buckwheat noodles",
+    "gluten free bread", "gluten-free flour", "corn tortilla", "almond flour",
+    "chickpea flour", "besan", "gram flour", "coconut flour", "rice bread",
+    # The vrat flours. Kuttu (buckwheat), singhara (water chestnut) and rajgira
+    # (amaranth) are the ENTIRE fasting repertoire and every one of them is
+    # gluten-free — flagging them would empty the sattvik corner for coeliac users,
+    # which is the same corner the deck was already running out of.
+    "kuttu", "kuttu ka atta", "kuttu flour", "singhara", "singhare ka atta",
+    "singhara flour", "rajgira", "rajgira flour", "amaranth flour", "water chestnut flour",
+    "buckwheat flour", "corn flour", "cornflour", "cornstarch", "corn starch",
+    "tapioca flour", "arrowroot", "sabudana", "samak", "millet flour", "ragi",
+}
+
+
+def _imp(allergen):
+    """Only two families have imposters. 'peanut butter' IS peanut and 'almond milk'
+    IS nuts — only their DAIRY-ness is false; 'rice noodles' are noodles but not wheat."""
+    if allergen == "dairy":
+        return DAIRY_IMPOSTERS
+    if allergen == "gluten":
+        return GLUTEN_IMPOSTERS
+    return frozenset()
+
+
 def derive_allergens(ings):
-    return sorted(a for a, kk in ALLERGEN_KEYS.items() if _hits(ings, kk))
+    return sorted(a for a, kk in ALLERGEN_KEYS.items() if _hits(ings, kk, _imp(a)))
 
 
 def derive_flags(ings, diet):
-    vegan = diet == "veg" and not (_hits(ings, DAIRY) or _hits(ings, EGG)
+    vegan = diet == "veg" and not (_hits(ings, DAIRY, DAIRY_IMPOSTERS) or _hits(ings, EGG)
                                    or _hits(ings, FLESH) or _hits(ings, OTHER_ANIMAL))
     noog = not _hits(ings, OG)
     jain = diet == "veg" and noog and not _hits(ings, ROOT)
@@ -103,9 +154,10 @@ def is_safe(dish):
         return False, "empty id/name"
     ings = dish["ingredients"]
     for allergen, kk in ALLERGEN_KEYS.items():
-        if _hits(ings, kk) and allergen not in dish["allergens"]:
+        if _hits(ings, kk, _imp(allergen)) and allergen not in dish["allergens"]:
             return False, f"undeclared {allergen}"           # the one bug that can hurt
-    if dish["vegan"] and (_hits(ings, DAIRY) or _hits(ings, EGG) or _hits(ings, FLESH)):
+    if dish["vegan"] and (_hits(ings, DAIRY, DAIRY_IMPOSTERS) or _hits(ings, EGG)
+                          or _hits(ings, FLESH)):
         return False, "vegan flag contradicts ingredients"
     if dish["diet"] == "veg" and (_hits(ings, FLESH) or _hits(ings, EGG)):
         return False, "veg flag contradicts ingredients"
@@ -249,7 +301,6 @@ def selftest():
         ("Arepa Pabellón", "Corn arepa filled with mozarella cheese",
          "corn arepa filled with mozarella cheese"),
         ("Aubergine couscous salad", "Oats cheese", "oats cheese"),
-        ("Amok Trey", "Coconut milk", "coconut milk"),
     ]:
         rec = {"strMeal": label, "strArea": "Test",
                "strInstructions": "Mix.", "strIngredient1": ing_name, "strMeasure1": "1"}
@@ -259,7 +310,27 @@ def selftest():
         assert not dd["vegan"], f"{label}: marked vegan despite '{key}'"
         ok2, why2 = is_safe(dd)
         assert ok2, f"{label}: correctly-derived dish rejected ({why2})"
-    print("SELFTEST OK — normalise + derive + gate correct, incl. the 11 Aug dairy regressions")
+
+    # The OTHER direction: compounds that borrow a dairy word but are dairy-free must
+    # NOT be flagged, or the fix strips 52 shipped dishes from the vegans who need them.
+    for label, ing_name, key in [
+        ("Thai curry", "Coconut milk", "coconut milk"),
+        ("Satay", "Peanut butter", "peanut butter"),
+        ("Bean stew", "Butter beans", "butter beans"),
+        ("Mapo tofu", "Beancurd", "beancurd"),
+    ]:
+        rec = {"strMeal": label, "strArea": "Test", "strInstructions": "Cook.",
+               "strIngredient1": ing_name, "strMeasure1": "1"}
+        dd = normalise(rec)
+        assert "dairy" not in dd["allergens"], f"{label}: '{key}' wrongly derived DAIRY"
+        assert is_safe(dd)[0], f"{label}: dairy-free dish wrongly rejected"
+    # ...but the non-dairy allergen it really carries must still be caught.
+    sat = normalise({"strMeal": "Satay", "strArea": "Test", "strInstructions": "Cook.",
+                     "strIngredient1": "Peanut butter", "strMeasure1": "1"})
+    assert "peanut" in sat["allergens"], "peanut butter must still derive PEANUT"
+
+    print("SELFTEST OK — derive + gate correct: 11 Aug dairy regressions caught, "
+          "imposters (coconut milk / peanut butter) not misflagged")
 
 
 def main():
