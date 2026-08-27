@@ -31,33 +31,64 @@ import re
 import sys
 import urllib.request
 
-# ── allergen map, in step with HoggNative/Ingredients.swift ─────────────────────────
+# ── allergen map — synced VERBATIM from HoggNative/Ingredients.swift, 27 Aug 2026
+# (Anirudh's decision: the robot's dictionary always mirrors the app's. The app gate
+# rejects the WHOLE feed on one undeclared allergen, so a smaller list here is not
+# "looser", it is a feed-killer. Imposters mirror CatalogUpdater.swift the same way.)
 ALLERGEN_KEYS = {
     "dairy": {"ghee", "curd", "butter", "cheese", "milk", "cream", "paneer", "khoya",
-              "malai", "yogurt", "yoghurt", "buttermilk", "mawa", "dahi", "condensed milk",
-              "milk powder", "clarified butter"},
-    "egg": {"egg", "eggs", "egg white", "egg yolk", "mayo", "mayonnaise"},
-    "fish": {"fish", "fish sauce", "anchovy", "tuna", "salmon", "pomfret", "cod",
-             "mackerel", "sardine", "rohu", "hilsa"},
+              "malai", "yogurt", "yoghurt", "buttermilk", "mawa", "rabri", "ricotta",
+              "mozzarella", "parmesan", "feta", "cream cheese", "sour cream",
+              "evaporated milk", "condensed milk", "milk powder", "dahi",
+              "clarified butter", "whey", "burrata", "mascarpone", "halloumi",
+              "labneh", "creme fraiche", "custard", "ice cream"},
+    "egg": {"egg", "eggs", "egg white", "egg yolk", "mayo", "mayonnaise", "meringue"},
+    "fish": {"fish", "fish sauce", "anchovy", "anchovies", "tuna", "salmon", "pomfret",
+             "surmai", "rohu", "hilsa", "mackerel", "sardine", "cod", "bombil"},
     "shellfish": {"prawns", "prawn", "shrimp", "crab", "lobster", "squid", "clams",
-                  "mussels", "oyster", "scallop"},
-    "peanut": {"peanut", "peanuts", "groundnut", "groundnuts", "peanut butter"},
+                  "mussels", "oyster", "calamari", "scallop", "crayfish"},
+    "peanut": {"peanut", "peanuts", "groundnut", "groundnuts", "moongphali",
+               "peanut butter"},
     "nuts": {"almond", "almonds", "cashew", "cashews", "kaju", "badam", "pista",
-             "pistachio", "walnut", "walnuts", "hazelnut", "pecan", "almond milk"},
-    "gluten": {"atta", "maida", "wheat", "wheat flour", "flour", "bread", "breadcrumbs",
-               "pav", "bun", "naan", "roti", "paratha", "pasta", "noodles", "vermicelli",
-               "semolina", "suji", "rava", "barley", "soy sauce", "hoisin sauce"},
-    "soy": {"soy", "soya", "soy sauce", "tofu", "edamame", "miso", "tempeh",
-            "soya chunks", "soy milk"},
-    "sesame": {"sesame", "sesame oil", "sesame seeds", "til", "tahini"},
-    "mustard": {"mustard", "mustard seeds", "mustard oil", "rai", "sarson"},
+             "pistachio", "pistachios", "walnut", "walnuts", "akhrot", "hazelnut",
+             "hazelnuts", "pecan", "macadamia", "brazil nut", "pine nut", "pine nuts",
+             "chironji", "mixed nuts", "almond flour", "almond milk", "almond meal",
+             "cashew paste", "nutella", "marzipan", "praline"},
+    "gluten": {"atta", "maida", "wheat", "wheat flour", "flour", "all purpose flour",
+               "refined flour", "bread", "breadcrumbs", "pav", "bun", "burger bun",
+               "pita", "tortilla", "naan", "roti", "paratha", "pasta", "noodles",
+               "spaghetti", "penne", "macaroni", "lasagne", "lasagna", "udon", "ramen",
+               "vermicelli", "sevai", "semolina", "suji", "sooji", "rava", "barley",
+               "bulgur", "couscous", "seitan", "puff pastry", "filo", "phyllo",
+               "wonton wrappers", "dumpling wrappers", "spring roll sheets",
+               "samosa patti", "malt", "beer",
+               "soy sauce", "soya sauce", "dark soy sauce", "light soy sauce",
+               "hoisin sauce"},
+    "soy": {"soy", "soya", "soy sauce", "soya sauce", "dark soy sauce",
+            "light soy sauce", "hoisin sauce", "tofu", "edamame", "miso", "tempeh",
+            "soya chunks", "soya granules", "soy milk", "soybean"},
+    "sesame": {"sesame", "sesame oil", "sesame seeds", "til", "tahini",
+               "gingelly oil", "benne"},
+    "mustard": {"mustard", "mustard seeds", "mustard oil", "rai", "sarson", "kasundi",
+                "dijon mustard", "wholegrain mustard"},
 }
 DAIRY, EGG = ALLERGEN_KEYS["dairy"], ALLERGEN_KEYS["egg"]
 FLESH = {"chicken", "mutton", "lamb", "pork", "beef", "bacon", "ham", "sausage", "goat",
-         "duck", "turkey", "keema", "mince", "fish", "prawns", "prawn", "shrimp", "crab"}
-OTHER_ANIMAL = {"honey", "gelatin", "gelatine", "lard", "tallow", "bone broth"}
-OG = {"onion", "garlic", "spring onion", "shallot", "leek"}
-ROOT = OG | {"potato", "ginger", "carrot", "beetroot", "radish", "sweet potato", "yam"}
+         "duck", "turkey", "keema", "mince", "salami", "pepperoni", "chorizo",
+         "prosciutto", "veal", "venison",
+         "fish", "fish sauce", "tuna", "salmon", "anchovy", "anchovies", "pomfret",
+         "surmai", "rohu", "hilsa", "mackerel", "sardine", "cod", "bombil",
+         "prawns", "prawn", "shrimp", "crab", "lobster", "squid", "clams", "mussels",
+         "oyster", "calamari", "scallop", "crayfish"}
+OTHER_ANIMAL = {"honey", "gelatin", "gelatine", "lard", "tallow", "bone broth", "dashi",
+                "worcestershire"}
+OG = {"onion", "onions", "spring onion", "springonion", "shallot", "shallots", "garlic",
+      "garlic paste", "ginger-garlic", "leek", "leeks", "chives", "scallion",
+      "scallions"}
+ROOT = OG | {"potato", "potatoes", "aloo", "carrot", "carrots", "radish", "mooli",
+             "beetroot", "beet", "yam", "arbi", "colocasia", "suran", "ginger",
+             "ginger paste", "turnip", "sweet potato", "shakarkandi", "mushroom",
+             "mushrooms"}
 
 
 def _keys(ings):
@@ -74,8 +105,9 @@ DAIRY_IMPOSTERS = {
     "oat milk", "oatmilk", "rice milk", "cashew milk", "peanut butter",
     "almond butter", "cashew butter", "cocoa butter", "apple butter",
     "butter beans", "butterbeans", "butternut", "beancurd", "bean curd",
-    "fermented bean curd", "shea butter", "nut butter", "milk thistle",
-    "cream of tartar", "creamed corn", "coconut yogurt", "soy yogurt", "creamer",
+    "fermentedbeancurd", "fermented bean curd", "butterhead", "buttermilk squash",
+    "shea butter", "nut butter", "milk thistle", "milkweed", "creamer",
+    "cream of tartar", "creamed corn", "coconut yogurt", "soy yogurt",
 }
 
 
@@ -111,18 +143,12 @@ def _hits(ings, vocab, imposters=frozenset()):
 # Gluten has imposters too: rice noodles / rice paper are the staple gluten-free
 # noodle, and flagging them would strip half of South-East Asia from coeliac users.
 GLUTEN_IMPOSTERS = {
-    "rice noodles", "rice noodle", "rice vermicelli", "rice paper", "rice flour",
-    "glass noodles", "mung bean noodles", "sweet potato noodles", "buckwheat noodles",
-    "gluten free bread", "gluten-free flour", "corn tortilla", "almond flour",
-    "chickpea flour", "besan", "gram flour", "coconut flour", "rice bread",
-    # The vrat flours. Kuttu (buckwheat), singhara (water chestnut) and rajgira
-    # (amaranth) are the ENTIRE fasting repertoire and every one of them is
-    # gluten-free — flagging them would empty the sattvik corner for coeliac users,
-    # which is the same corner the deck was already running out of.
-    "kuttu", "kuttu ka atta", "kuttu flour", "singhara", "singhare ka atta",
-    "singhara flour", "rajgira", "rajgira flour", "amaranth flour", "water chestnut flour",
-    "buckwheat flour", "corn flour", "cornflour", "cornstarch", "corn starch",
-    "tapioca flour", "arrowroot", "sabudana", "samak", "millet flour", "ragi",
+    "rice noodle", "rice noodles", "rice vermicelli", "rice paper", "rice flour",
+    "glass noodles", "corn tortilla", "almond flour", "chickpea flour", "besan",
+    "gram flour", "coconut flour", "kuttu", "singhara", "singhare", "rajgira",
+    "amaranth flour", "water chestnut flour", "buckwheat flour", "corn flour",
+    "cornflour", "cornstarch", "corn starch", "tapioca flour", "arrowroot",
+    "sabudana", "samak", "millet flour", "ragi",
 }
 
 
