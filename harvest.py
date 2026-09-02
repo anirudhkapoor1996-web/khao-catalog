@@ -209,8 +209,34 @@ def ing_key(name):
     """Reduce a free-text ingredient to a lowercase key the app matches on."""
     n = name.lower().strip()
     n = re.sub(r"\([^)]*\)", "", n)                    # drop parentheticals
-    n = re.sub(r"[0-9]+|tbsp|tsp|cup|cups|g|kg|ml|grams?|large|small|medium|chopped|"
-               r"sliced|to taste|fresh|dried", "", n)
+    # ⚠️ FIXED 1 Sep 2026 — READ THIS BEFORE TOUCHING THE REGEX AGAIN.
+    #
+    # The line this replaces was a single unbounded alternation containing a bare
+    # `g`, so `re.sub` deleted EVERY LETTER "g" anywhere in the string:
+    #     Ghee -> hee     Garlic -> arlic    Ginger -> iner    Egg -> e
+    #     Yoghurt -> yohurt   Sugar -> suar   Cabbage -> cabbae
+    # Measured on 30 real ingredient names, 21 came out corrupted.
+    #
+    # 🔴 WHY IT WAS A SAFETY BUG, NOT A TYPO: `ghee` is a DAIRY ALLERGEN KEY.
+    # Stored as `hee` it matches nothing, so the ingredient-level allergen
+    # re-check in ShoppingListBuilder cannot see it. Anirudh, 1 Sep 2026:
+    # "full word needs to exist to warn people about possible allergens etc".
+    #
+    # ⚠️ AND WHY THE OBVIOUS FIX IS ALSO WRONG: simply adding \b around the old
+    # list still destroys "gram flour" and "Bengal gram", because `grams?` (the
+    # unit) collides with `gram` (besan, chana — real Indian ingredients, and a
+    # legume). So a unit only counts as a unit when a NUMBER is attached to it.
+    # That distinction is the whole fix; do not collapse these three steps back
+    # into one alternation.
+    #
+    # 1. Units, but only where a quantity is actually attached.
+    n = re.sub(r"\b\d+(?:\.\d+)?\s*(?:kg|g|ml|l|tbsp|tsp|cups?|grams?)\b", " ", n)
+    # 2. Any remaining bare numbers.
+    n = re.sub(r"[0-9]+", " ", n)
+    # 3. Words that are ALWAYS preparation and never an ingredient. Note there is
+    #    deliberately no bare `g`, `kg`, `ml` or `gram` in this list.
+    n = re.sub(r"\b(?:tbsp|tsp|cups?|large|small|medium|chopped|sliced|"
+               r"to taste|fresh|dried)\b", " ", n)
     n = re.sub(r"[^a-z ]", " ", n).strip()
     n = re.sub(r"\s+", " ", n)
     return n
