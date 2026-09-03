@@ -385,13 +385,151 @@ def selftest():
           "imposters (coconut milk / peanut butter) not misflagged")
 
 
+
+# ── the one-off repair pass ─────────────────────────────────────────────────────────
+#
+# WHY THIS EXISTS, AND WHY `harvest` COULD NOT DO IT.
+# `harvest()` does `merged = existing + added` — it APPENDS dishes it has never seen and
+# carries every existing row through untouched. So fixing `ing_key` above stops FUTURE
+# corruption and repairs nothing already shipped. Measured on feed v10: the old bare-`g`
+# regex had corrupted 1,557 ingredient rows across 545 of 1,958 recipes, hiding an
+# allergen on 25 of them — `Ghee`->`hee` (dairy), `Egg`/`Eggs`->`e`/`es`, `Groundnut
+# oil`->`roundnut oil` (peanut), `Spaghetti`->`spahetti` (gluten).
+#
+# ⚠️ THE RULE THAT MAKES THIS SAFE: MONOTONE, ONE DIRECTION ONLY.
+# An earlier version of this pass re-derived `allergens` outright. Measured, that would
+# have REMOVED at least one stored allergen from 622 of 1,958 recipes — those declarations
+# are curated or source-supplied and are often stricter than the ingredient list implies.
+# A fix for a bug that dropped allergens must never drop more of them. So:
+#   • allergens        → UNION. Keep every stored one, add what the repaired keys reveal.
+#   • diet             → tighten only (veg -> egg -> nonveg). Never loosen.
+#   • vegan/jain/noOG  → may be switched OFF. Never switched ON.
+#   • keys             → touched ONLY where the stored key is exactly what the BROKEN
+#                        ing_key produced AND the fixed one differs, so the 1,236
+#                        hand-curated keys ("Chicken thigh, boneless" -> "chicken") are
+#                        left alone.
+# The three invariants are ASSERTED below, not promised in a comment.
+
+
+def _broken_ing_key(name):
+    """The exact pre-fix function, kept verbatim so the repair can recognise its output.
+    Do not 'tidy' this — it is a fingerprint, not logic."""
+    n = name.lower().strip()
+    n = re.sub(r"\([^)]*\)", "", n)
+    n = re.sub(r"[0-9]+|tbsp|tsp|cup|cups|g|kg|ml|grams?|large|small|medium|chopped|"
+               r"sliced|to taste|fresh|dried", "", n)
+    n = re.sub(r"[^a-z ]", " ", n).strip()
+    n = re.sub(r"\s+", " ", n)
+    return n
+
+
+_DIET_RANK = {"nonveg": 0, "egg": 1, "veg": 2}   # higher = more restricted
+
+
+def _diet_floor(ings):
+    """The loosest diet the ingredients permit, using the SAME whole-word matcher the
+    safety gate uses. `infer_diet` compares keys by EXACT equality, so 'salmon fillet'
+    never matched FLESH and dishes sat on the live feed labelled veg. This does not fix
+    infer_diet; it refuses to let the repair leave such a dish mislabelled."""
+    if _hits(ings, FLESH):
+        return "nonveg"
+    if _hits(ings, EGG):
+        return "egg"
+    return "veg"
+
+
+def repair(doc):
+    """Repair a loaded catalogue in place. Returns a dict of counts."""
+    recipes = doc["recipes"] if isinstance(doc, dict) else doc
+    before = {r["id"]: {"allergens": list(r.get("allergens") or []),
+                        "diet": r.get("diet"),
+                        "vegan": r.get("vegan"), "jain": r.get("jain"), "noOG": r.get("noOG"),
+                        "ings": [(i.get("name"), i.get("qty")) for i in r.get("ingredients", [])],
+                        "name": r.get("name"), "steps": r.get("steps")}
+              for r in recipes}
+
+    rows = 0
+    for r in recipes:
+        for ing in r.get("ingredients", []):
+            nm, k = ing.get("name", ""), ing.get("key", "")
+            ok, nk = _broken_ing_key(nm), ing_key(nm)
+            if k == ok and ok != nk and nk:
+                ing["key"] = nk
+                rows += 1
+
+    added_allergens = tightened = flags_off = 0
+    for r in recipes:
+        ings = r["ingredients"]
+        stored = set(r.get("allergens") or [])
+        gained = set(derive_allergens(ings)) - stored          # UNION, additions only
+        if gained:
+            r["allergens"] = sorted(stored | gained)
+            added_allergens += 1
+
+        floor = _diet_floor(ings)
+        if _DIET_RANK[floor] < _DIET_RANK.get(r.get("diet"), 2):
+            r["diet"] = floor
+            tightened += 1
+
+        nv, nj, nn = derive_flags(ings, r["diet"])
+        off = False
+        for fld, val in (("vegan", nv), ("jain", nj), ("noOG", nn)):
+            if r.get(fld) and not val:
+                r[fld] = False
+                off = True
+        if off:
+            flags_off += 1
+            if "vegan" in r.get("tags", []) and not r.get("vegan"):
+                r["tags"] = [t for t in r["tags"] if t != "vegan"]
+
+    # ⚠️ the monotone promise, checked in code
+    removed = loosened = restored = 0
+    for r in recipes:
+        b = before[r["id"]]
+        if set(b["allergens"]) - set(r.get("allergens") or []):
+            removed += 1
+        if _DIET_RANK.get(r["diet"], 2) > _DIET_RANK.get(b["diet"], 2):
+            loosened += 1
+        for fld in ("vegan", "jain", "noOG"):
+            if r.get(fld) and not b[fld]:
+                restored += 1
+        assert [(i.get("name"), i.get("qty")) for i in r["ingredients"]] == b["ings"], \
+            f"{r['id']}: an ingredient name or quantity changed"
+        assert all(i["key"] for i in r["ingredients"]), f"{r['id']}: a key went empty"
+        assert r["name"] == b["name"] and r.get("steps") == b["steps"], \
+            f"{r['id']}: name or steps changed"
+    assert removed == 0, f"MONOTONE BROKEN: {removed} recipes lost an allergen"
+    assert loosened == 0, f"MONOTONE BROKEN: {loosened} recipes had their diet loosened"
+    assert restored == 0, f"MONOTONE BROKEN: {restored} restriction flags were switched ON"
+
+    fails = [(r["id"], is_safe(r)[1]) for r in recipes if not is_safe(r)[0]]
+    assert not fails, f"repair left {len(fails)} recipes failing the safety gate: {fails[:5]}"
+
+    return {"rows": rows, "recipes": len(recipes), "allergens_added": added_allergens,
+            "diet_tightened": tightened, "flags_off": flags_off}
+
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--catalog", default="catalog.json")
     ap.add_argument("--selftest", action="store_true")
+    ap.add_argument("--repair", action="store_true",
+                    help="one-off: fix ingredient keys the pre-1 Sep 2026 ing_key corrupted, "
+                         "monotonically. Never removes an allergen. Does not harvest.")
     a = ap.parse_args()
     if a.selftest:
         selftest(); return
+    if a.repair:
+        doc = json.load(open(a.catalog))
+        n = repair(doc)
+        doc["version"] = doc.get("version", 1) + 1
+        json.dump(doc, open(a.catalog, "w"), ensure_ascii=False, separators=(",", ":"))
+        print(f"repaired {n['rows']} ingredient rows across {n['recipes']} recipes; "
+              f"{n['allergens_added']} recipes gained a previously-hidden allergen, "
+              f"{n['diet_tightened']} diets tightened, {n['flags_off']} restriction flags "
+              f"switched off; 0 allergens removed; feed v{doc['version']}")
+        return
     doc = json.load(open(a.catalog))
     existing = doc["recipes"] if isinstance(doc, dict) else doc
     added, dropped = harvest(existing)
