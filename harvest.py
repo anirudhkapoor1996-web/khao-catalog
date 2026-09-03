@@ -111,6 +111,48 @@ DAIRY_IMPOSTERS = {
 }
 
 
+# ── SINGULAR AND PLURAL ARE THE SAME INGREDIENT ────────────────────────────────────
+# Anirudh's ruling, 4 Sep 2026, verbatim: "all plurals and singulars are to be treated
+# the same. If an ingredient exists, an allergic / intolerant person will still be
+# affected if it's one or two."
+#
+# Measured against live feed v11 the day it was written: the catalogue held 35
+# singular/plural key pairs. Whole-word matching — the fix that ended the 442 false
+# flags — is exactly what makes "tomatoes" miss the vocabulary entry "tomato", and it
+# hid SEVEN real defects, including two sardine dishes flagged vegan.
+#
+# Mirrors `IngredientFacts.singular` in HoggNative/Ingredients.swift and
+# `IngredientFacts.singular` in engine/Ingredients.kt. All three must move together.
+# ⚠️ Deliberately NOT a general stemmer. -us and -ss are left alone so "hummus",
+# "couscous" and "molasses" survive.
+def _singular(w):
+    w = w.lower()
+    if len(w) <= 3 or w.endswith("ss") or w.endswith("us"):
+        return w
+    if w.endswith("ies"):
+        return w[:-3] + "y"
+    if w.endswith("oes"):
+        return w[:-2]
+    if w.endswith(("ches", "shes", "xes", "zes")):
+        return w[:-2]
+    if w.endswith("ves"):
+        return w[:-3] + "f"
+    if w.endswith("s"):
+        return w[:-1]
+    return w
+
+
+# "goats cheese" is CHEESE, not goat. Found 4 Sep 2026: adding the plural pass made
+# `goats` normalise to `goat`, which is in FLESH, and three vegetarian dishes were about
+# to be reclassified as meat. Same shape as DAIRY_IMPOSTERS — the word is borrowed, the
+# ingredient is not. Mirrors `IngredientFacts.fleshImposters` in the app.
+FLESH_IMPOSTERS = {
+    "goat cheese", "goats cheese", "goat's cheese", "goatcheese",
+    "goat milk", "goats milk", "goat's milk", "goat curd",
+    "goat butter", "goat yoghurt", "goat yogurt", "goats curd", "goat's curd",
+}
+
+
 def _hits(ings, vocab, imposters=frozenset()):
     """Does any ingredient actually contain something from `vocab`?
 
@@ -130,13 +172,21 @@ def _hits(ings, vocab, imposters=frozenset()):
             continue
         words = re.findall(r"[a-z]+", k)
         joined = " ".join(words)
+        nwords = [_singular(w) for w in words]
+        njoined = " ".join(nwords)
         for v in vocab:
             vw = v.split()
             if len(vw) == 1:
                 if vw[0] in words:
                     return True
-            elif f" {' '.join(vw)} " in f" {joined} ":
-                return True
+                if _singular(vw[0]) in nwords:            # 4 Sep 2026: singular == plural
+                    return True
+            else:
+                if f" {' '.join(vw)} " in f" {joined} ":
+                    return True
+                nvw = [_singular(x) for x in vw]
+                if f" {' '.join(nvw)} " in f" {njoined} ":
+                    return True
     return False
 
 
@@ -168,7 +218,8 @@ def derive_allergens(ings):
 
 def derive_flags(ings, diet):
     vegan = diet == "veg" and not (_hits(ings, DAIRY, DAIRY_IMPOSTERS) or _hits(ings, EGG)
-                                   or _hits(ings, FLESH) or _hits(ings, OTHER_ANIMAL))
+                                   or _hits(ings, FLESH, FLESH_IMPOSTERS)
+                                   or _hits(ings, OTHER_ANIMAL))
     noog = not _hits(ings, OG)
     jain = diet == "veg" and noog and not _hits(ings, ROOT)
     return vegan, jain, noog
@@ -183,10 +234,20 @@ def is_safe(dish):
         if _hits(ings, kk, _imp(allergen)) and allergen not in dish["allergens"]:
             return False, f"undeclared {allergen}"           # the one bug that can hurt
     if dish["vegan"] and (_hits(ings, DAIRY, DAIRY_IMPOSTERS) or _hits(ings, EGG)
-                          or _hits(ings, FLESH)):
+                          or _hits(ings, FLESH, FLESH_IMPOSTERS)):
         return False, "vegan flag contradicts ingredients"
-    if dish["diet"] == "veg" and (_hits(ings, FLESH) or _hits(ings, EGG)):
+    if dish["diet"] == "veg" and (_hits(ings, FLESH, FLESH_IMPOSTERS) or _hits(ings, EGG)):
         return False, "veg flag contradicts ingredients"
+    # ⚠️ ADDED 4 Sep 2026 — a HOLE THAT WAS OPEN ON BOTH PLATFORMS, independent of the
+    # plural fix. The vegan check above compared INGREDIENTS, and the token check that
+    # sat beside it in the app looked at dairy and egg only. So a dish could declare the
+    # FISH allergen and still be flagged vegan, and two did: "Fresh sardines" was
+    # allergens=["fish","gluten"], diet=veg, vegan=true, jain=true.
+    _alg = set(dish.get("allergens") or [])
+    if dish["vegan"] and (_alg & {"dairy", "egg", "fish", "shellfish"}):
+        return False, "vegan flag contradicts its own allergen tokens"
+    if dish["diet"] in ("veg", "egg") and (_alg & {"fish", "shellfish"}):
+        return False, "diet contradicts its own allergen tokens"
     if len(dish["name"]) > 80 or any(len(s) > 400 for s in dish["steps"]):
         return False, "text too long"
     if not dish["ingredients"]:
@@ -426,12 +487,14 @@ def _broken_ing_key(name):
 _DIET_RANK = {"nonveg": 0, "egg": 1, "veg": 2}   # higher = more restricted
 
 
-def _diet_floor(ings):
+def _diet_floor(ings, allergens=()):
     """The loosest diet the ingredients permit, using the SAME whole-word matcher the
     safety gate uses. `infer_diet` compares keys by EXACT equality, so 'salmon fillet'
     never matched FLESH and dishes sat on the live feed labelled veg. This does not fix
     infer_diet; it refuses to let the repair leave such a dish mislabelled."""
-    if _hits(ings, FLESH):
+    # A declared fish / shellfish token is itself proof of flesh, even when no
+    # ingredient key spells it (4 Sep 2026).
+    if _hits(ings, FLESH, FLESH_IMPOSTERS) or (set(allergens) & {"fish", "shellfish"}):
         return "nonveg"
     if _hits(ings, EGG):
         return "egg"
@@ -466,7 +529,7 @@ def repair(doc):
             r["allergens"] = sorted(stored | gained)
             added_allergens += 1
 
-        floor = _diet_floor(ings)
+        floor = _diet_floor(ings, r.get("allergens") or [])
         if _DIET_RANK[floor] < _DIET_RANK.get(r.get("diet"), 2):
             r["diet"] = floor
             tightened += 1
