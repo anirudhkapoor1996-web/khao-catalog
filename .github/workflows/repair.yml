@@ -1,0 +1,45 @@
+# ONE-OFF REPAIR — manual only, never on a schedule.
+#
+# Fixes the ingredient keys the pre-1 Sep 2026 `ing_key` corrupted: a bare `g` in an
+# unbounded alternation ate letters out of real ingredient names, so `Ghee` was stored
+# as `hee` (a DAIRY key that then matches nothing), `Egg`/`Eggs` as `e`/`es`,
+# `Groundnut oil` as `roundnut oil` (peanut), `Spaghetti` as `spahetti` (gluten).
+# Measured on feed v10: 1,557 rows across 545 of 1,958 recipes, hiding an allergen on 25.
+#
+# ⚠️ DELIBERATELY A SEPARATE FILE FROM harvest.yml. It carries no `schedule:`, so it can
+# never fire on the weekly cron, and the working harvester is left untouched.
+#
+# Two gates stand in front of the feed:
+#   1. `--selftest` runs first and fails the job before anything is written.
+#   2. `--repair` asserts its own monotone promise and aborts if a single allergen would
+#      be removed, a diet loosened, or a restriction flag switched on.
+name: Repair the corrupted ingredient keys (one-off)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Prove the safety pipeline before touching the feed
+        run: python3 harvest.py --selftest
+      - name: Repair the keys, monotonically
+        run: python3 harvest.py --repair --catalog catalog.json
+      - name: Publish only if something actually changed
+        run: |
+          if git diff --quiet catalog.json; then
+            echo "nothing to repair"; exit 0
+          fi
+          git config user.name  "Khao Repair"
+          git config user.email "actions@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Repair 1557 ingredient keys corrupted by the old ing_key; no allergen removed"
+          git push
