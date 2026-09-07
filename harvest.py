@@ -44,9 +44,17 @@ ALLERGEN_KEYS = {
               "labneh", "creme fraiche", "custard", "ice cream"},
     "egg": {"egg", "eggs", "egg white", "egg yolk", "mayo", "mayonnaise", "meringue"},
     "fish": {"fish", "fish sauce", "anchovy", "anchovies", "tuna", "salmon", "pomfret",
-             "surmai", "rohu", "hilsa", "mackerel", "sardine", "cod", "bombil"},
+             "surmai", "rohu", "hilsa", "mackerel", "sardine", "cod", "bombil",
+             # widened 7 Sep 2026 — see FLESH
+             "haddock", "trout", "sea bass", "seabass", "bass", "monkfish", "herring",
+             "halibut", "tilapia", "snapper", "catfish", "eel", "kingfish", "basa",
+             "bhetki", "bekti", "carp", "bream", "plaice", "swordfish", "kipper", "kippers",
+             "mullet", "seafood"},
     "shellfish": {"prawns", "prawn", "shrimp", "crab", "lobster", "squid", "clams",
-                  "mussels", "oyster", "calamari", "scallop", "crayfish"},
+                  "mussels", "oyster", "calamari", "scallop", "crayfish",
+                  # widened 7 Sep 2026 — see FLESH
+                  "octopus", "cuttlefish", "crawfish", "scampi", "langoustine",
+                  "langoustines", "seafood"},
     "peanut": {"peanut", "peanuts", "groundnut", "groundnuts", "moongphali",
                "peanut butter"},
     "nuts": {"almond", "almonds", "cashew", "cashews", "kaju", "badam", "pista",
@@ -79,7 +87,25 @@ FLESH = {"chicken", "mutton", "lamb", "pork", "beef", "bacon", "ham", "sausage",
          "fish", "fish sauce", "tuna", "salmon", "anchovy", "anchovies", "pomfret",
          "surmai", "rohu", "hilsa", "mackerel", "sardine", "cod", "bombil",
          "prawns", "prawn", "shrimp", "crab", "lobster", "squid", "clams", "mussels",
-         "oyster", "calamari", "scallop", "crayfish"}
+         "oyster", "calamari", "scallop", "crayfish",
+         # ⚠️ WIDENED 7 Sep 2026 — words the live feed was already using that none of
+         # the three vocabularies knew. "Kenyan Beef Curry" (sirloin steak), "Ropa
+         # Vieja" (flank steak), "Thai-style steamed trout", "Sea bass with sizzled
+         # ginger" and "Sledz w oleju" (herring) were all on the feed as VEG and VEGAN;
+         # "Smoked Haddock Kedgeree" as egg. A vegan would have been dealt beef, and a
+         # fish-allergic user haddock with no fish token to protect them. Same list in
+         # IngredientFacts.flesh (iOS), IngredientFacts.flesh (Android) and here.
+         # NOT "drumstick" (moringa, a vegetable in Indian kitchens), NOT bare "ribs",
+         # "chops", "cutlet", "kebab", "tikka" (celery ribs, veg cutlet, paneer tikka).
+         "meat", "steak", "meatball", "meatballs", "oxtail", "brisket", "liver", "kidney",
+         "pancetta", "lardons", "pastrami", "mortadella", "frankfurter", "hot dog", "hotdog",
+         "quail", "rabbit", "boar", "gizzard", "tripe",
+         "pork ribs", "beef ribs", "spare ribs", "spareribs", "short ribs", "back ribs",
+         "pork chops", "pork chop", "lamb chops", "lamb chop", "mutton chops", "mutton chop",
+         "haddock", "trout", "sea bass", "seabass", "bass", "monkfish", "herring", "halibut",
+         "tilapia", "snapper", "catfish", "eel", "kingfish", "basa", "bhetki", "bekti",
+         "carp", "bream", "plaice", "swordfish", "kipper", "kippers", "mullet", "seafood",
+         "octopus", "cuttlefish", "crawfish", "scampi", "langoustine", "langoustines"}
 OTHER_ANIMAL = {"honey", "gelatin", "gelatine", "lard", "tallow", "bone broth", "dashi",
                 "worcestershire"}
 OG = {"onion", "onions", "spring onion", "springonion", "shallot", "shallots", "garlic",
@@ -150,6 +176,19 @@ FLESH_IMPOSTERS = {
     "goat cheese", "goats cheese", "goat's cheese", "goatcheese",
     "goat milk", "goats milk", "goat's milk", "goat curd",
     "goat butter", "goat yoghurt", "goat yogurt", "goats curd", "goat's curd",
+    # 7 Sep 2026, with the widened FLESH: the words that BORROW a meat word.
+    "coconut meat", "mock meat", "soy meat", "soya meat", "meat substitute", "plant meat",
+    "vegan meat", "veggie meat", "vegetarian meat", "meatless", "meat masala",
+    "jackfruit meat", "cauliflower steak", "tofu steak", "paneer steak", "mushroom steak",
+    "aubergine steak", "eggplant steak", "watermelon steak", "kidney bean", "kidney beans",
+    "vegan meatball", "veggie meatball", "vegetarian meatball", "paneer meatball",
+    "aubergine caviar", "eggplant caviar", "veggie sausage", "vegan sausage",
+    "vegetarian sausage", "soya sausage", "vegan bacon", "veggie bacon", "coconut bacon",
+    "vegan chicken", "mock chicken", "soya chicken", "vegan fish", "mock fish",
+    "vegan ham", "mock duck", "vegan duck", "mock pork", "vegan pork", "vegan beef",
+    "mock beef", "vegan mince", "soya mince", "soya keema", "soy keema", "vegan keema",
+    "mushroom keema", "paneer keema", "vegan tuna", "vegan crab", "vegan prawn",
+    "mock prawn", "vegan shrimp",
 }
 
 
@@ -238,6 +277,16 @@ def is_safe(dish):
         return False, "vegan flag contradicts ingredients"
     if dish["diet"] == "veg" and (_hits(ings, FLESH, FLESH_IMPOSTERS) or _hits(ings, EGG)):
         return False, "veg flag contradicts ingredients"
+    # ⚠️ ADDED 7 Sep 2026 — THE RULE THAT KEPT EVERY PHONE ON v7 FOR FOUR WEEKS.
+    # The app's gate (CatalogUpdater.swift, "diet != .nonveg && hasFlesh") refuses a
+    # feed carrying ANY dish labelled `egg` whose ingredients name meat or fish. This
+    # file only checked `veg`. So `infer_diet` (exact-match, see below) labelled
+    # "Chicken Fried Rice", "General Tsos Chicken", "Turkey Meatloaf" and 22 more as
+    # eggetarian, this gate waved them through, and v8–v13 were each fetched and
+    # silently refused by every iPhone and Android — Anirudh's own included. An
+    # eggetarian user would have been dealt chicken. Same rule here now, same words.
+    if dish["diet"] != "nonveg" and _hits(ings, FLESH, FLESH_IMPOSTERS):
+        return False, "flesh in a non-nonveg dish"
     # ⚠️ ADDED 4 Sep 2026 — a HOLE THAT WAS OPEN ON BOTH PLATFORMS, independent of the
     # plural fix. The vegan check above compared INGREDIENTS, and the token check that
     # sat beside it in the app looked at dairy and egg only. So a dish could declare the
@@ -248,22 +297,71 @@ def is_safe(dish):
         return False, "vegan flag contradicts its own allergen tokens"
     if dish["diet"] in ("veg", "egg") and (_alg & {"fish", "shellfish"}):
         return False, "diet contradicts its own allergen tokens"
-    if len(dish["name"]) > 80 or any(len(s) > 400 for s in dish["steps"]):
+    # Text caps and the two shapes an injection takes — CatalogUpdater.textRejection.
+    if len(dish["name"]) > 80 or len(dish.get("hindi", "")) > 80:
+        return False, "name too long"
+    if len(dish["steps"]) > 12 or any(len(s) > 400 for s in dish["steps"]):
         return False, "text too long"
+    joined = " ".join([dish["name"], dish.get("hindi", "")] + list(dish["steps"]))
+    for needle in ("http://", "https://", "www.", "<script", "</", "javascript:"):
+        if needle in joined:
+            return False, f"text carries {needle!r}"
     if not dish["ingredients"]:
         return False, "no ingredients"
     return True, "ok"
 
 
+def feed_failures(recipes):
+    """Every reason the APPS would refuse this feed, whole-feed rules included —
+    CatalogUpdater.rejectionReason / CatalogGate.sanityFailure, in Python. Empty means
+    "the phones will install it". Per-dish reasons name the dish so it can be fixed.
+    The judge of record is still the Swift gate (Hogg-iOS `tools/feed-gate.sh`); this
+    is the same question asked where the file is written, so a refusal fails the
+    workflow instead of being discovered on a phone a month later."""
+    out = []
+    if len(recipes) < 200:
+        out.append(f"only {len(recipes)} dishes (floor 200)")
+    seen = set()
+    for r in recipes:
+        if r["id"] in seen:
+            out.append(f"duplicate id {r['id']}")
+        seen.add(r["id"])
+    if not any("sattvik" in r.get("tags", []) for r in recipes):
+        out.append("no sattvik dish")
+    if not any(r.get("diet") == "veg" for r in recipes):
+        out.append("no veg dish")
+    if not any("b" in r.get("meals", []) for r in recipes):
+        out.append("no breakfast dish")
+    declared = sum(1 for r in recipes if r.get("allergens"))
+    if declared < len(recipes) // 5:
+        out.append(f"allergen coverage {declared}/{len(recipes)} below a fifth")
+    declarable = set(ALLERGEN_KEYS)
+    for r in recipes:
+        alien = [a for a in r.get("allergens", []) if a not in declarable]
+        if alien:
+            out.append(f"{r['id']} {r['name']}: undeclarable allergen token {alien[0]!r}")
+            continue
+        ok, why = is_safe(r)
+        if not ok:
+            out.append(f"{r['id']} {r['name']}: {why}")
+    return out
+
+
 # ── normalisation helpers ───────────────────────────────────────────────────────────
 DIET_HINT_NONVEG = FLESH
 def infer_diet(ings):
-    ks = _keys(ings)
-    if ks & FLESH:
-        return "nonveg"
-    if ks & EGG:
-        return "egg"
-    return "veg"
+    """The diet the ingredients permit, decided by the SAME whole-word matcher the
+    safety gate uses.
+
+    ⚠️ 7 Sep 2026. This compared keys by EXACT EQUALITY (`ks & FLESH`), so "chicken
+    breast", "minced beef", "lamb mince" and "smoked haddock" were not flesh, and any
+    such dish with an egg in it became diet `egg`. Twenty-five of them reached the
+    live feed across v8–v13 — and because the app's gate matches whole words, it
+    refused every one of those feeds, silently, on every phone. The matcher that
+    decides the label must be the matcher that checks it; anything else is two
+    opinions about one dish.
+    """
+    return _diet_floor(ings)
 
 
 def ing_key(name):
@@ -442,8 +540,43 @@ def selftest():
                      "strIngredient1": "Peanut butter", "strMeasure1": "1"})
     assert "peanut" in sat["allergens"], "peanut butter must still derive PEANUT"
 
+    # ⚠️ THE 7 Sep 2026 CASE, TO THE LETTER: v13's "Belgian Meatballs in Liège Syrup
+    # Sauce" — minced beef, minced pork, one egg — was labelled diet `egg`. The label
+    # must come out `nonveg`, and the poisoned label must be refused, per dish AND per
+    # feed, or the harvester is once again free to publish a feed every phone refuses.
+    meatball = normalise({"strMeal": "Test Meatballs", "strArea": "Belgian",
+                          "strInstructions": "Mix.\nFry.",
+                          "strIngredient1": "Minced Beef", "strMeasure1": "300g",
+                          "strIngredient2": "Minced Pork", "strMeasure2": "300g",
+                          "strIngredient3": "Egg", "strMeasure3": "1"})
+    assert meatball["diet"] == "nonveg", f"minced beef + egg labelled {meatball['diet']!r}, not nonveg"
+    assert meatball["id"].startswith("FND-NV-"), meatball["id"]
+    assert is_safe(meatball)[0], "a correctly labelled meat dish was refused"
+    poisoned = dict(meatball, diet="egg")
+    ok3, why3 = is_safe(poisoned)
+    assert not ok3 and why3 == "flesh in a non-nonveg dish", f"egg-labelled meat passed the gate: {ok3} {why3}"
+    for label, ing in [("Chicken Fried Rice", "Chicken breast"), ("Lamb pie", "Lamb mince"),
+                       ("Kedgeree", "Smoked Haddock"), ("Meatloaf", "Ground turkey")]:
+        dd = normalise({"strMeal": label, "strArea": "Test", "strInstructions": "Cook.",
+                        "strIngredient1": ing, "strMeasure1": "1",
+                        "strIngredient2": "Egg", "strMeasure2": "1"})
+        assert dd["diet"] == "nonveg", f"{label}: '{ing}' + egg labelled {dd['diet']!r}"
+    # ...and "goats cheese" is cheese, not goat: still veg, never nonveg.
+    gc = normalise({"strMeal": "Goat cheese salad", "strArea": "Test", "strInstructions": "Toss.",
+                    "strIngredient1": "Goats cheese", "strMeasure1": "100g"})
+    assert gc["diet"] == "veg", f"goats cheese labelled {gc['diet']!r}"
+    # The whole-feed question: one poisoned dish among sane ones names itself.
+    sane = [dict(meatball, id=f"PAD-{i}", name=f"Pad {i}", tags=["sattvik"], meals=["b"],
+                 diet="nonveg", allergens=["egg"]) for i in range(200)]
+    sane[0] = dict(sane[0], diet="veg", vegan=False, allergens=["egg"],
+                   ingredients=[{"name": "Rice", "qty": "1", "key": "rice"}])
+    assert feed_failures(sane) == [], feed_failures(sane)[:3]
+    assert feed_failures(sane + [poisoned]) == [f"{poisoned['id']} {poisoned['name']}: flesh in a non-nonveg dish"], \
+        feed_failures(sane + [poisoned])
+
     print("SELFTEST OK — derive + gate correct: 11 Aug dairy regressions caught, "
-          "imposters (coconut milk / peanut butter) not misflagged")
+          "imposters (coconut milk / peanut butter) not misflagged, "
+          "7 Sep egg-labelled meat refused per dish and per feed")
 
 
 
@@ -580,6 +713,9 @@ def main():
     ap.add_argument("--repair", action="store_true",
                     help="one-off: fix ingredient keys the pre-1 Sep 2026 ing_key corrupted, "
                          "monotonically. Never removes an allergen. Does not harvest.")
+    ap.add_argument("--check", action="store_true",
+                    help="ask the gate about the catalogue as it stands and exit 1 if any "
+                         "dish would make the apps refuse it. Writes nothing.")
     a = ap.parse_args()
     if a.selftest:
         selftest(); return
@@ -595,13 +731,31 @@ def main():
         return
     doc = json.load(open(a.catalog))
     existing = doc["recipes"] if isinstance(doc, dict) else doc
+    if a.check:
+        fails = feed_failures(existing)
+        for f in fails:
+            print("REFUSED", f)
+        print(f"FEED_CHECK={'REFUSED' if fails else 'ACCEPTED'} v{doc.get('version', '?')} "
+              f"recipes={len(existing)} failures={len(fails)}")
+        sys.exit(1 if fails else 0)
     added, dropped = harvest(existing)
     merged = existing + added
     ver = (doc.get("version", 1) + 1) if isinstance(doc, dict) else 2
+    # ⚠️ THE WHOLE FEED, NOT JUST THE NEW DISHES, AND LOUDLY. Until 7 Sep 2026 only
+    # each new dish was gated; the merged file was written and pushed unchecked, and
+    # a feed the app refuses is invisible from here — every phone just keeps the old
+    # list. A failing exit fails the workflow step, GitHub emails Anirudh, and
+    # nothing is pushed. Silence on the phones stays; silence at the source ends.
+    fails = feed_failures(merged)
+    if fails:
+        for f in fails[:20]:
+            print("REFUSED", f)
+        sys.exit(f"FEED_CHECK=REFUSED — {len(fails)} dish(es) would make every phone "
+                 f"refuse v{ver}; nothing written")
     json.dump({"format": 1, "version": ver, "recipes": merged},
               open(a.catalog, "w"), ensure_ascii=False, separators=(",", ":"))
     print(f"harvested {len(added)} new, dropped {dropped} unsafe; "
-          f"catalogue {len(existing)} -> {len(merged)}, feed v{ver}")
+          f"catalogue {len(existing)} -> {len(merged)}, feed v{ver}; FEED_CHECK=ACCEPTED")
 
 
 if __name__ == "__main__":
