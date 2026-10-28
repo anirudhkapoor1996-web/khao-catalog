@@ -403,6 +403,40 @@ def ing_key(name):
 
 PALETTE = ["#EBC77A", "#C79A3E"]
 
+# Every rcat the two apps' cuisine chips can reach (iOS Recipes.swift HoggData.cuisines,
+# Android PalateEngine.kt CUISINE_GROUPS — keep all three in step). 28 Oct 2026: ~560
+# feed dishes carried rcats no chip named ("north", "france", "united", "jamaican"…) and
+# 186 more were "world" — unreachable by choosing any cuisine. A new TheMealDB area now
+# shows up as a loud warning on the workflow run instead of silently vanishing.
+KNOWN_RCATS = {
+    "northindian", "north", "india", "modern", "mughlai", "biryani", "southindian", "south",
+    "kerala", "karnataka", "andhra", "konkani", "street", "rolls", "seafood", "healthy",
+    "homestyle", "cafe", "sweets", "italian", "chinese", "japanese", "korean", "vietnamese",
+    "indonesian", "malaysian", "filipino", "cambodian", "thai", "mexican", "mideast", "saudi",
+    "afghan", "greek", "continental", "spanish", "portuguese", "american", "british", "united",
+    "canadian", "australian", "irish", "bengali", "assamese", "gujarati", "rajasthani",
+    "maharashtrian", "maharashtria", "goan", "kashmiri", "french", "france", "turkish",
+    "syrian", "armenian", "ethiopian", "kenyan", "botswanan", "caribbean", "jamaican",
+    "german", "austrian", "latam", "venezuela", "argentina", "uruguayan", "polish", "russian",
+    "ukrainian", "croatian", "slovakia", "albanian", "bulgarian", "moroccan", "algerian",
+    "tunisian", "egyptian", "norway", "netherlands", "danish", "belgian", "world",
+}
+
+# TheMealDB area -> app rcat, where the first word is not already one the apps know.
+AREA_RCAT = {"dutch": "netherlands", "norwegian": "norway", "argentinian": "argentina",
+             "venezulan": "venezuela", "venezuelan": "venezuela", "slovakian": "slovakia",
+             "unknown": "world"}
+
+
+def rcat_for(cuisine):
+    first = (cuisine or "World").lower().split()[0][:12]
+    rc = AREA_RCAT.get(first, first)
+    if rc not in KNOWN_RCATS:
+        # GitHub Actions annotation: shows on the run page and in the email.
+        print(f"::warning::harvest: cuisine '{cuisine}' -> rcat '{rc}' is not reachable by any "
+              f"cuisine chip in either app; add it to KNOWN_RCATS and to both apps' groups")
+    return rc
+
 
 def normalise(rec):
     """A source record (TheMealDB shape) -> a Khao dish, or None if unusable."""
@@ -435,7 +469,7 @@ def normalise(rec):
         "spice": 2, "mins": 40, "rich": 3, "price": 2, "kcal": 400, "protein": 10,
         "tags": (["vegan"] if vegan else []) + ["found"],
         "meals": ["l", "d"], "emoji": "🍽",
-        "rcat": cuisine.lower().split()[0][:12], "pop": 0.4, "colors": PALETTE,
+        "rcat": rcat_for(cuisine), "pop": 0.4, "colors": PALETTE,
         "imageKeywords": ",".join(name.lower().split()[:2]),
         "ingredients": ings, "steps": steps or ["See the video for the method."],
         "fp": {"spicy": 2, "sweet": 0, "sour": 0, "salty": 1, "umami": 2,
