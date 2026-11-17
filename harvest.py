@@ -69,7 +69,7 @@ ALLERGEN_KEYS = {
                "vermicelli", "sevai", "semolina", "suji", "sooji", "rava", "barley",
                "bulgur", "couscous", "seitan", "puff pastry", "filo", "phyllo",
                "wonton wrappers", "dumpling wrappers", "spring roll sheets",
-               "samosa patti", "malt", "beer",
+               "samosa patti", "malt", "beer", "ciabatta", "baguette", "sourdough", "focaccia", "brioche", "croissant", "bagel", "panko",
                "soy sauce", "soya sauce", "dark soy sauce", "light soy sauce",
                "hoisin sauce"},
     "soy": {"soy", "soya", "soy sauce", "soya sauce", "dark soy sauce",
