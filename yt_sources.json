@@ -592,5 +592,124 @@
    "channel": "Certified Angus Beef",
    "title": "How to Make Steak Au Poivre | Classic French Recipe"
   }
+ },
+ {
+  "id": "FND-V-AUSTRIANGARLIC-F8CE7",
+  "name": "Austrian Garlic Soup in a Bread Bowl (Knoblauchsuppe im Brot)",
+  "source": {
+   "video": "rSpHokFp7Js",
+   "channel": "Healthy Recipes",
+   "title": "Ein typisches Osterreichisches Gericht: Alte Knoblauchsuppe im Brot"
+  }
+ },
+ {
+  "id": "FND-E-EGGSFLORENTINE-AACCE",
+  "name": "Eggs Florentine (Binging with Babish)",
+  "source": {
+   "video": "34j9_tbM7og",
+   "channel": "Binging with Babish",
+   "title": "Binging with Babish: Eggs Florentine from Frasier",
+   "page": "https://www.bingingwithbabish.com/recipes/eggsflorentine"
+  }
+ },
+ {
+  "id": "FND-NV-ORIGINALORANGE-1959C",
+  "name": "Original Orange Chicken (Panda Express, by Tasty)",
+  "source": {
+   "video": "5Sa9nYKiYg0",
+   "channel": "Tasty",
+   "title": "The Original Orange Chicken by Panda Express",
+   "page": "https://tasty.co/recipe/original-orange-chicken-by-panda-express"
+  }
+ },
+ {
+  "id": "FND-NV-CHICKENFRICASS-D248C",
+  "name": "Chicken Fricassee (RecipeTin Eats)",
+  "source": {
+   "video": "sqelF9LaAlQ",
+   "channel": "RecipeTin Eats",
+   "title": "Chicken Fricassee - quick French Chicken Stew",
+   "page": "https://www.recipetineats.com/chicken-fricassee-quick-french-chicken-stew/"
+  }
+ },
+ {
+  "id": "FND-NV-PADKRAPOWGAIFO-F614F",
+  "name": "Pad Krapow Gai (Food Wishes)",
+  "source": {
+   "video": "SoFSmNaKTVU",
+   "channel": "Food Wishes",
+   "title": "Spicy Thai Basil Chicken (Pad Krapow Gai)",
+   "page": "http://foodwishes.blogspot.com/2017/04/spicy-thai-basil-chicken-my-pad-krapow.html"
+  }
+ },
+ {
+  "id": "FND-NV-BEEFBEANANDBEE-0CF96",
+  "name": "Beef, Bean and Beer Chili (Food Wishes)",
+  "source": {
+   "video": "Tb8lKl67RTo",
+   "channel": "Food Wishes",
+   "title": "Beef, Bean & Beer Chili Recipe - How to Make Beef & Beer Chili",
+   "page": "http://foodwishes.blogspot.com/2015/06/beef-bean-and-beer-chili-what-great-way.html"
+  }
+ },
+ {
+  "id": "FND-NV-PEPOSOTUSCANBL-C136F",
+  "name": "Peposo (Tuscan Black Pepper Beef)",
+  "source": {
+   "video": "7qmt9rup6_I",
+   "channel": "Food Wishes",
+   "title": "Peposo - Tuscan Black Pepper Beef - Food Wishes",
+   "page": "https://foodwishes.blogspot.com/2017/11/peposo-dellimpruneta-making-bad-beef.html"
+  }
+ },
+ {
+  "id": "FND-NV-GREEKLEMONCHIC-91997",
+  "name": "Greek Lemon Chicken and Potatoes (Food Wishes)",
+  "source": {
+   "video": "h6OSMbfhIao",
+   "channel": "Food Wishes",
+   "title": "Greek Lemon Chicken & Potatoes (Roasted with Garlic & Herbs)",
+   "page": "http://foodwishes.blogspot.com/2015/04/greek-lemon-chicken-and-potatoes-both.html"
+  }
+ },
+ {
+  "id": "FND-E-FROZENVANILLAC-56206",
+  "name": "Frozen Vanilla Custard (French Vanilla Ice Cream)",
+  "source": {
+   "video": "OTYpUwB6qjs",
+   "channel": "Food Wishes",
+   "title": "Frozen Vanilla Custard - French Vanilla Ice Cream Recipe",
+   "page": "http://foodwishes.blogspot.com/2017/05/frozen-vanilla-custard-western-ny-for.html"
+  }
+ },
+ {
+  "id": "FND-NV-PENANGPORKSATA-C2704",
+  "name": "Penang Pork Satay (Food Wishes)",
+  "source": {
+   "video": "FR8qD11QfOI",
+   "channel": "Food Wishes",
+   "title": "Penang Pork Satay - Grilled Pork Skewers - Food Wishes",
+   "page": "https://foodwishes.blogspot.com/2019/08/penang-pork-satay-maybe-just-like-one.html"
+  }
+ },
+ {
+  "id": "FND-NV-DIMERDEVILCALC-F3D35",
+  "name": "Dim'er Devil (Calcutta Cabin Egg Devil)",
+  "source": {
+   "video": "sOKFdGDbzCI",
+   "channel": "Bong Eats",
+   "title": "Dim'er Devil - Egg Devil - Calcutta Cabin Style Spicy Scotch Eggs",
+   "page": "https://www.bongeats.com/recipe/dimer-devil"
+  }
+ },
+ {
+  "id": "FND-NV-ITALIANGARLICS-CB51F",
+  "name": "Italian Garlic Soup with Crispy Croutons",
+  "source": {
+   "video": "GdcCVZ_D7hQ",
+   "channel": "Recipe30",
+   "title": "Garlic Soup Italian style with crispy croutons",
+   "page": "http://www.recipe30.com/garlic-soup-italian-style.html/"
+  }
  }
 ]
