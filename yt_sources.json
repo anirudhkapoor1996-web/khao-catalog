@@ -861,5 +861,35 @@
    "title": "How to Make Takeout Icon General Tso's Chicken",
    "page": "https://www.vice.com/en/article/88gqpv/general-tsos-chicken-recipe"
   }
+ },
+ {
+  "id": "FND-V-CUCUMBERCREAMI-E9021",
+  "name": "Cucumber Cream Ice (Victorian, Tasting History)",
+  "source": {
+   "video": "0Uot4uVKrVk",
+   "channel": "Tasting History with Max Miller",
+   "title": "Victorian Ice Cream & The Queen of Ices",
+   "basis": "spoken in the video (YouTube captions)"
+  }
+ },
+ {
+  "id": "FND-E-PARMESANCHEESE-36F59",
+  "name": "Parmesan Cheese Ice Cream (1789, Tasting History)",
+  "source": {
+   "video": "BR7fywQ-vUE",
+   "channel": "Tasting History with Max Miller",
+   "title": "A History of Ice Cream | A Recipe from 1789",
+   "basis": "spoken in the video (YouTube captions)"
+  }
+ },
+ {
+  "id": "FND-V-LENTILTOFUSAMS-DFFE8",
+  "name": "Lentil Tofu (Sam's Home Kitchen)",
+  "source": {
+   "video": "6N8KE4o4xMw",
+   "channel": "Sam's Home Kitchen",
+   "title": "2 Ingredients Lentil Tofu (Firm Tofu)",
+   "basis": "spoken in the video (YouTube captions)"
+  }
  }
 ]
