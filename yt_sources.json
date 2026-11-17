@@ -801,5 +801,65 @@
    "title": "How To Make The Worlds Tastiest Sourdough bread (Updated)",
    "page": "https://www.hobbshousebakery.co.uk/recipe/sourdough/"
   }
+ },
+ {
+  "id": "FND-NV-KOREANTUNASAND-4465E",
+  "name": "Korean Tuna Sandwich (Maangchi)",
+  "source": {
+   "video": "SU12dtgfqkE",
+   "channel": "Maangchi",
+   "title": "Tuna sandwich",
+   "page": "http://www.maangchi.com/recipe/tuna-sandwich"
+  }
+ },
+ {
+  "id": "FND-NV-YANGNYEOMTONGD-7E77A",
+  "name": "Yangnyeom Tongdak (Maangchi)",
+  "source": {
+   "video": "XnLWBoZn710",
+   "channel": "Maangchi",
+   "title": "Korean Fried Chicken (Yangnyeom-tongdak)",
+   "page": "https://www.maangchi.com/recipe/yangnyeom-tongdak"
+  }
+ },
+ {
+  "id": "FND-NV-TOMKHAGAIPAILI-D065C",
+  "name": "Tom Kha Gai (Pailin's Kitchen)",
+  "source": {
+   "video": "qQ_G0LVzaCI",
+   "channel": "Pailin's Kitchen",
+   "title": "If You Can Only Make ONE Dish, Make Tom Kha Gai",
+   "page": "https://hot-thai-kitchen.com/tom-ka-gai/"
+  }
+ },
+ {
+  "id": "FND-NV-HATYAIFRIEDCHI-82D98",
+  "name": "Hat Yai Fried Chicken (Pailin's Kitchen)",
+  "source": {
+   "video": "cIpiVkm3KAY",
+   "channel": "Pailin's Kitchen",
+   "title": "3 Reasons THAI FRIED CHICKEN is the Best in the World",
+   "page": "https://hot-thai-kitchen.com/hat-yai-fried-chicken"
+  }
+ },
+ {
+  "id": "FND-NV-THAICHILIANDHE-A733C",
+  "name": "Thai Chili and Herb Peanuts (Tom Yum Peanuts)",
+  "source": {
+   "video": "89gaob4ovkA",
+   "channel": "Pailin's Kitchen",
+   "title": "People Always Ask For This Recipe After Thailand Trip - Chili Lime Peanuts",
+   "page": "https://hot-thai-kitchen.com/chili-herb-nuts/"
+  }
+ },
+ {
+  "id": "FND-NV-GENERALTSOSCHI-26E5F",
+  "name": "General Tso's Chicken (Munchies)",
+  "source": {
+   "video": "mJ8RMyPOZRQ",
+   "channel": "Munchies",
+   "title": "How to Make Takeout Icon General Tso's Chicken",
+   "page": "https://www.vice.com/en/article/88gqpv/general-tsos-chicken-recipe"
+  }
  }
 ]
