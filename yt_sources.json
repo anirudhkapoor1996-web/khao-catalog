@@ -151,5 +151,77 @@
    "channel": "Henrys HowTos",
    "title": "How To Make The Best Persian Kabab Koobideh"
   }
+ },
+ {
+  "id": "FND-NV-CHICKENAFGHANI-8C76E",
+  "name": "Chicken Afghani",
+  "source": {
+   "video": "AzKB1ayNmyA",
+   "channel": "Get Curried",
+   "title": "How To Make Chicken Afghani"
+  }
+ },
+ {
+  "id": "FND-NV-CHICKENNIHARI-59DA9",
+  "name": "Chicken Nihari",
+  "source": {
+   "video": "CF7LWcQXtkI",
+   "channel": "Get Curried",
+   "title": "Chicken Nihari Recipe | Murgh Nihari"
+  }
+ },
+ {
+  "id": "FND-NV-RESHMICHICKENM-8322B",
+  "name": "Reshmi Chicken Masala",
+  "source": {
+   "video": "VFnAOfpZKnM",
+   "channel": "Get Curried",
+   "title": "Reshmi Chicken Masala | Malai Chicken Recipe"
+  }
+ },
+ {
+  "id": "FND-NV-CHICKENLAPETA-89703",
+  "name": "Chicken Lapeta",
+  "source": {
+   "video": "iM93CCW4mX8",
+   "channel": "Get Curried",
+   "title": "Chicken Lapeta Recipe | Murgh Lapeta"
+  }
+ },
+ {
+  "id": "FND-NV-KABULIPULAO-E2DEE",
+  "name": "Kabuli Pulao",
+  "source": {
+   "video": "loGcp7ix6oM",
+   "channel": "Get Curried",
+   "title": "Kabuli Pulao | Afghan Style Pulao"
+  }
+ },
+ {
+  "id": "FND-NV-CHICKENMAKHANI-470C5",
+  "name": "Chicken Makhani Handi",
+  "source": {
+   "video": "fiCZ6ikcTVw",
+   "channel": "Spice Eats",
+   "title": "Chicken Makhani Handi | Chicken Handi Recipe"
+  }
+ },
+ {
+  "id": "FND-NV-CRISPYMUTTONCH-F0FF8",
+  "name": "Crispy Mutton Chap Fry",
+  "source": {
+   "video": "e2s13A6jUVE",
+   "channel": "Cook with Lubna",
+   "title": "Crispy Mutton Chap Fry Recipe"
+  }
+ },
+ {
+  "id": "FND-NV-TAVUKSISTURKIS-3E3F9",
+  "name": "Tavuk Sis (Turkish Chicken Kebab)",
+  "source": {
+   "video": "BVBKHI2xqZY",
+   "channel": "Henrys HowTos",
+   "title": "How To Make Turkish Chicken Kebab (Tavuk Sis)"
+  }
  }
 ]
