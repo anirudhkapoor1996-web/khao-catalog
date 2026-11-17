@@ -444,7 +444,7 @@ def normalise(rec):
     if not name:
         return None
     ings = []
-    for i in range(1, 21):
+    for i in range(1, 41):
         ing = (rec.get(f"strIngredient{i}") or "").strip()
         qty = (rec.get(f"strMeasure{i}") or "").strip()
         if ing:
