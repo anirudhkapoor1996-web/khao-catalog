@@ -18,7 +18,7 @@ goes on the review queue instead.
 
 usage: recipe_gate.py CATALOG.json [--apply] [--report DIR]
 """
-import json, re, sys, os, collections
+import json, re, re, sys, os, collections
 
 # ---------------------------------------------------------------- normalisation
 PROTECT = [
@@ -526,6 +526,18 @@ def main():
             mine = MAP[a[src]]
             prev = MAP.get(r.get(fld), "yes") if fld in r else "yes"
             r[fld] = mine if ORD[mine] >= ORD[prev] else prev
+        # A dish this gate moved to "if" with no reason from diet_check.py would show an alert with
+        # nothing to say. Give it the same "ingredient (needs X)" line the apps turn into "Use X".
+        for fld, attr in (("gf", "gluten"), ("halal", "halal"), ("kosher", "kosher")):
+            if r[fld] == "if" and not r["dietWhy"].get(fld):
+                lines = []
+                for t in a["why"].get(attr, []):
+                    subj = re.split(r"\s+(?:must|may|needs?|can|is|contains?|has|mentions)\b", t, maxsplit=1)[0].strip()
+                    fix = ("a gluten-free one" if fld == "gf"
+                           else ("%s meat" % fld if "slaughter" in t else "%s-certified ingredient" % fld))
+                    lines.append("%s (needs %s)" % (subj, fix))
+                if lines:
+                    r["dietWhy"][fld] = list(dict.fromkeys(lines))[:3]
         r["gateWhy"] = gate_why
         r["checkAlerts"] = a["alerts"]
         r["checkedBy"] = "gate-v1"
