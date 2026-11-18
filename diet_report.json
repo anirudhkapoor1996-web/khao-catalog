@@ -1,0 +1,7841 @@
+{
+ "version_checked": 44,
+ "dishes": 2240,
+ "added_allergens": [
+  [
+   "IND-V-3-2-031",
+   "Masala Maggi",
+   "soy",
+   [
+    "maggi"
+   ]
+  ],
+  [
+   "IND-V-2-2-032",
+   "Chai + Pakora",
+   "dairy",
+   [
+    "chai patti + milk + adrak"
+   ]
+  ],
+  [
+   "IND-NV-3-2-040",
+   "Chicken Shawarma Roll",
+   "egg",
+   [
+    "tahini / mayo-garlic"
+   ]
+  ],
+  [
+   "IND-NV-3-2-040",
+   "Chicken Shawarma Roll",
+   "mustard",
+   [
+    "tahini / mayo-garlic"
+   ]
+  ],
+  [
+   "KOR-V-3-1-115",
+   "Bibimbap",
+   "gluten",
+   [
+    "gochujang"
+   ]
+  ],
+  [
+   "USA-NV-2-3-116",
+   "Classic Cheeseburger",
+   "mustard",
+   [
+    "pickles"
+   ]
+  ],
+  [
+   "IND-V-1-3-124",
+   "Dhokla",
+   "mustard",
+   [
+    "mustard + curry leaves"
+   ]
+  ],
+  [
+   "IND-V-1-2-130",
+   "Khaman Dhokla",
+   "mustard",
+   [
+    "mustard + curry leaves"
+   ]
+  ],
+  [
+   "IND-V-2-2-137",
+   "Goan Veg Xacuti",
+   "soy",
+   [
+    "mixed veg + soya"
+   ]
+  ],
+  [
+   "IND-V-3-2-157",
+   "Rasam & Rice",
+   "mustard",
+   [
+    "rasam powder"
+   ]
+  ],
+  [
+   "THA-NV-2-2-210",
+   "Thai Basil Chicken",
+   "shellfish",
+   [
+    "oyster + soy sauce"
+   ]
+  ],
+  [
+   "CHN-V-3-2-212",
+   "Mapo Tofu",
+   "gluten",
+   [
+    "chilli bean paste"
+   ]
+  ],
+  [
+   "JPN-V-1-1-217",
+   "Miso Soup",
+   "fish",
+   [
+    "dashi/veg stock"
+   ]
+  ],
+  [
+   "KOR-NV-3-2-218",
+   "Bibimbap Beef",
+   "gluten",
+   [
+    "gochujang"
+   ]
+  ],
+  [
+   "KOR-V-2-1-219",
+   "Kimchi Fried Rice",
+   "gluten",
+   [
+    "gochujang"
+   ]
+  ],
+  [
+   "MEA-NV-2-2-228",
+   "Chicken Shawarma Plate",
+   "gluten",
+   [
+    "rice/pita"
+   ]
+  ],
+  [
+   "MEA-NV-2-2-228",
+   "Chicken Shawarma Plate",
+   "mustard",
+   [
+    "pickles"
+   ]
+  ],
+  [
+   "ETH-V-1-2-249",
+   "Misir Wot & Injera",
+   "gluten",
+   [
+    "injera flatbread"
+   ]
+  ],
+  [
+   "IDN-NV-3-2-251",
+   "Nasi Goreng",
+   "gluten",
+   [
+    "kecap manis"
+   ]
+  ],
+  [
+   "IDN-V-2-2-253",
+   "Gado Gado",
+   "gluten",
+   [
+    "prawn crackers"
+   ]
+  ],
+  [
+   "IDN-V-2-2-253",
+   "Gado Gado",
+   "shellfish",
+   [
+    "prawn crackers"
+   ]
+  ],
+  [
+   "VIE-V-1-1-262",
+   "Fresh Spring Rolls",
+   "gluten",
+   [
+    "peanut hoisin dip"
+   ]
+  ],
+  [
+   "VIE-V-1-1-262",
+   "Fresh Spring Rolls",
+   "shellfish",
+   [
+    "tofu/prawn"
+   ]
+  ],
+  [
+   "VIE-NV-2-2-263",
+   "Banh Mi",
+   "mustard",
+   [
+    "pate + mayo"
+   ]
+  ],
+  [
+   "IND-V-1-1-271",
+   "Vermicelli Upma",
+   "mustard",
+   [
+    "mustard + curry leaves"
+   ]
+  ],
+  [
+   "IND-V-1-1-272",
+   "Rava Upma",
+   "mustard",
+   [
+    "mustard + curry leaves"
+   ]
+  ],
+  [
+   "IND-V-2-3-003",
+   "Sarson Ka Saag",
+   "gluten",
+   [
+    "makki flour"
+   ]
+  ],
+  [
+   "IND-V-2-3-003",
+   "Sarson Ka Saag",
+   "mustard",
+   [
+    "mustard greens"
+   ]
+  ],
+  [
+   "IND-V-1-2-003",
+   "Shukto",
+   "mustard",
+   [
+    "panch phoron"
+   ]
+  ],
+  [
+   "IND-NV-4-3-002",
+   "Goan Sausage Pulao",
+   "gluten",
+   [
+    "goan sausage"
+   ]
+  ],
+  [
+   "IND-V-2-2-006",
+   "Sattu Paratha",
+   "mustard",
+   [
+    "pickle masala"
+   ]
+  ],
+  [
+   "JPN-V-1-2-001",
+   "Vegetable Tempura",
+   "egg",
+   [
+    "tempura flour"
+   ]
+  ],
+  [
+   "JPN-NV-1-4-001",
+   "Tonkatsu",
+   "soy",
+   [
+    "tonkatsu sauce"
+   ]
+  ],
+  [
+   "IDN-NV-2-3-001",
+   "Chicken Satay",
+   "gluten",
+   [
+    "kecap manis"
+   ]
+  ],
+  [
+   "USA-NV-1-2-001",
+   "Caesar Salad",
+   "mustard",
+   [
+    "caesar dressing"
+   ]
+  ],
+  [
+   "DEU-NV-1-3-002",
+   "Bratwurst & Sauerkraut",
+   "gluten",
+   [
+    "bratwurst"
+   ]
+  ],
+  [
+   "ETH-V-0-1-001",
+   "Injera",
+   "gluten",
+   [
+    "teff flour"
+   ]
+  ],
+  [
+   "BRA-NV-2-5-001",
+   "Feijoada",
+   "gluten",
+   [
+    "sausage"
+   ]
+  ],
+  [
+   "BRA-V-0-3-001",
+   "Pao de Queijo",
+   "gluten",
+   [
+    "tapioca flour"
+   ]
+  ],
+  [
+   "MMR-NV-3-4-001",
+   "Burmese Khao Suey",
+   "egg",
+   [
+    "egg noodles"
+   ]
+  ],
+  [
+   "FRA-NV-1-5-003",
+   "Cassoulet",
+   "gluten",
+   [
+    "sausage"
+   ]
+  ],
+  [
+   "CHN-NV-1-4-001",
+   "Char Siu Pork",
+   "gluten",
+   [
+    "hoisin"
+   ]
+  ],
+  [
+   "MEX-V-2-2-002",
+   "Elote",
+   "mustard",
+   [
+    "mayo"
+   ]
+  ],
+  [
+   "IND-V-3-1-002",
+   "Rasam",
+   "mustard",
+   [
+    "rasam powder"
+   ]
+  ],
+  [
+   "IND-V-2-2-012",
+   "Sambar Vada",
+   "mustard",
+   [
+    "sambar"
+   ]
+  ],
+  [
+   "JPN-NV-1-3-002",
+   "Chicken Donburi",
+   "fish",
+   [
+    "dashi"
+   ]
+  ],
+  [
+   "JPN-NV-1-3-003",
+   "Okonomiyaki",
+   "soy",
+   [
+    "okonomi sauce"
+   ]
+  ],
+  [
+   "JPN-V-1-2-002",
+   "Udon Noodle Soup",
+   "fish",
+   [
+    "dashi"
+   ]
+  ],
+  [
+   "THA-NV-3-4-001",
+   "Khao Soi",
+   "egg",
+   [
+    "egg noodles"
+   ]
+  ],
+  [
+   "CHN-NV-4-3-003",
+   "Twice Cooked Pork",
+   "gluten",
+   [
+    "doubanjiang"
+   ]
+  ],
+  [
+   "ESP-NV-1-5-001",
+   "Fabada Asturiana",
+   "gluten",
+   [
+    "chorizo"
+   ]
+  ],
+  [
+   "IND-NV-5-4-006",
+   "Malvani Chicken Curry",
+   "mustard",
+   [
+    "malvani masala"
+   ]
+  ],
+  [
+   "USA-NV-1-3-001",
+   "Chicken Caesar Wrap",
+   "fish",
+   [
+    "caesar dressing"
+   ]
+  ],
+  [
+   "USA-NV-1-3-001",
+   "Chicken Caesar Wrap",
+   "mustard",
+   [
+    "caesar dressing"
+   ]
+  ],
+  [
+   "JPN-NV-1-4-002",
+   "Katsu Sando",
+   "dairy",
+   [
+    "milk bread"
+   ]
+  ],
+  [
+   "JPN-NV-1-4-002",
+   "Katsu Sando",
+   "soy",
+   [
+    "tonkatsu sauce"
+   ]
+  ],
+  [
+   "IDN-NV-3-3-002",
+   "Ayam Bakar",
+   "gluten",
+   [
+    "kecap manis"
+   ]
+  ],
+  [
+   "KOR-NV-4-3-003",
+   "Dakgalbi",
+   "gluten",
+   [
+    "gochujang"
+   ]
+  ],
+  [
+   "CHN-NV-1-2-004",
+   "Beef and Broccoli",
+   "gluten",
+   [
+    "oyster sauce"
+   ]
+  ],
+  [
+   "JPN-NV-1-3-005",
+   "Gyudon",
+   "fish",
+   [
+    "dashi"
+   ]
+  ],
+  [
+   "PRT-NV-1-2-001",
+   "Caldo Verde",
+   "gluten",
+   [
+    "chorizo"
+   ]
+  ],
+  [
+   "IND-V-3-2-012",
+   "Pithla Bhakri",
+   "gluten",
+   [
+    "jowar flour"
+   ]
+  ],
+  [
+   "USA-NV-3-3-001",
+   "Jambalaya",
+   "gluten",
+   [
+    "sausage"
+   ]
+  ],
+  [
+   "JPN-NV-2-4-005",
+   "Sushi Bake",
+   "mustard",
+   [
+    "kewpie mayo"
+   ]
+  ],
+  [
+   "KOR-V-1-4-001",
+   "Korean Corn Cheese",
+   "mustard",
+   [
+    "mayo"
+   ]
+  ],
+  [
+   "CHN-NV-1-3-002",
+   "Wonton Noodle Soup",
+   "egg",
+   [
+    "egg noodles"
+   ]
+  ],
+  [
+   "PHL-NV-2-2-002",
+   "Pancit Canton",
+   "egg",
+   [
+    "egg noodles"
+   ]
+  ],
+  [
+   "CHN-V-4-3-002",
+   "Mapo Tofu Rice Bowl",
+   "gluten",
+   [
+    "doubanjiang"
+   ]
+  ],
+  [
+   "USA-NV-3-4-002",
+   "Crispy Chicken Zinger",
+   "mustard",
+   [
+    "mayo"
+   ]
+  ],
+  [
+   "IND-EG-1-2-001",
+   "Egg Sandwich",
+   "mustard",
+   [
+    "mayo"
+   ]
+  ],
+  [
+   "IND-V-0-3-013",
+   "Fruit Custard",
+   "egg",
+   [
+    "custard powder"
+   ]
+  ],
+  [
+   "IND-V-0-3-013",
+   "Fruit Custard",
+   "gluten",
+   [
+    "custard powder"
+   ]
+  ],
+  [
+   "MED-V-2-2-005",
+   "Falafel Bowl",
+   "gluten",
+   [
+    "falafel"
+   ]
+  ],
+  [
+   "THA-NV-3-3-002",
+   "Thai Cashew Chicken",
+   "gluten",
+   [
+    "oyster sauce"
+   ]
+  ],
+  [
+   "JPN-NV-1-3-008",
+   "Prawn Tempura Bowl",
+   "egg",
+   [
+    "tempura flour"
+   ]
+  ],
+  [
+   "JPN-NV-3-3-001",
+   "Spicy Tuna Roll",
+   "mustard",
+   [
+    "sriracha mayo"
+   ]
+  ],
+  [
+   "KOR-NV-3-3-001",
+   "Bibimbap Bowl (Beef)",
+   "gluten",
+   [
+    "gochujang"
+   ]
+  ],
+  [
+   "IDN-V-3-2-001",
+   "Nasi Goreng Vegetarian",
+   "gluten",
+   [
+    "kecap manis"
+   ]
+  ],
+  [
+   "IDN-V-3-2-002",
+   "Tempeh Stir Fry",
+   "gluten",
+   [
+    "kecap manis"
+   ]
+  ],
+  [
+   "SGP-V-2-3-001",
+   "Roti Prata with Curry",
+   "fish",
+   [
+    "fish curry"
+   ]
+  ],
+  [
+   "IND-V-2-2-183",
+   "Upma Kozhukattai",
+   "gluten",
+   [
+    "rice rava"
+   ]
+  ],
+  [
+   "IND-V-2-2-184",
+   "Lemon Sevai",
+   "gluten",
+   [
+    "rice sevai (idiyappam noodles)"
+   ]
+  ],
+  [
+   "IND-V-2-2-187",
+   "Khichu",
+   "peanut",
+   [
+    "groundnut oil"
+   ]
+  ],
+  [
+   "IND-V-2-4-015",
+   "Radhaballabhi",
+   "dairy",
+   [
+    "ghee"
+   ]
+  ],
+  [
+   "ODI-V-3-4-001",
+   "Dahi Bara Aloo Dum",
+   "mustard",
+   [
+    "panch phoron"
+   ]
+  ],
+  [
+   "IND-V-0-2-010",
+   "Assamese Jolpan",
+   "sesame",
+   [
+    "til pitha or bora saul"
+   ]
+  ],
+  [
+   "CHN-NV-0-3-001",
+   "Turnip Cake",
+   "gluten",
+   [
+    "chinese sausage"
+   ]
+  ],
+  [
+   "JPN-EG-0-2-001",
+   "Tamagoyaki",
+   "fish",
+   [
+    "dashi"
+   ]
+  ],
+  [
+   "JPN-EG-0-2-001",
+   "Tamagoyaki",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "JPN-EG-0-2-002",
+   "Tamago Kake Gohan",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "IDN-NV-1-2-001",
+   "Bubur Ayam",
+   "shellfish",
+   [
+    "prawn crackers"
+   ]
+  ],
+  [
+   "PHL-NV-1-4-001",
+   "Tapsilog",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "IND-V-3-3-039",
+   "Mangodi ki Sabzi",
+   "mustard",
+   [
+    "mustard oil"
+   ]
+  ],
+  [
+   "NAG-NV-3-3-001",
+   "Galho",
+   "mustard",
+   [
+    "mustard greens"
+   ]
+  ],
+  [
+   "SIK-NV-4-4-001",
+   "Phagshapa",
+   "soy",
+   [
+    "soybean oil"
+   ]
+  ],
+  [
+   "IND-NV-3-3-178",
+   "Chicken Taash",
+   "mustard",
+   [
+    "mustard oil"
+   ]
+  ],
+  [
+   "ODI-V-2-2-001",
+   "Dalma",
+   "mustard",
+   [
+    "panch phoron"
+   ]
+  ],
+  [
+   "ODI-V-1-1-001",
+   "Santula",
+   "dairy",
+   [
+    "milk or water"
+   ]
+  ],
+  [
+   "GAR-V-2-3-001",
+   "Chainsoo",
+   "mustard",
+   [
+    "mustard oil"
+   ]
+  ],
+  [
+   "MAL-NV-4-3-001",
+   "Sungtachi Kodi",
+   "mustard",
+   [
+    "malvani masala"
+   ]
+  ],
+  [
+   "MAL-NV-4-4-001",
+   "Kombdi Vade",
+   "mustard",
+   [
+    "malvani masala"
+   ]
+  ],
+  [
+   "CHN-V-2-2-266",
+   "Dry Fried Green Beans",
+   "mustard",
+   [
+    "ya cai preserved mustard greens"
+   ]
+  ],
+  [
+   "CHN-NV-0-2-001",
+   "Steamed Fish with Ginger and Scallion",
+   "peanut",
+   [
+    "groundnut oil"
+   ]
+  ],
+  [
+   "CHN-EG-0-2-001",
+   "Tomato and Egg Stir Fry",
+   "gluten",
+   [
+    "light soy sauce"
+   ]
+  ],
+  [
+   "JPN-V-0-3-001",
+   "Agedashi Tofu",
+   "fish",
+   [
+    "kombu and shiitake dashi"
+   ]
+  ],
+  [
+   "PHL-NV-2-5-001",
+   "Sisig",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "PHL-NV-2-5-001",
+   "Sisig",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "MMR-NV-2-3-001",
+   "Shan Noodles",
+   "mustard",
+   [
+    "pickled mustard greens"
+   ]
+  ],
+  [
+   "GBR-NV-1-4-008",
+   "Cottage Pie",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "GBR-NV-1-4-008",
+   "Cottage Pie",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "POL-NV-1-4-001",
+   "Bigos",
+   "gluten",
+   [
+    "smoked kielbasa"
+   ]
+  ],
+  [
+   "IND-V-3-2-185",
+   "Lobia Masala",
+   "mustard",
+   [
+    "mustard oil"
+   ]
+  ],
+  [
+   "IND-V-2-2-194",
+   "Tofu Bhurji",
+   "gluten",
+   [
+    "pav bhaji masala"
+   ]
+  ],
+  [
+   "JPN-V-0-1-002",
+   "Kenchinjiru",
+   "fish",
+   [
+    "kombu dashi"
+   ]
+  ],
+  [
+   "USA-NV-0-3-001",
+   "Cobb Salad",
+   "mustard",
+   [
+    "red wine vinaigrette"
+   ]
+  ],
+  [
+   "IND-V-2-2-199",
+   "Farali Dhokla",
+   "gluten",
+   [
+    "samak flour",
+    "sabudana flour"
+   ]
+  ],
+  [
+   "IND-V-2-4-020",
+   "Farali Pattice",
+   "gluten",
+   [
+    "sabudana flour"
+   ]
+  ],
+  [
+   "IND-V-2-3-167",
+   "Vrat Wale Dahi Vade",
+   "gluten",
+   [
+    "samak flour"
+   ]
+  ],
+  [
+   "MOD-EG-3-3-001",
+   "Chilli Crisp Eggs",
+   "gluten",
+   [
+    "light soy sauce"
+   ]
+  ],
+  [
+   "MOD-EG-0-3-001",
+   "Furikake Scrambled Eggs",
+   "fish",
+   [
+    "nori sesame furikake"
+   ]
+  ],
+  [
+   "MOD-V-1-3-006",
+   "Sticky Sesame Tofu",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "MOD-V-1-3-007",
+   "Soy Braised Tofu and Mushrooms",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "MOD-V-2-3-009",
+   "Maple Soy Tempeh",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "MOD-V-3-2-003",
+   "Tofu Larb",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "MOD-V-2-2-005",
+   "Smashed Cucumber Salad",
+   "gluten",
+   [
+    "soy sauce"
+   ]
+  ],
+  [
+   "FND-V-APPLEFRANGIPAN",
+   "Apple Frangipan Tart",
+   "gluten",
+   [
+    "digestive biscuits"
+   ]
+  ],
+  [
+   "FND-V-AUBERGINEHUMMU",
+   "Aubergine & hummus grills",
+   "sesame",
+   [
+    "hummus"
+   ]
+  ],
+  [
+   "FND-V-BARRAMUNDIWITH",
+   "Barramundi with Moroccan spices",
+   "fish",
+   [
+    "barramundi"
+   ]
+  ],
+  [
+   "FND-V-BEANSAUSAGEHOT",
+   "Bean & Sausage Hotpot",
+   "gluten",
+   [
+    "sausages"
+   ]
+  ],
+  [
+   "FND-NV-BEEFPUMPKINSTE",
+   "Beef pumpkin Stew",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-BEEFPUMPKINSTE",
+   "Beef pumpkin Stew",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-BIGOSHUNTERSST",
+   "Bigos (Hunters Stew)",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-BIGOSHUNTERSST",
+   "Bigos (Hunters Stew)",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-BIGOSPOLISHHUN",
+   "Bigos (Polish hunter's stew)",
+   "gluten",
+   [
+    "german sausages"
+   ]
+  ],
+  [
+   "FND-V-BLACKBERRYFOOL",
+   "Blackberry Fool",
+   "nuts",
+   [
+    "hazlenuts"
+   ]
+  ],
+  [
+   "FND-V-BRAISEDSTUFFED",
+   "Braised stuffed cabbage",
+   "nuts",
+   [
+    "cooked chestnut"
+   ]
+  ],
+  [
+   "FND-V-CHOCOLATECARAM",
+   "Chocolate Caramel Crispy",
+   "gluten",
+   [
+    "mars bar",
+    "rice krispies"
+   ]
+  ],
+  [
+   "FND-NV-CHORBAHAMRABEL",
+   "Chorba Hamra bel Frik (Algerian Lamb, Tomato, and Freekeh Soup)",
+   "gluten",
+   [
+    "freekeh"
+   ]
+  ],
+  [
+   "FND-V-CHRISTMASPUDDI",
+   "Christmas Pudding Flapjack",
+   "gluten",
+   [
+    "christmas pudding"
+   ]
+  ],
+  [
+   "FND-V-CONCHSTEW",
+   "Conch Stew",
+   "shellfish",
+   [
+    "conchs"
+   ]
+  ],
+  [
+   "FND-E-CREAMYAJIGREEN",
+   "Creamy Aji green sauce",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-E-FRIEDCALAMARI",
+   "Fried calamari",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-V-GRAPENUTICECRE",
+   "Grape Nut Ice Cream",
+   "gluten",
+   [
+    "grape nut cereal"
+   ]
+  ],
+  [
+   "FND-E-GRILLEDCORNWIT",
+   "Grilled corn with garlic mayo & grated cheese",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-E-HOTCUMINLAMBWR",
+   "Hot cumin lamb wrap with crunchy slaw & spicy mayo",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-V-JAMROLYPOLY",
+   "Jam Roly-Poly",
+   "egg",
+   [
+    "custard"
+   ]
+  ],
+  [
+   "FND-V-KAPSALON",
+   "Kapsalon",
+   "gluten",
+   [
+    "fries"
+   ]
+  ],
+  [
+   "FND-V-KEYLIMEPIE",
+   "Key Lime Pie",
+   "gluten",
+   [
+    "digestive biscuits"
+   ]
+  ],
+  [
+   "FND-NV-LAMBBIRYANI",
+   "Lamb Biryani",
+   "gluten",
+   [
+    "khus khus"
+   ]
+  ],
+  [
+   "FND-NV-LANCASHIREHOTP",
+   "Lancashire hotpot",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-LANCASHIREHOTP",
+   "Lancashire hotpot",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-LASAGNE",
+   "Lasagne",
+   "egg",
+   [
+    "lasagne sheets"
+   ]
+  ],
+  [
+   "FND-V-LAYEREDMANGOCU",
+   "Layered mango custard",
+   "egg",
+   [
+    "custard"
+   ]
+  ],
+  [
+   "FND-V-LAYEREDMANGOCU",
+   "Layered mango custard",
+   "gluten",
+   [
+    "custard"
+   ]
+  ],
+  [
+   "FND-V-MEDITERRANEANP",
+   "Mediterranean Pasta Salad",
+   "gluten",
+   [
+    "farfalle"
+   ]
+  ],
+  [
+   "FND-V-MUSHROOMCHESTN",
+   "Mushroom & Chestnut Rotolo",
+   "egg",
+   [
+    "lasagne sheets"
+   ]
+  ],
+  [
+   "FND-V-MUSHROOMCHESTN",
+   "Mushroom & Chestnut Rotolo",
+   "nuts",
+   [
+    "chestnuts"
+   ]
+  ],
+  [
+   "FND-V-NOODLEBOWLSALA",
+   "Noodle bowl salad",
+   "peanut",
+   [
+    "ground nut oil"
+   ]
+  ],
+  [
+   "FND-E-NUMPANGCAMBODI",
+   "Num Pang – Cambodian Baguette Sandwich",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-NV-OPENFACEDSANDW",
+   "Open-faced Sandwich With Potato",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-V-PEANUTBUTTERCH",
+   "Peanut Butter Cheesecake",
+   "gluten",
+   [
+    "peanut cookies"
+   ]
+  ],
+  [
+   "FND-V-PILCHARDPUTTAN",
+   "Pilchard puttanesca",
+   "fish",
+   [
+    "pilchards"
+   ]
+  ],
+  [
+   "FND-V-PISTACHIOKUNAF",
+   "Pistachio Kunafa Chocolate Cake and Cupcakes",
+   "gluten",
+   [
+    "oreo cream biscuits",
+    "sevaiiya"
+   ]
+  ],
+  [
+   "FND-NV-PORTUGUESEBARB",
+   "Portuguese barbecued pork (Febras assadas)",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-E-POTATOSALADOLI",
+   "Potato Salad (Olivier Salad)",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-V-RIGATONIWITHFE",
+   "Rigatoni with fennel sausage sauce",
+   "dairy",
+   [
+    "pecorino"
+   ]
+  ],
+  [
+   "FND-V-RIGATONIWITHFE",
+   "Rigatoni with fennel sausage sauce",
+   "gluten",
+   [
+    "italian fennel sausages",
+    "rigatoni"
+   ]
+  ],
+  [
+   "FND-V-ROSEMARYBRAISE",
+   "Rosemary braised red cabbage with kabanos",
+   "gluten",
+   [
+    "kabanos sausages"
+   ]
+  ],
+  [
+   "FND-V-SALTEDCARAMELC",
+   "Salted Caramel Cheescake",
+   "gluten",
+   [
+    "digestive biscuits",
+    "pretzels",
+    "toffee popcorn"
+   ]
+  ],
+  [
+   "FND-V-SLAGROOMTAART",
+   "Slagroomtaart",
+   "nuts",
+   [
+    "nougatine"
+   ]
+  ],
+  [
+   "FND-NV-SNERTDUTCHSPLI",
+   "Snert (Dutch Split Pea Soup)",
+   "gluten",
+   [
+    "sausages"
+   ]
+  ],
+  [
+   "FND-NV-SPAGHETTIALLAC",
+   "Spaghetti alla Carbonara",
+   "dairy",
+   [
+    "pecorino"
+   ]
+  ],
+  [
+   "FND-V-SPICYARRABIATA",
+   "Spicy Arrabiata Penne",
+   "dairy",
+   [
+    "parmigiano-reggiano"
+   ]
+  ],
+  [
+   "FND-V-SPOTTEDDICK",
+   "Spotted Dick",
+   "egg",
+   [
+    "custard"
+   ]
+  ],
+  [
+   "FND-NV-STEAKANDKIDNEY",
+   "Steak and Kidney Pie",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-STEAKANDKIDNEY",
+   "Steak and Kidney Pie",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-E-SUSHI",
+   "Sushi",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-NV-THAIBEEFSTIRFR",
+   "Thai beef stir-fry",
+   "gluten",
+   [
+    "oyster sauce"
+   ]
+  ],
+  [
+   "FND-NV-TURKEYBNHM",
+   "Turkey Bánh mì",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-V-VEGANBANHMI",
+   "Vegan banh mi",
+   "sesame",
+   [
+    "hummus"
+   ]
+  ],
+  [
+   "FND-V-VEGANLASAGNA",
+   "Vegan Lasagna",
+   "egg",
+   [
+    "lasagne sheets"
+   ]
+  ],
+  [
+   "FND-NV-ZAPIEKANKI",
+   "Zapiekanki",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-V-BAKEDBRIEWITHS",
+   "Baked brie with sorrel jam",
+   "dairy",
+   [
+    "brie"
+   ]
+  ],
+  [
+   "FND-V-BREADFRUITTACO",
+   "Breadfruit Tacos",
+   "fish",
+   [
+    "codfish bulljaw"
+   ]
+  ],
+  [
+   "FND-V-BREADFRUITTACO",
+   "Breadfruit Tacos",
+   "gluten",
+   [
+    "breadfruit"
+   ]
+  ],
+  [
+   "FND-V-CONCHFRITTERS",
+   "Conch Fritters",
+   "shellfish",
+   [
+    "conchs"
+   ]
+  ],
+  [
+   "FND-V-FLAPPERPIE",
+   "Flapper Pie",
+   "gluten",
+   [
+    "graham cracker crumbs"
+   ]
+  ],
+  [
+   "FND-V-KOULENJE",
+   "Koulenje",
+   "nuts",
+   [
+    "ground mahleb"
+   ]
+  ],
+  [
+   "FND-NV-LAONAEMKHAO",
+   "Lao Naem Khao",
+   "gluten",
+   [
+    "sour pork sausage"
+   ]
+  ],
+  [
+   "FND-V-NANAIMOBARS",
+   "Nanaimo Bars",
+   "gluten",
+   [
+    "custard",
+    "digestive biscuits",
+    "custard powder"
+   ]
+  ],
+  [
+   "FND-NV-PANFRIEDHAKEWH",
+   "Pan-fried hake, white bean & chorizo broth",
+   "fish",
+   [
+    "hake"
+   ]
+  ],
+  [
+   "FND-V-PLANTAINROLLS",
+   "plantain rolls",
+   "fish",
+   [
+    "codfish bulljaw"
+   ]
+  ],
+  [
+   "FND-NV-PRAWNSTIRFRY",
+   "Prawn stir-fry",
+   "peanut",
+   [
+    "ground nut oil"
+   ]
+  ],
+  [
+   "FND-V-SASKATOONPIE",
+   "Saskatoon Pie",
+   "soy",
+   [
+    "vegetable shortening"
+   ]
+  ],
+  [
+   "FND-V-VEGETARIANSHAK",
+   "Vegetarian Shakshuka",
+   "gluten",
+   [
+    "toast"
+   ]
+  ],
+  [
+   "FND-NV-VIETNAMESELAMB",
+   "Vietnamese lamb shanks with sweet potatoes",
+   "peanut",
+   [
+    "ground nut oil"
+   ]
+  ],
+  [
+   "FND-NV-VIETNAMESESTYL",
+   "Vietnamese-style caramel pork",
+   "peanut",
+   [
+    "ground nut oil"
+   ]
+  ],
+  [
+   "FND-E-CLASSICTOURTIR",
+   "Classic Tourtière",
+   "gluten",
+   [
+    "shortcrust pastry"
+   ]
+  ],
+  [
+   "FND-E-TOURTIERE",
+   "Tourtiere",
+   "gluten",
+   [
+    "shortcrust pastry"
+   ]
+  ],
+  [
+   "FND-E-TURKEYMEATLOAF",
+   "Turkey Meatloaf",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-E-TURKEYMEATLOAF",
+   "Turkey Meatloaf",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-ARROZALHORNOBA",
+   "Arroz al horno (baked rice)",
+   "gluten",
+   [
+    "black pudding"
+   ]
+  ],
+  [
+   "FND-NV-CHILLIPRAWNLIN",
+   "Chilli prawn linguine",
+   "dairy",
+   [
+    "fromage frais"
+   ]
+  ],
+  [
+   "FND-NV-CRISPYFRIEDFIS",
+   "Crispy fried fish with ginger and fermented soybeans (trey chien chuon)",
+   "egg",
+   [
+    "tempura flour"
+   ]
+  ],
+  [
+   "FND-NV-CRISPYSAUSAGES",
+   "Crispy Sausages and Greens",
+   "gluten",
+   [
+    "italian fennel sausages"
+   ]
+  ],
+  [
+   "FND-NV-CROCKPOTCHICKE",
+   "Crock Pot Chicken Baked Tacos",
+   "gluten",
+   [
+    "hard taco shells"
+   ]
+  ],
+  [
+   "FND-NV-CROCKPOTCHICKE",
+   "Crock Pot Chicken Baked Tacos",
+   "mustard",
+   [
+    "vinaigrette dressing"
+   ]
+  ],
+  [
+   "FND-NV-CUMBERLANDPIE",
+   "Cumberland Pie",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-CUMBERLANDPIE",
+   "Cumberland Pie",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-FLEMISHHUTSEPO",
+   "Flemish Hutsepot",
+   "gluten",
+   [
+    "sausages"
+   ]
+  ],
+  [
+   "FND-NV-MINCEDBEEFPIE",
+   "Minced Beef Pie",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-MINCEDBEEFPIE",
+   "Minced Beef Pie",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-MINICHILLIBEEF",
+   "Mini chilli beef pies",
+   "gluten",
+   [
+    "ready rolled shortcrust pastry"
+   ]
+  ],
+  [
+   "FND-NV-SALMONEGGSEGGS",
+   "Salmon Eggs Eggs Benedict",
+   "gluten",
+   [
+    "english muffins"
+   ]
+  ],
+  [
+   "FND-NV-SMOKYCHICKENSK",
+   "Smoky chicken skewers",
+   "egg",
+   [
+    "smoky aïoli"
+   ]
+  ],
+  [
+   "FND-NV-SPAGHETTIBOLOG",
+   "Spaghetti Bolognese",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-SPAGHETTIBOLOG",
+   "Spaghetti Bolognese",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-STEAKDIANE",
+   "Steak Diane",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-STEAKDIANE",
+   "Steak Diane",
+   "gluten",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-STEAKDIANE",
+   "Steak Diane",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-TONKATSUPORK",
+   "Tonkatsu pork",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-TONKATSUPORK",
+   "Tonkatsu pork",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-VENEZUELANSHRE",
+   "Venezuelan Shredded Beef",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-VENEZUELANSHRE",
+   "Venezuelan Shredded Beef",
+   "gluten",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-VENEZUELANSHRE",
+   "Venezuelan Shredded Beef",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-TUNAMELTSANDWI-JHUOA",
+   "Tuna Melt Sandwich",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-NV-TUNASANDWICH-4CVQR",
+   "Tuna Sandwich",
+   "mustard",
+   [
+    "salad dressing"
+   ]
+  ],
+  [
+   "FND-E-EGGYOLKBUTTERT-C635F",
+   "Egg Yolk Butter Toasts",
+   "soy",
+   [
+    "tamari"
+   ]
+  ],
+  [
+   "FND-NV-GROWNUPSLOPPYJ-543A7",
+   "Grown Up Sloppy Joes",
+   "dairy",
+   [
+    "brioche buns, toasted"
+   ]
+  ],
+  [
+   "FND-NV-GROWNUPSLOPPYJ-543A7",
+   "Grown Up Sloppy Joes",
+   "egg",
+   [
+    "brioche buns, toasted"
+   ]
+  ],
+  [
+   "FND-NV-GROWNUPSLOPPYJ-543A7",
+   "Grown Up Sloppy Joes",
+   "fish",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-GROWNUPSLOPPYJ-543A7",
+   "Grown Up Sloppy Joes",
+   "soy",
+   [
+    "worcestershire sauce"
+   ]
+  ],
+  [
+   "FND-NV-CHANGEZICHICKE-9F245",
+   "Changezi Chicken",
+   "gluten",
+   [
+    "parantha"
+   ]
+  ],
+  [
+   "FND-NV-CHICKENPATIALA-4A0FC",
+   "Chicken Patiala (Murg Patiala)",
+   "nuts",
+   [
+    "cashewnut paste"
+   ]
+  ],
+  [
+   "FND-NV-GALOUTIKEBABSA-C5412",
+   "Galouti Kebab (Sanjeev Kapoor)",
+   "gluten",
+   [
+    "warqi parantha, laccha onion, green chut"
+   ]
+  ],
+  [
+   "FND-NV-PULLUMPARTHICU-7A998",
+   "Pullum Parthicum (Parthian Chicken)",
+   "fish",
+   [
+    "garum (or colatura di alici or fish sauc"
+   ]
+  ],
+  [
+   "FND-V-HASSELBACKBUTT-8DA9D",
+   "Hasselback Butternut Squash with Tofu and Bean Ricotta",
+   "dairy",
+   [
+    "olive oil (ricotta)"
+   ]
+  ],
+  [
+   "FND-NV-KOREANTUNASAND-4465E",
+   "Korean Tuna Sandwich (Maangchi)",
+   "mustard",
+   [
+    "mayonnaise"
+   ]
+  ],
+  [
+   "FND-NV-YANGNYEOMTONGD-7E77A",
+   "Yangnyeom Tongdak (Maangchi)",
+   "soy",
+   [
+    "hot pepper paste (gochujang)"
+   ]
+  ]
+ ],
+ "jain_turned_off": [
+  [
+   "IND-V-2-2-147",
+   "Kerala Avial",
+   [
+    "mixed veg (drumstick,carrot) (root, bulb or mushroom)"
+   ]
+  ],
+  [
+   "IND-V-0-3-024",
+   "Vattayappam",
+   [
+    "dry yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "IND-V-0-4-014",
+   "Kashmiri Bakarkhani",
+   [
+    "dry yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "IND-V-2-2-199",
+   "Farali Dhokla",
+   [
+    "green chilli-ginger paste (root, bulb or mushroom)"
+   ]
+  ],
+  [
+   "FND-V-AUBERGINEHUMMU",
+   "Aubergine & hummus grills",
+   [
+    "aubergine (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-AUBERGINECOUSC",
+   "Aubergine couscous salad",
+   [
+    "aubergine (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-BAJANSALTBREAD",
+   "Bajan Salt Bread Recipe",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-BAKEDYUCAFRIES",
+   "Baked Yuca Fries",
+   [
+    "yuca (root, bulb or mushroom)"
+   ]
+  ],
+  [
+   "FND-V-CASSAVABREAD",
+   "Cassava bread",
+   [
+    "cassava flour (root, bulb or mushroom)"
+   ]
+  ],
+  [
+   "FND-V-CASSAVACAKE",
+   "Cassava Cake",
+   [
+    "cassava (root, bulb or mushroom)"
+   ]
+  ],
+  [
+   "FND-V-CHINONAPPLETAR",
+   "Chinon Apple Tarts",
+   [
+    "red wine jelly (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-CHOCOLATEAVOCA",
+   "Chocolate Avocado Mousse",
+   [
+    "honey (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-DANISHRYEBREAD",
+   "Danish Rye Bread",
+   [
+    "dark beer (honey, yeast, alcohol, gelatin or many-seeded vegetable)",
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-DOMINICAMASTIF",
+   "Dominica mastiff bread",
+   [
+    "instant yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-DUTCHDOUGHNUTS",
+   "Dutch doughnuts",
+   [
+    "instant yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-GRIDDLEDFLATBR",
+   "Griddled flatbreads",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-HONEYCOOKIES",
+   "Honey Cookies",
+   [
+    "honey (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-HOTCHOCOLATEFU",
+   "Hot Chocolate Fudge",
+   [
+    "miniature marshmallows (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-JAMROLYPOLY",
+   "Jam Roly-Poly",
+   [
+    "suet (meat, fish or egg)",
+    "custard (meat, fish or egg)"
+   ]
+  ],
+  [
+   "FND-V-LAYEREDMANGOCU",
+   "Layered mango custard",
+   [
+    "custard (meat, fish or egg)"
+   ]
+  ],
+  [
+   "FND-V-MADOMBIDUMPLIN",
+   "Madombi: Dumplings from Botswana",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-MAGWINYADOUGHN",
+   "Magwinya: Doughnut Bites from Botswana",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-NOCHURNRUMRAIS",
+   "No-Churn Rum Raisin Ice Cream",
+   [
+    "dark rum (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-PEANUTBUTTERCH",
+   "Peanut Butter Cheesecake",
+   [
+    "gelatine leafs (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-PEARTARTETATIN",
+   "Pear Tarte Tatin",
+   [
+    "brandy (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-PIZZAEXPRESSMA",
+   "Pizza Express Margherita",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-RASPBERRYMOUSS",
+   "Raspberry mousse",
+   [
+    "gelatine leafs (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-ROCKYROADFUDGE",
+   "Rocky Road Fudge",
+   [
+    "miniature marshmallows (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-RYEBREAD",
+   "Rye bread",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)",
+    "honey (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-SPOTTEDDICK",
+   "Spotted Dick",
+   [
+    "suet (meat, fish or egg)",
+    "custard (meat, fish or egg)"
+   ]
+  ],
+  [
+   "FND-V-STRAWBERRIESRO",
+   "Strawberries Romanoff",
+   [
+    "grand marnier (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-SYRIANBREAD",
+   "Syrian Bread",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-TRADITIONALDUT",
+   "Traditional Dutch rice tart (rijstevlaai)",
+   [
+    "yeast (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-BREADFRUITTACO",
+   "Breadfruit Tacos",
+   [
+    "codfish bulljaw (meat, fish or egg)"
+   ]
+  ],
+  [
+   "FND-V-PLANTAINROLLS",
+   "plantain rolls",
+   [
+    "codfish bulljaw (meat, fish or egg)"
+   ]
+  ],
+  [
+   "FND-V-SPANISHFIGALMO",
+   "Spanish fig & almond balls",
+   [
+    "brandy (honey, yeast, alcohol, gelatin or many-seeded vegetable)",
+    "clear honey (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-BASICSOURDOUGH-A932F",
+   "Basic Sourdough Loaf",
+   [
+    "sourdough starter (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "FND-V-HOBBSHOUSESOUR-A3465",
+   "Hobbs House Sourdough Bread",
+   [
+    "sourdough starter (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ],
+  [
+   "LST-V-IRUPULI-01",
+   "Iru Puli Kuzhambu",
+   [
+    "brinjal, cubed (honey, yeast, alcohol, gelatin or many-seeded vegetable)"
+   ]
+  ]
+ ],
+ "jain_maybe_on": [
+  [
+   "IND-V-2-4-012",
+   "Paneer Butter Masala"
+  ],
+  [
+   "IND-V-2-2-018",
+   "Kadhi Chawal"
+  ],
+  [
+   "IND-V-1-1-022",
+   "Idli Sambar"
+  ],
+  [
+   "IND-V-1-1-035",
+   "Oats Chilla"
+  ],
+  [
+   "IND-V-2-2-037",
+   "Quinoa Pulao"
+  ],
+  [
+   "ITA-V-1-3-101",
+   "Margherita Pizza"
+  ],
+  [
+   "USA-V-1-2-117",
+   "Mac & Cheese"
+  ],
+  [
+   "GRK-V-1-1-119",
+   "Greek Salad"
+  ],
+  [
+   "IND-V-1-2-130",
+   "Khaman Dhokla"
+  ],
+  [
+   "IND-V-2-3-131",
+   "Dal Baati Churma"
+  ],
+  [
+   "IND-V-3-2-132",
+   "Gatte Ki Sabzi"
+  ],
+  [
+   "IND-V-2-2-133",
+   "Ker Sangri"
+  ],
+  [
+   "IND-V-2-2-137",
+   "Goan Veg Xacuti"
+  ],
+  [
+   "IND-V-1-2-141",
+   "Cham Cham"
+  ],
+  [
+   "IND-V-2-2-151",
+   "Sindhi Kadhi"
+  ],
+  [
+   "IND-V-3-2-157",
+   "Rasam & Rice"
+  ],
+  [
+   "IND-V-2-2-169",
+   "Sev Tameta Nu Shaak"
+  ],
+  [
+   "IND-V-1-2-179",
+   "Shufta"
+  ],
+  [
+   "ITA-V-1-3-206",
+   "Margherita Calzone"
+  ],
+  [
+   "THA-V-1-2-209",
+   "Mango Sticky Rice"
+  ],
+  [
+   "JPN-V-1-1-216",
+   "Vegetable Sushi Rolls"
+  ],
+  [
+   "MEX-V-2-2-222",
+   "Veg Quesadilla"
+  ],
+  [
+   "MEA-V-1-1-227",
+   "Tabbouleh"
+  ],
+  [
+   "TUR-V-1-1-232",
+   "Baklava"
+  ],
+  [
+   "CAR-V-2-2-259",
+   "Rice & Peas"
+  ],
+  [
+   "ITA-V-1-3-268",
+   "Caprese Salad"
+  ],
+  [
+   "CON-V-1-2-270",
+   "Baked Veg Lasagna"
+  ],
+  [
+   "IND-V-1-1-271",
+   "Vermicelli Upma"
+  ],
+  [
+   "IND-V-1-3-274",
+   "Rasgulla"
+  ],
+  [
+   "IND-V-2-1-275",
+   "Fruit Chaat"
+  ],
+  [
+   "IND-V-2-5-001",
+   "Dal Makhani"
+  ],
+  [
+   "IND-V-3-4-002",
+   "Kadhai Paneer"
+  ],
+  [
+   "IND-V-2-3-003",
+   "Sarson Ka Saag"
+  ],
+  [
+   "IND-V-2-2-003",
+   "Appam with Stew"
+  ],
+  [
+   "IND-V-1-2-003",
+   "Shukto"
+  ],
+  [
+   "IND-V-0-3-001",
+   "Mishti Doi"
+  ],
+  [
+   "IND-V-1-1-003",
+   "Khaman"
+  ],
+  [
+   "IND-V-1-2-004",
+   "Gujarati Kadhi"
+  ],
+  [
+   "IND-V-4-3-001",
+   "Misal Pav"
+  ],
+  [
+   "IND-V-0-3-002",
+   "Puran Poli"
+  ],
+  [
+   "IND-V-2-1-002",
+   "Kashmiri Haak Saag"
+  ],
+  [
+   "IND-V-2-2-006",
+   "Sattu Paratha"
+  ],
+  [
+   "IND-V-2-2-007",
+   "Sindhi Sai Bhaji"
+  ],
+  [
+   "INDC-V-4-3-001",
+   "Chilli Paneer"
+  ],
+  [
+   "INDC-V-3-2-002",
+   "Veg Manchow Soup"
+  ],
+  [
+   "ITA-V-1-2-001",
+   "Minestrone Soup"
+  ],
+  [
+   "ITA-V-1-5-001",
+   "Fettuccine Alfredo"
+  ],
+  [
+   "ESP-V-0-3-001",
+   "Churros con Chocolate"
+  ],
+  [
+   "MED-V-2-2-001",
+   "Falafel Plate"
+  ],
+  [
+   "JPN-V-0-1-001",
+   "Onigiri"
+  ],
+  [
+   "THA-V-5-1-001",
+   "Papaya Salad (Som Tum)"
+  ],
+  [
+   "MEX-V-2-3-001",
+   "Quesadilla"
+  ],
+  [
+   "ETH-V-0-1-001",
+   "Injera"
+  ],
+  [
+   "CAR-V-3-2-001",
+   "Trini Doubles"
+  ],
+  [
+   "NEP-V-2-2-001",
+   "Nepali Dal Bhat"
+  ],
+  [
+   "IND-V-0-3-003",
+   "Jalebi"
+  ],
+  [
+   "IND-V-0-2-002",
+   "Filter Coffee"
+  ],
+  [
+   "IND-V-0-2-003",
+   "Mango Lassi"
+  ],
+  [
+   "ITA-V-1-3-002",
+   "Pesto Pasta"
+  ],
+  [
+   "LEB-V-1-2-002",
+   "Manakish Zaatar"
+  ],
+  [
+   "LEB-V-1-1-002",
+   "Fattoush"
+  ],
+  [
+   "IND-V-1-2-006",
+   "Jeera Rice"
+  ],
+  [
+   "IND-V-3-1-002",
+   "Rasam"
+  ],
+  [
+   "IND-V-2-2-014",
+   "Puttu and Kadala"
+  ],
+  [
+   "IND-V-0-4-003",
+   "Sheer Khurma"
+  ],
+  [
+   "IND-V-2-4-002",
+   "Methi Malai Mutter"
+  ],
+  [
+   "IND-V-0-2-004",
+   "Tandoori Roti"
+  ],
+  [
+   "IND-V-0-3-007",
+   "Lachha Paratha"
+  ],
+  [
+   "IND-V-2-2-020",
+   "Veg Pulao"
+  ],
+  [
+   "ITA-V-1-3-003",
+   "Focaccia"
+  ],
+  [
+   "ITA-V-0-4-002",
+   "Cannoli"
+  ],
+  [
+   "GRC-V-1-2-001",
+   "Dolma"
+  ],
+  [
+   "TUR-V-0-5-002",
+   "Kunefe"
+  ],
+  [
+   "IND-V-0-3-008",
+   "Coconut Barfi"
+  ],
+  [
+   "IND-V-0-3-009",
+   "Besan Ladoo"
+  ],
+  [
+   "IND-V-0-4-004",
+   "Rabri Falooda"
+  ],
+  [
+   "IND-V-0-3-010",
+   "Thandai"
+  ],
+  [
+   "IND-V-1-2-007",
+   "Bengali Cholar Dal"
+  ],
+  [
+   "IND-V-1-2-008",
+   "Khar"
+  ],
+  [
+   "IND-V-0-3-011",
+   "Kashmiri Modur Pulav"
+  ],
+  [
+   "IND-V-2-2-027",
+   "Dahi Vada"
+  ],
+  [
+   "IND-V-3-2-006",
+   "Papdi Chaat"
+  ],
+  [
+   "IND-V-4-2-001",
+   "Mirchi Bajji"
+  ],
+  [
+   "HLT-V-1-2-001",
+   "Buddha Bowl"
+  ],
+  [
+   "COL-V-1-2-001",
+   "Arepas"
+  ],
+  [
+   "VNM-V-0-3-001",
+   "Vietnamese Iced Coffee"
+  ],
+  [
+   "IND-V-0-1-001",
+   "Neer Dosa"
+  ],
+  [
+   "IND-V-3-2-007",
+   "Veg Jalfrezi"
+  ],
+  [
+   "IND-V-3-4-005",
+   "Veg Handi"
+  ],
+  [
+   "IND-V-3-2-009",
+   "Veg Seekh Kabab"
+  ],
+  [
+   "IND-V-2-3-012",
+   "Corn Cheese Balls"
+  ],
+  [
+   "IND-V-3-3-016",
+   "Kachori"
+  ],
+  [
+   "USA-V-0-4-001",
+   "Apple Pie"
+  ],
+  [
+   "GBR-V-0-5-002",
+   "Banoffee Pie"
+  ],
+  [
+   "ITA-V-0-3-001",
+   "Affogato"
+  ],
+  [
+   "ITA-V-0-4-003",
+   "Gelato"
+  ],
+  [
+   "TUR-V-0-3-001",
+   "Turkish Coffee"
+  ],
+  [
+   "TUR-V-0-1-001",
+   "Ayran"
+  ],
+  [
+   "MEX-V-0-2-001",
+   "Horchata"
+  ],
+  [
+   "IND-V-0-1-002",
+   "Lemonade (Shikanji)"
+  ],
+  [
+   "IND-V-0-1-003",
+   "Nimbu Soda"
+  ],
+  [
+   "IND-V-1-1-008",
+   "Chaas (Buttermilk)"
+  ],
+  [
+   "IND-V-0-3-012",
+   "Cold Coffee"
+  ],
+  [
+   "HLT-V-0-4-001",
+   "Hot Chocolate"
+  ],
+  [
+   "HLT-V-0-2-001",
+   "Smoothie Bowl"
+  ],
+  [
+   "IND-V-2-2-034",
+   "Panchmel Dal"
+  ],
+  [
+   "IND-V-2-3-016",
+   "Dal Dhokli"
+  ],
+  [
+   "IND-V-2-2-035",
+   "Kobbari Rice"
+  ],
+  [
+   "IND-V-2-2-036",
+   "Lemon Rice"
+  ],
+  [
+   "IND-V-3-2-011",
+   "Tamarind Rice"
+  ],
+  [
+   "INDC-V-4-3-003",
+   "Paneer 65"
+  ],
+  [
+   "INDC-V-3-3-001",
+   "American Chopsuey"
+  ],
+  [
+   "INDC-V-1-2-001",
+   "Sweet Corn Soup"
+  ],
+  [
+   "IND-V-3-3-017",
+   "Kadala Curry"
+  ],
+  [
+   "IND-V-2-2-038",
+   "Avial"
+  ],
+  [
+   "ITA-V-1-4-003",
+   "Calzone"
+  ],
+  [
+   "MAR-V-2-3-001",
+   "Harira Soup"
+  ],
+  [
+   "IND-V-2-2-040",
+   "Handvo"
+  ],
+  [
+   "IND-V-2-3-018",
+   "Fafda Jalebi"
+  ],
+  [
+   "IND-V-1-2-009",
+   "Khandvi"
+  ],
+  [
+   "IND-V-2-2-043",
+   "Kothimbir Vadi"
+  ],
+  [
+   "IND-V-2-2-044",
+   "Solkadhi Rice Plate"
+  ],
+  [
+   "IND-V-1-2-010",
+   "Bajra Khichdi"
+  ],
+  [
+   "IND-V-0-4-005",
+   "Mohan Thal"
+  ],
+  [
+   "IND-V-0-5-002",
+   "Ghevar"
+  ],
+  [
+   "LKA-V-2-2-001",
+   "Dhal Curry (Parippu)"
+  ],
+  [
+   "KEN-V-0-3-001",
+   "Chapati Kenyan Style"
+  ],
+  [
+   "MED-V-2-2-003",
+   "Falafel Kathi Roll"
+  ],
+  [
+   "INDC-V-4-3-004",
+   "Crispy Chilli Baby Corn"
+  ],
+  [
+   "IND-V-4-3-003",
+   "Tandoori Momos"
+  ],
+  [
+   "IND-V-3-4-006",
+   "Paneer Tikka Biryani"
+  ],
+  [
+   "IND-V-2-4-003",
+   "Malai Soya Chaap"
+  ],
+  [
+   "IND-V-2-4-004",
+   "Veg Kofta Curry"
+  ],
+  [
+   "MEX-V-0-5-001",
+   "Churros Ice Cream Sundae"
+  ],
+  [
+   "GRC-V-1-2-002",
+   "Grilled Halloumi Salad"
+  ],
+  [
+   "GBR-V-0-3-001",
+   "Scones with Cream"
+  ],
+  [
+   "JPN-V-0-2-001",
+   "Vegetable Sushi Platter"
+  ],
+  [
+   "ITA-V-1-5-002",
+   "Vegetable Lasagna"
+  ],
+  [
+   "IND-V-3-5-001",
+   "Paneer Lababdar"
+  ],
+  [
+   "IND-V-4-3-004",
+   "Chana Pindi"
+  ],
+  [
+   "IND-V-2-4-005",
+   "Veg Korma"
+  ],
+  [
+   "IND-V-2-5-004",
+   "Navratan Korma"
+  ],
+  [
+   "IND-V-2-5-005",
+   "Veg Makhanwala"
+  ],
+  [
+   "IND-V-1-2-011",
+   "Khichdi"
+  ],
+  [
+   "IND-V-2-2-048",
+   "Masala Khichdi"
+  ],
+  [
+   "IND-V-1-2-012",
+   "Curd Rice"
+  ],
+  [
+   "IND-V-2-2-049",
+   "Dal Shorba"
+  ],
+  [
+   "IND-V-3-4-009",
+   "Paneer Tikka Pizza"
+  ],
+  [
+   "ITA-V-2-4-002",
+   "Veggie Supreme Pizza"
+  ],
+  [
+   "IND-V-1-3-001",
+   "Cheese Corn Sandwich"
+  ],
+  [
+   "IND-V-2-3-021",
+   "Pasta in Red Sauce"
+  ],
+  [
+   "IND-V-1-4-001",
+   "Pasta in White Sauce"
+  ],
+  [
+   "USA-V-2-3-001",
+   "Veg Burger"
+  ],
+  [
+   "MED-V-2-3-001",
+   "Falafel Burger"
+  ],
+  [
+   "HLT-V-1-1-001",
+   "Quinoa Salad"
+  ],
+  [
+   "MED-V-2-1-001",
+   "Chickpea Salad"
+  ],
+  [
+   "IND-V-1-2-013",
+   "Vegetable Daliya"
+  ],
+  [
+   "IND-V-0-3-014",
+   "Shrikhand"
+  ],
+  [
+   "IND-V-0-4-006",
+   "Basundi"
+  ],
+  [
+   "IND-V-0-3-015",
+   "Phirni"
+  ],
+  [
+   "IND-V-0-4-007",
+   "Ras Malai"
+  ],
+  [
+   "IND-V-0-3-016",
+   "Sandesh"
+  ],
+  [
+   "IND-V-0-4-008",
+   "Kaju Katli"
+  ],
+  [
+   "IND-V-0-4-009",
+   "Motichoor Ladoo"
+  ],
+  [
+   "IND-V-0-4-010",
+   "Malpua"
+  ],
+  [
+   "IND-V-0-3-017",
+   "Nolen Gur Rasgulla"
+  ],
+  [
+   "IND-V-0-2-005",
+   "Til Ladoo"
+  ],
+  [
+   "IND-V-0-2-006",
+   "Chikki"
+  ],
+  [
+   "IND-V-0-3-018",
+   "Coconut Ladoo"
+  ],
+  [
+   "IND-V-0-5-003",
+   "Moong Dal Halwa"
+  ],
+  [
+   "IND-V-0-3-019",
+   "Sooji Halwa"
+  ],
+  [
+   "IND-V-2-2-055",
+   "Grilled Paneer Steak"
+  ],
+  [
+   "HLT-V-0-2-003",
+   "Overnight Oats"
+  ],
+  [
+   "HLT-V-1-2-005",
+   "Avocado Toast"
+  ],
+  [
+   "IND-V-1-3-002",
+   "Kashmiri Pulao"
+  ],
+  [
+   "IND-V-1-2-014",
+   "Matar Pulao"
+  ],
+  [
+   "IND-V-2-3-023",
+   "Bagara Rice"
+  ],
+  [
+   "IND-V-2-2-056",
+   "Coconut Rice"
+  ],
+  [
+   "IND-V-1-2-015",
+   "Curd Rice with Pomegranate"
+  ],
+  [
+   "IND-V-2-2-057",
+   "Vegetable Upma Bowl"
+  ],
+  [
+   "IND-V-1-1-012",
+   "Rava Idli"
+  ],
+  [
+   "IND-V-1-2-016",
+   "Set Dosa"
+  ],
+  [
+   "IND-V-1-2-017",
+   "Idiyappam"
+  ],
+  [
+   "IND-V-1-3-004",
+   "Vegetable Stew Kerala"
+  ],
+  [
+   "LEB-V-2-3-001",
+   "Fatteh"
+  ],
+  [
+   "MED-V-2-2-005",
+   "Falafel Bowl"
+  ],
+  [
+   "IND-V-2-2-060",
+   "Ghee Podi Idli"
+  ],
+  [
+   "IND-V-1-2-018",
+   "Ragi Mudde"
+  ],
+  [
+   "IND-V-3-3-030",
+   "Bisi Bele Bath Bowl"
+  ],
+  [
+   "IND-V-0-3-020",
+   "Kesari Bath"
+  ],
+  [
+   "IND-V-0-3-021",
+   "Obbattu (Holige)"
+  ],
+  [
+   "IND-V-3-2-019",
+   "Puliyogare"
+  ],
+  [
+   "IND-V-0-3-022",
+   "Piyush"
+  ],
+  [
+   "IND-V-0-3-023",
+   "Aamras Puri"
+  ],
+  [
+   "IND-V-2-3-024",
+   "Dahi Bhalla Papdi"
+  ],
+  [
+   "IND-V-1-2-019",
+   "Dal Khichdi Bowl"
+  ],
+  [
+   "IND-V-2-5-006",
+   "Makhani Pasta"
+  ],
+  [
+   "IND-V-3-3-033",
+   "Chilli Cheese Toast"
+  ],
+  [
+   "JPN-V-1-3-001",
+   "Tofu Katsu"
+  ],
+  [
+   "IDN-V-3-2-002",
+   "Tempeh Stir Fry"
+  ],
+  [
+   "IND-V-2-2-183",
+   "Upma Kozhukattai"
+  ],
+  [
+   "IND-V-2-2-184",
+   "Lemon Sevai"
+  ],
+  [
+   "IND-V-1-2-180",
+   "Thatte Idli"
+  ],
+  [
+   "IND-V-0-4-012",
+   "Mangalore Buns"
+  ],
+  [
+   "IND-V-0-4-013",
+   "Pazham Pori"
+  ],
+  [
+   "MAL-V-1-2-001",
+   "Amboli"
+  ],
+  [
+   "IND-V-2-2-187",
+   "Khichu"
+  ],
+  [
+   "IND-V-3-4-017",
+   "Bedmi Puri"
+  ],
+  [
+   "ODI-V-1-2-001",
+   "Chakuli Pitha"
+  ],
+  [
+   "IND-V-1-1-274",
+   "Sattu Sharbat"
+  ],
+  [
+   "LEV-V-0-3-001",
+   "Labneh with Zaatar"
+  ],
+  [
+   "FRA-V-0-5-004",
+   "Pain au Chocolat"
+  ],
+  [
+   "WEL-V-1-4-001",
+   "Welsh Rarebit"
+  ],
+  [
+   "HON-V-0-3-001",
+   "Baleadas"
+  ],
+  [
+   "CAR-V-0-4-001",
+   "Johnny Cakes"
+  ],
+  [
+   "JAM-V-0-3-001",
+   "Cornmeal Porridge"
+  ],
+  [
+   "CHN-V-0-3-001",
+   "Youtiao with Soy Milk"
+  ],
+  [
+   "PHL-V-0-3-001",
+   "Champorado"
+  ],
+  [
+   "IND-V-3-3-039",
+   "Mangodi ki Sabzi"
+  ],
+  [
+   "ODI-V-2-2-001",
+   "Dalma"
+  ],
+  [
+   "HIM-V-2-4-001",
+   "Chana Madra"
+  ],
+  [
+   "KOR-V-0-2-001",
+   "Kongguksu"
+  ],
+  [
+   "ITA-V-1-4-103",
+   "Cacio e Pepe"
+  ],
+  [
+   "USA-V-1-5-001",
+   "Baked Mac and Cheese"
+  ],
+  [
+   "IND-V-2-2-192",
+   "Cabbage Kootu"
+  ],
+  [
+   "IND-V-2-2-193",
+   "Paruppu Usili"
+  ],
+  [
+   "IND-V-2-3-163",
+   "Pumpkin Erissery"
+  ],
+  [
+   "IND-V-3-3-042",
+   "Temple Style Puliyodarai"
+  ],
+  [
+   "IND-V-3-3-044",
+   "Udupi Sambar"
+  ],
+  [
+   "IND-V-2-2-207",
+   "Kootu"
+  ],
+  [
+   "MOD-V-2-3-003",
+   "Sticky Tempeh Lettuce Cups"
+  ],
+  [
+   "MOD-V-2-4-001",
+   "Peanut Tofu with Greens"
+  ],
+  [
+   "MOD-V-2-3-004",
+   "Crispy Lentils with Herb Yoghurt"
+  ],
+  [
+   "MOD-V-1-2-001",
+   "Sesame Edamame Smash"
+  ],
+  [
+   "MOD-V-2-2-002",
+   "Black Bean Tacos with Lime Slaw"
+  ],
+  [
+   "MOD-V-1-2-004",
+   "Chickpea Couscous Salad"
+  ],
+  [
+   "MOD-V-0-4-002",
+   "Silken Tofu Chocolate Pots"
+  ],
+  [
+   "MOD-V-0-3-005",
+   "Peas and Feta on Toast"
+  ],
+  [
+   "MOD-V-0-4-003",
+   "Charred Cabbage with Miso Butter"
+  ],
+  [
+   "MOD-V-2-4-003",
+   "Miso Butter Corn Ribs"
+  ],
+  [
+   "IND-V-0-3-906",
+   "Vrat Fruit Chaat"
+  ],
+  [
+   "IND-V-0-3-907",
+   "Bhuna Makhana"
+  ],
+  [
+   "IND-V-0-4-911",
+   "Nariyal Sabudana Kheer"
+  ],
+  [
+   "IND-V-0-4-912",
+   "Rajgira Ladoo"
+  ],
+  [
+   "IND-V-1-1-903",
+   "Samak Rice"
+  ],
+  [
+   "IND-V-0-4-904",
+   "Samak Ki Kheer"
+  ],
+  [
+   "IND-V-0-4-905",
+   "Singhare Ka Halwa"
+  ],
+  [
+   "IND-V-1-1-906",
+   "Roasted Makhana"
+  ],
+  [
+   "IND-V-1-2-909",
+   "Sama Idli"
+  ],
+  [
+   "IND-V-0-4-910",
+   "Lauki Halwa"
+  ],
+  [
+   "IND-V-3-4-911",
+   "Makhana Curry"
+  ],
+  [
+   "IND-V-2-2-913",
+   "Kaddu Ki Sabzi (Vrat)"
+  ],
+  [
+   "IND-V-2-1-926",
+   "Chana Sundal"
+  ],
+  [
+   "IND-V-0-3-928",
+   "Vegan Coconut Ladoo"
+  ],
+  [
+   "IND-V-3-3-929",
+   "Vegetable Bisi Bele Bath"
+  ],
+  [
+   "IND-V-2-2-931",
+   "Vegan Thepla"
+  ],
+  [
+   "IND-V-2-2-932",
+   "Vegan Pumpkin Erissery"
+  ],
+  [
+   "IND-V-2-3-936",
+   "Dibba Rotti"
+  ],
+  [
+   "IND-V-1-4-937",
+   "Modur Pulao"
+  ],
+  [
+   "IND-V-1-2-938",
+   "Vegan Sol Kadhi"
+  ],
+  [
+   "IND-V-0-2-939",
+   "Til Chikki"
+  ],
+  [
+   "LST-V-BAJRERAAB-01",
+   "Bajre ki Raab"
+  ]
+ ],
+ "allergen_maybe_extra": [
+  [
+   "IND-NV-5-3-005",
+   "Chicken 65",
+   "gluten"
+  ],
+  [
+   "IND-EG-2-2-010",
+   "Anda Bhurji",
+   "dairy"
+  ],
+  [
+   "IND-V-2-2-018",
+   "Kadhi Chawal",
+   "gluten"
+  ],
+  [
+   "IND-V-2-2-032",
+   "Chai + Pakora",
+   "gluten"
+  ],
+  [
+   "IND-V-1-1-035",
+   "Oats Chilla",
+   "gluten"
+  ],
+  [
+   "THA-NV-3-3-104",
+   "Thai Green Curry",
+   "shellfish"
+  ],
+  [
+   "THA-V-3-2-105",
+   "Pad Thai",
+   "egg"
+  ],
+  [
+   "THA-V-3-2-105",
+   "Pad Thai",
+   "shellfish"
+  ],
+  [
+   "MEA-V-1-1-112",
+   "Falafel Hummus Bowl",
+   "gluten"
+  ],
+  [
+   "VIE-NV-1-1-121",
+   "Pho Bo",
+   "fish"
+  ],
+  [
+   "VIE-NV-1-1-121",
+   "Pho Bo",
+   "soy"
+  ],
+  [
+   "IND-V-1-2-129",
+   "Undhiyu",
+   "nuts"
+  ],
+  [
+   "IND-V-3-2-132",
+   "Gatte Ki Sabzi",
+   "gluten"
+  ],
+  [
+   "IND-NV-3-3-148",
+   "Malabar Prawn Biryani",
+   "dairy"
+  ],
+  [
+   "IND-NV-3-4-156",
+   "Amritsari Fish",
+   "gluten"
+  ],
+  [
+   "IND-V-2-2-162",
+   "Malai Kofta",
+   "gluten"
+  ],
+  [
+   "IND-NV-4-3-166",
+   "Hyderabadi Haleem",
+   "nuts"
+  ],
+  [
+   "IND-V-2-2-169",
+   "Sev Tameta Nu Shaak",
+   "gluten"
+  ],
+  [
+   "IND-V-2-2-171",
+   "Bisi Bele Bath",
+   "nuts"
+  ],
+  [
+   "IND-NV-3-2-181",
+   "Chilli Chicken",
+   "egg"
+  ],
+  [
+   "IND-V-3-2-184",
+   "Schezwan Fried Rice",
+   "gluten"
+  ],
+  [
+   "ITA-NV-1-3-204",
+   "Chicken Parmigiana",
+   "egg"
+  ],
+  [
+   "THA-NV-2-2-210",
+   "Thai Basil Chicken",
+   "fish"
+  ],
+  [
+   "CHN-NV-2-2-211",
+   "Sweet & Sour Pork",
+   "gluten"
+  ],
+  [
+   "CHN-NV-2-2-211",
+   "Sweet & Sour Pork",
+   "soy"
+  ],
+  [
+   "JPN-NV-1-2-214",
+   "Chicken Katsu Curry",
+   "egg"
+  ],
+  [
+   "JPN-V-1-1-216",
+   "Vegetable Sushi Rolls",
+   "sesame"
+  ],
+  [
+   "KOR-NV-3-2-218",
+   "Bibimbap Beef",
+   "sesame"
+  ],
+  [
+   "MEA-NV-2-2-228",
+   "Chicken Shawarma Plate",
+   "dairy"
+  ],
+  [
+   "MEA-NV-2-2-228",
+   "Chicken Shawarma Plate",
+   "sesame"
+  ],
+  [
+   "SPA-NV-2-3-235",
+   "Seafood Paella",
+   "fish"
+  ],
+  [
+   "FRA-NV-1-3-238",
+   "Coq au Vin",
+   "dairy"
+  ],
+  [
+   "FRA-V-1-2-241",
+   "Crepes with Nutella",
+   "nuts"
+  ],
+  [
+   "USA-NV-2-3-245",
+   "BBQ Ribs",
+   "gluten"
+  ],
+  [
+   "IDN-NV-3-2-251",
+   "Nasi Goreng",
+   "fish"
+  ],
+  [
+   "MYS-NV-3-2-254",
+   "Chicken Laksa",
+   "fish"
+  ],
+  [
+   "MYS-NV-3-2-254",
+   "Chicken Laksa",
+   "gluten"
+  ],
+  [
+   "MYS-NV-3-2-254",
+   "Chicken Laksa",
+   "shellfish"
+  ],
+  [
+   "VIE-NV-2-2-263",
+   "Banh Mi",
+   "soy"
+  ],
+  [
+   "CON-V-1-2-269",
+   "Creamy Mushroom Soup",
+   "gluten"
+  ],
+  [
+   "IND-NV-3-4-001",
+   "Galouti Kebab",
+   "nuts"
+  ],
+  [
+   "IND-V-3-4-003",
+   "Veg Dum Biryani",
+   "nuts"
+  ],
+  [
+   "IND-EG-3-3-001",
+   "Egg Biryani",
+   "dairy"
+  ],
+  [
+   "IND-V-4-3-001",
+   "Misal Pav",
+   "peanut"
+  ],
+  [
+   "ITA-V-0-5-001",
+   "Tiramisu",
+   "egg"
+  ],
+  [
+   "ESP-NV-2-4-001",
+   "Paella Valenciana",
+   "fish"
+  ],
+  [
+   "ESP-V-0-3-001",
+   "Churros con Chocolate",
+   "dairy"
+  ],
+  [
+   "MEA-NV-3-3-001",
+   "Chicken Shawarma",
+   "sesame"
+  ],
+  [
+   "CHN-NV-1-2-001",
+   "Dim Sum Dumplings",
+   "soy"
+  ],
+  [
+   "CHN-NV-1-2-002",
+   "Wonton Soup",
+   "soy"
+  ],
+  [
+   "CHN-NV-4-3-002",
+   "Dan Dan Noodles",
+   "peanut"
+  ],
+  [
+   "CHN-NV-4-3-002",
+   "Dan Dan Noodles",
+   "soy"
+  ],
+  [
+   "JPN-V-0-1-001",
+   "Onigiri",
+   "soy"
+  ],
+  [
+   "JPN-NV-1-4-001",
+   "Tonkatsu",
+   "egg"
+  ],
+  [
+   "KOR-V-2-2-001",
+   "Japchae",
+   "sesame"
+  ],
+  [
+   "THA-NV-4-2-001",
+   "Tom Yum Soup",
+   "fish"
+  ],
+  [
+   "THA-NV-2-4-001",
+   "Massaman Curry",
+   "fish"
+  ],
+  [
+   "THA-NV-2-4-001",
+   "Massaman Curry",
+   "peanut"
+  ],
+  [
+   "VNM-NV-2-3-002",
+   "Bun Cha",
+   "soy"
+  ],
+  [
+   "MYS-NV-3-3-001",
+   "Char Kway Teow",
+   "egg"
+  ],
+  [
+   "MYS-NV-4-4-001",
+   "Laksa",
+   "fish"
+  ],
+  [
+   "PHL-NV-2-2-001",
+   "Sinigang",
+   "fish"
+  ],
+  [
+   "SGP-NV-1-3-001",
+   "Hainanese Chicken Rice",
+   "soy"
+  ],
+  [
+   "MEX-NV-3-4-001",
+   "Beef Burrito",
+   "dairy"
+  ],
+  [
+   "GBR-NV-1-4-003",
+   "Full English Breakfast",
+   "dairy"
+  ],
+  [
+   "GBR-V-0-5-001",
+   "Sticky Toffee Pudding",
+   "egg"
+  ],
+  [
+   "DEU-V-0-5-001",
+   "Black Forest Cake",
+   "egg"
+  ],
+  [
+   "SWE-NV-1-4-001",
+   "Swedish Meatballs",
+   "gluten"
+  ],
+  [
+   "SWE-NV-1-2-001",
+   "Gravlax",
+   "mustard"
+  ],
+  [
+   "IND-V-3-2-004",
+   "Aloo Tikki Chaat",
+   "gluten"
+  ],
+  [
+   "IND-V-2-1-003",
+   "Bhel Puri",
+   "gluten"
+  ],
+  [
+   "IND-V-2-1-003",
+   "Bhel Puri",
+   "peanut"
+  ],
+  [
+   "CHN-V-3-2-001",
+   "Hot and Sour Soup",
+   "egg"
+  ],
+  [
+   "CHN-NV-1-4-001",
+   "Char Siu Pork",
+   "sesame"
+  ],
+  [
+   "CHN-NV-1-3-001",
+   "Xiao Long Bao",
+   "soy"
+  ],
+  [
+   "MEX-V-3-4-001",
+   "Chiles Rellenos",
+   "gluten"
+  ],
+  [
+   "USA-NV-1-4-002",
+   "Clam Chowder",
+   "gluten"
+  ],
+  [
+   "IND-V-0-5-001",
+   "Bebinca",
+   "dairy"
+  ],
+  [
+   "JPN-NV-1-3-002",
+   "Chicken Donburi",
+   "soy"
+  ],
+  [
+   "JPN-NV-1-3-003",
+   "Okonomiyaki",
+   "shellfish"
+  ],
+  [
+   "JPN-NV-1-3-004",
+   "Gyoza",
+   "soy"
+  ],
+  [
+   "JPN-NV-0-2-002",
+   "Sushi Roll (Maki)",
+   "sesame"
+  ],
+  [
+   "JPN-NV-0-2-002",
+   "Sushi Roll (Maki)",
+   "soy"
+  ],
+  [
+   "VNM-NV-4-4-001",
+   "Bun Bo Hue",
+   "fish"
+  ],
+  [
+   "VNM-NV-2-3-003",
+   "Com Tam",
+   "soy"
+  ],
+  [
+   "THA-NV-4-2-002",
+   "Thai Basil Chicken (Pad Krapow)",
+   "soy"
+  ],
+  [
+   "THA-NV-3-4-001",
+   "Khao Soi",
+   "fish"
+  ],
+  [
+   "CHN-NV-1-2-003",
+   "Congee",
+   "soy"
+  ],
+  [
+   "CHN-NV-5-3-001",
+   "Ma La Xiang Guo",
+   "peanut"
+  ],
+  [
+   "IND-V-2-3-008",
+   "Lauki Kofta",
+   "gluten"
+  ],
+  [
+   "IND-NV-3-3-006",
+   "Fish Amritsari",
+   "gluten"
+  ],
+  [
+   "IND-NV-4-3-005",
+   "Prawn Koliwada",
+   "gluten"
+  ],
+  [
+   "ITA-V-2-4-001",
+   "Eggplant Parmigiana",
+   "gluten"
+  ],
+  [
+   "USA-NV-2-5-001",
+   "Chicken and Waffles",
+   "egg"
+  ],
+  [
+   "MEA-NV-2-4-001",
+   "Kabsa",
+   "nuts"
+  ],
+  [
+   "IND-V-0-3-009",
+   "Besan Ladoo",
+   "nuts"
+  ],
+  [
+   "IND-V-0-4-004",
+   "Rabri Falooda",
+   "nuts"
+  ],
+  [
+   "IND-V-3-4-004",
+   "Bagara Baingan",
+   "nuts"
+  ],
+  [
+   "IND-V-0-3-011",
+   "Kashmiri Modur Pulav",
+   "dairy"
+  ],
+  [
+   "IND-V-4-2-001",
+   "Mirchi Bajji",
+   "gluten"
+  ],
+  [
+   "MEA-NV-3-3-002",
+   "Shawarma Rice Bowl",
+   "dairy"
+  ],
+  [
+   "MEA-NV-3-3-002",
+   "Shawarma Rice Bowl",
+   "sesame"
+  ],
+  [
+   "ARG-NV-2-3-001",
+   "Empanadas",
+   "egg"
+  ],
+  [
+   "JPN-NV-1-4-002",
+   "Katsu Sando",
+   "egg"
+  ],
+  [
+   "CHN-NV-2-3-002",
+   "Bao Buns",
+   "sesame"
+  ],
+  [
+   "IND-NV-3-4-008",
+   "Mutton Biryani (Kolkata)",
+   "dairy"
+  ],
+  [
+   "IND-NV-3-4-009",
+   "Thalassery Biryani",
+   "dairy"
+  ],
+  [
+   "IND-NV-2-4-002",
+   "Reshmi Kabab",
+   "egg"
+  ],
+  [
+   "IND-NV-4-4-004",
+   "Kori Rotti",
+   "gluten"
+  ],
+  [
+   "VNM-NV-2-3-004",
+   "Beef Pho",
+   "soy"
+  ],
+  [
+   "VNM-NV-2-3-005",
+   "Cao Lau",
+   "soy"
+  ],
+  [
+   "VNM-NV-3-3-001",
+   "Vietnamese Lemongrass Chicken",
+   "soy"
+  ],
+  [
+   "IDN-V-2-3-001",
+   "Nasi Uduk",
+   "peanut"
+  ],
+  [
+   "IDN-NV-3-3-002",
+   "Ayam Bakar",
+   "peanut"
+  ],
+  [
+   "KOR-NV-2-3-003",
+   "Beef Bulgogi Bowl",
+   "sesame"
+  ],
+  [
+   "KOR-NV-4-3-003",
+   "Dakgalbi",
+   "dairy"
+  ],
+  [
+   "THA-NV-4-2-003",
+   "Larb Gai",
+   "fish"
+  ],
+  [
+   "THA-NV-3-4-002",
+   "Panang Curry",
+   "fish"
+  ],
+  [
+   "THA-NV-3-4-002",
+   "Panang Curry",
+   "peanut"
+  ],
+  [
+   "GBR-NV-1-4-004",
+   "Fish Pie",
+   "gluten"
+  ],
+  [
+   "GBR-NV-1-4-005",
+   "Bangers and Mash",
+   "dairy"
+  ],
+  [
+   "IND-V-5-3-001",
+   "Veg Kolhapuri",
+   "nuts"
+  ],
+  [
+   "IND-V-3-2-010",
+   "Onion Bhaji",
+   "gluten"
+  ],
+  [
+   "USA-V-0-5-002",
+   "Brownie",
+   "egg"
+  ],
+  [
+   "USA-V-0-4-002",
+   "Chocolate Chip Cookies",
+   "egg"
+  ],
+  [
+   "HLT-V-0-2-001",
+   "Smoothie Bowl",
+   "nuts"
+  ],
+  [
+   "CHN-NV-1-2-004",
+   "Beef and Broccoli",
+   "soy"
+  ],
+  [
+   "CHN-NV-2-3-003",
+   "Salt and Pepper Squid",
+   "gluten"
+  ],
+  [
+   "JPN-NV-1-3-005",
+   "Gyudon",
+   "soy"
+  ],
+  [
+   "JPN-NV-0-2-003",
+   "Chirashi Bowl",
+   "soy"
+  ],
+  [
+   "KOR-NV-2-4-001",
+   "Galbi Ribs",
+   "sesame"
+  ],
+  [
+   "THA-NV-2-2-001",
+   "Thai Fried Rice",
+   "soy"
+  ],
+  [
+   "IND-V-2-3-015",
+   "Amritsari Dal",
+   "dairy"
+  ],
+  [
+   "INDC-NV-4-3-003",
+   "Chicken Lollipop",
+   "gluten"
+  ],
+  [
+   "INDC-NV-4-3-003",
+   "Chicken Lollipop",
+   "soy"
+  ],
+  [
+   "INDC-V-4-3-003",
+   "Paneer 65",
+   "gluten"
+  ],
+  [
+   "INDC-V-3-3-001",
+   "American Chopsuey",
+   "soy"
+  ],
+  [
+   "INDC-NV-4-3-004",
+   "Dragon Chicken",
+   "gluten"
+  ],
+  [
+   "INDC-NV-4-3-004",
+   "Dragon Chicken",
+   "soy"
+  ],
+  [
+   "INDC-V-1-2-001",
+   "Sweet Corn Soup",
+   "soy"
+  ],
+  [
+   "ITA-V-1-4-004",
+   "Arancini",
+   "egg"
+  ],
+  [
+   "ITA-NV-1-3-001",
+   "Tortellini in Brodo",
+   "egg"
+  ],
+  [
+   "MAR-NV-2-3-002",
+   "Chicken Tagine with Preserved Lemon",
+   "nuts"
+  ],
+  [
+   "MAR-V-2-3-001",
+   "Harira Soup",
+   "gluten"
+  ],
+  [
+   "PER-NV-3-4-001",
+   "Aji de Gallina",
+   "dairy"
+  ],
+  [
+   "IND-V-1-2-009",
+   "Khandvi",
+   "sesame"
+  ],
+  [
+   "IND-V-3-2-013",
+   "Batata Vada",
+   "gluten"
+  ],
+  [
+   "IND-V-2-2-043",
+   "Kothimbir Vadi",
+   "gluten"
+  ],
+  [
+   "IND-V-3-2-014",
+   "Bikaneri Bhujia Sabzi",
+   "gluten"
+  ],
+  [
+   "IND-V-0-4-005",
+   "Mohan Thal",
+   "nuts"
+  ],
+  [
+   "MMR-V-2-2-001",
+   "Tea Leaf Salad",
+   "sesame"
+  ],
+  [
+   "IND-NV-3-3-013",
+   "Chicken Tikka Roll",
+   "dairy"
+  ],
+  [
+   "MEA-NV-3-3-003",
+   "Shawarma Roll",
+   "sesame"
+  ],
+  [
+   "INDC-V-3-3-002",
+   "Honey Chilli Potato",
+   "gluten"
+  ],
+  [
+   "INDC-V-3-3-002",
+   "Honey Chilli Potato",
+   "soy"
+  ],
+  [
+   "IND-NV-5-4-011",
+   "Chicken 65 Biryani",
+   "dairy"
+  ],
+  [
+   "IND-NV-5-4-011",
+   "Chicken 65 Biryani",
+   "egg"
+  ],
+  [
+   "IND-V-3-4-007",
+   "Soya Chaap Masala",
+   "gluten"
+  ],
+  [
+   "IND-V-2-4-004",
+   "Veg Kofta Curry",
+   "dairy"
+  ],
+  [
+   "IND-V-2-4-004",
+   "Veg Kofta Curry",
+   "gluten"
+  ],
+  [
+   "INDC-V-4-2-003",
+   "Hakka Chilli Garlic Fried Rice",
+   "soy"
+  ],
+  [
+   "INDC-NV-4-3-005",
+   "Crispy Chilli Chicken Dry",
+   "egg"
+  ],
+  [
+   "INDC-NV-4-3-005",
+   "Crispy Chilli Chicken Dry",
+   "gluten"
+  ],
+  [
+   "INDC-NV-4-3-005",
+   "Crispy Chilli Chicken Dry",
+   "soy"
+  ],
+  [
+   "MEX-NV-3-5-001",
+   "Mole Poblano",
+   "gluten"
+  ],
+  [
+   "GBR-NV-1-5-001",
+   "Beef Wellington",
+   "dairy"
+  ],
+  [
+   "GBR-NV-1-5-001",
+   "Beef Wellington",
+   "egg"
+  ],
+  [
+   "JPN-NV-2-5-001",
+   "Ramen Tonkotsu",
+   "soy"
+  ],
+  [
+   "JPN-V-0-2-001",
+   "Vegetable Sushi Platter",
+   "sesame"
+  ],
+  [
+   "JPN-V-0-2-001",
+   "Vegetable Sushi Platter",
+   "soy"
+  ],
+  [
+   "ITA-V-1-4-005",
+   "Ravioli in Sage Butter",
+   "egg"
+  ],
+  [
+   "HLT-V-1-3-001",
+   "Mushroom Soup",
+   "gluten"
+  ],
+  [
+   "JPN-NV-1-3-007",
+   "Prawn Tempura Roll",
+   "gluten"
+  ],
+  [
+   "JPN-NV-1-3-007",
+   "Prawn Tempura Roll",
+   "soy"
+  ],
+  [
+   "JPN-NV-2-4-004",
+   "Katsu Curry Udon",
+   "egg"
+  ],
+  [
+   "JPN-NV-2-4-005",
+   "Sushi Bake",
+   "dairy"
+  ],
+  [
+   "JPN-NV-2-4-005",
+   "Sushi Bake",
+   "soy"
+  ],
+  [
+   "KOR-NV-1-2-001",
+   "Kimbap",
+   "sesame"
+  ],
+  [
+   "KOR-NV-1-2-001",
+   "Kimbap",
+   "soy"
+  ],
+  [
+   "THA-NV-3-3-001",
+   "Thai Coconut Soup (Tom Kha)",
+   "fish"
+  ],
+  [
+   "IND-V-3-4-008",
+   "Dum Aloo (Punjabi)",
+   "dairy"
+  ],
+  [
+   "IND-V-2-5-005",
+   "Veg Makhanwala",
+   "nuts"
+  ],
+  [
+   "IND-V-4-3-005",
+   "Sev Bhaji",
+   "gluten"
+  ],
+  [
+   "IND-V-3-2-018",
+   "Matki Usal",
+   "gluten"
+  ],
+  [
+   "IND-V-2-2-048",
+   "Masala Khichdi",
+   "dairy"
+  ],
+  [
+   "INDC-NV-1-2-001",
+   "Chicken Sweetcorn Soup",
+   "soy"
+  ],
+  [
+   "CHN-NV-1-3-002",
+   "Wonton Noodle Soup",
+   "shellfish"
+  ],
+  [
+   "CHN-NV-1-3-002",
+   "Wonton Noodle Soup",
+   "soy"
+  ],
+  [
+   "MYS-NV-4-4-002",
+   "Laksa Lemak",
+   "fish"
+  ],
+  [
+   "IDN-NV-2-2-001",
+   "Beef Bakso Soup",
+   "soy"
+  ],
+  [
+   "PHL-NV-1-3-001",
+   "Filipino Lumpia",
+   "soy"
+  ],
+  [
+   "USA-NV-2-4-005",
+   "Chicken Burger",
+   "egg"
+  ],
+  [
+   "USA-NV-1-3-002",
+   "Club Sandwich",
+   "dairy"
+  ],
+  [
+   "IND-EG-1-2-001",
+   "Egg Sandwich",
+   "dairy"
+  ],
+  [
+   "MEA-NV-2-2-001",
+   "Chicken Shawarma Salad",
+   "dairy"
+  ],
+  [
+   "HLT-V-0-2-002",
+   "Oats Porridge",
+   "gluten"
+  ],
+  [
+   "HLT-V-0-2-002",
+   "Oats Porridge",
+   "nuts"
+  ],
+  [
+   "IND-V-2-2-051",
+   "Masala Oats",
+   "gluten"
+  ],
+  [
+   "IND-V-0-3-014",
+   "Shrikhand",
+   "nuts"
+  ],
+  [
+   "IND-V-0-3-015",
+   "Phirni",
+   "nuts"
+  ],
+  [
+   "IND-V-0-4-007",
+   "Ras Malai",
+   "nuts"
+  ],
+  [
+   "IND-V-0-4-009",
+   "Motichoor Ladoo",
+   "gluten"
+  ],
+  [
+   "IND-V-0-4-011",
+   "Beetroot Halwa",
+   "nuts"
+  ],
+  [
+   "IND-V-0-5-003",
+   "Moong Dal Halwa",
+   "nuts"
+  ],
+  [
+   "IND-V-0-3-019",
+   "Sooji Halwa",
+   "nuts"
+  ],
+  [
+   "HLT-V-0-2-003",
+   "Overnight Oats",
+   "gluten"
+  ],
+  [
+   "HLT-V-0-2-003",
+   "Overnight Oats",
+   "nuts"
+  ],
+  [
+   "HLT-V-0-2-004",
+   "Greek Yogurt Parfait",
+   "nuts"
+  ],
+  [
+   "MEX-EG-3-3-001",
+   "Huevos Rancheros",
+   "dairy"
+  ],
+  [
+   "IND-NV-2-5-004",
+   "Chicken Biryani (Lucknowi)",
+   "dairy"
+  ],
+  [
+   "IND-NV-4-4-012",
+   "Sindhi Biryani",
+   "dairy"
+  ],
+  [
+   "IND-V-1-3-002",
+   "Kashmiri Pulao",
+   "dairy"
+  ],
+  [
+   "IND-V-2-3-023",
+   "Bagara Rice",
+   "nuts"
+  ],
+  [
+   "IND-V-1-1-012",
+   "Rava Idli",
+   "nuts"
+  ],
+  [
+   "LEB-NV-2-3-002",
+   "Chicken Kabab Roll (Lebanese)",
+   "dairy"
+  ],
+  [
+   "LEB-NV-2-3-002",
+   "Chicken Kabab Roll (Lebanese)",
+   "sesame"
+  ],
+  [
+   "LEB-NV-2-4-001",
+   "Musakhan",
+   "nuts"
+  ],
+  [
+   "MEA-NV-2-4-002",
+   "Maqluba",
+   "nuts"
+  ],
+  [
+   "MEA-NV-3-3-005",
+   "Shawarma Bowl (Beef)",
+   "dairy"
+  ],
+  [
+   "MEA-NV-3-3-005",
+   "Shawarma Bowl (Beef)",
+   "sesame"
+  ],
+  [
+   "VNM-NV-3-3-002",
+   "Bún Riêu",
+   "fish"
+  ],
+  [
+   "VNM-NV-1-1-001",
+   "Goi Cuon Platter",
+   "peanut"
+  ],
+  [
+   "THA-NV-4-2-004",
+   "Thai Basil Fried Rice",
+   "soy"
+  ],
+  [
+   "THA-NV-3-3-002",
+   "Thai Cashew Chicken",
+   "fish"
+  ],
+  [
+   "THA-NV-3-3-002",
+   "Thai Cashew Chicken",
+   "soy"
+  ],
+  [
+   "THA-NV-4-3-001",
+   "Drunken Noodles (Pad Kee Mao)",
+   "fish"
+  ],
+  [
+   "THA-NV-4-3-001",
+   "Drunken Noodles (Pad Kee Mao)",
+   "soy"
+  ],
+  [
+   "SGP-V-2-2-001",
+   "Chwee Kueh",
+   "soy"
+  ],
+  [
+   "IND-V-2-2-060",
+   "Ghee Podi Idli",
+   "nuts"
+  ],
+  [
+   "IND-V-0-3-020",
+   "Kesari Bath",
+   "nuts"
+  ],
+  [
+   "IND-V-3-2-019",
+   "Puliyogare",
+   "sesame"
+  ],
+  [
+   "IND-V-0-3-022",
+   "Piyush",
+   "nuts"
+  ],
+  [
+   "IND-NV-3-5-004",
+   "Butter Chicken Pasta",
+   "nuts"
+  ],
+  [
+   "IND-V-2-5-006",
+   "Makhani Pasta",
+   "nuts"
+  ],
+  [
+   "JPN-NV-3-3-001",
+   "Spicy Tuna Roll",
+   "sesame"
+  ],
+  [
+   "JPN-NV-3-3-001",
+   "Spicy Tuna Roll",
+   "soy"
+  ],
+  [
+   "KOR-NV-3-3-001",
+   "Bibimbap Bowl (Beef)",
+   "egg"
+  ],
+  [
+   "KOR-NV-3-3-001",
+   "Bibimbap Bowl (Beef)",
+   "sesame"
+  ],
+  [
+   "KOR-V-1-3-001",
+   "Cheese Kimbap",
+   "sesame"
+  ],
+  [
+   "KOR-V-1-3-001",
+   "Cheese Kimbap",
+   "soy"
+  ],
+  [
+   "THA-NV-2-3-002",
+   "Thai Pineapple Fried Rice",
+   "egg"
+  ],
+  [
+   "THA-NV-2-3-002",
+   "Thai Pineapple Fried Rice",
+   "fish"
+  ],
+  [
+   "THA-NV-2-3-002",
+   "Thai Pineapple Fried Rice",
+   "nuts"
+  ],
+  [
+   "VNM-V-2-2-001",
+   "Vegetable Pho",
+   "soy"
+  ],
+  [
+   "SGP-EG-0-2-002",
+   "Kaya Butter Toast Set",
+   "egg"
+  ],
+  [
+   "CHN-EG-1-2-002",
+   "Egg Drop Soup",
+   "soy"
+  ],
+  [
+   "SGP-NV-3-3-001",
+   "Singapore Noodles",
+   "egg"
+  ],
+  [
+   "SGP-NV-3-3-001",
+   "Singapore Noodles",
+   "soy"
+  ],
+  [
+   "IND-V-2-3-159",
+   "Sev Khamani",
+   "sesame"
+  ],
+  [
+   "IND-V-2-3-160",
+   "Locho",
+   "sesame"
+  ],
+  [
+   "FRA-V-0-5-004",
+   "Pain au Chocolat",
+   "soy"
+  ],
+  [
+   "SWI-V-0-2-001",
+   "Bircher Muesli",
+   "gluten"
+  ],
+  [
+   "CHN-EG-2-3-001",
+   "Jianbing",
+   "sesame"
+  ],
+  [
+   "CHN-NV-0-3-001",
+   "Turnip Cake",
+   "soy"
+  ],
+  [
+   "VNM-NV-1-2-001",
+   "Banh Cuon",
+   "soy"
+  ],
+  [
+   "THA-NV-1-1-001",
+   "Khao Tom",
+   "soy"
+  ],
+  [
+   "IND-V-3-4-019",
+   "Mirchi ka Salan",
+   "nuts"
+  ],
+  [
+   "VID-NV-5-4-001",
+   "Saoji Chicken",
+   "nuts"
+  ],
+  [
+   "VID-V-4-3-001",
+   "Patodi Rassa",
+   "nuts"
+  ],
+  [
+   "IND-V-3-4-020",
+   "Kathal ki Biryani",
+   "nuts"
+  ],
+  [
+   "ANG-NV-2-3-001",
+   "Railway Mutton Curry",
+   "nuts"
+  ],
+  [
+   "BEN-NV-3-3-001",
+   "Bene Israel Chicken Curry",
+   "nuts"
+  ],
+  [
+   "ANG-NV-2-2-001",
+   "Mulligatawny Soup",
+   "nuts"
+  ],
+  [
+   "CHN-V-2-3-001",
+   "Salt and Pepper Tofu",
+   "gluten"
+  ],
+  [
+   "CHN-V-0-2-001",
+   "Buddha's Delight",
+   "sesame"
+  ],
+  [
+   "YUN-NV-0-3-001",
+   "Crossing the Bridge Noodles",
+   "gluten"
+  ],
+  [
+   "YUN-NV-0-3-001",
+   "Crossing the Bridge Noodles",
+   "soy"
+  ],
+  [
+   "JPN-NV-0-4-001",
+   "Sukiyaki",
+   "egg"
+  ],
+  [
+   "KOR-NV-2-2-001",
+   "Doenjang Jjigae",
+   "gluten"
+  ],
+  [
+   "KOR-NV-1-3-001",
+   "Bossam",
+   "fish"
+  ],
+  [
+   "KOR-NV-1-3-001",
+   "Bossam",
+   "gluten"
+  ],
+  [
+   "KOR-NV-1-3-001",
+   "Bossam",
+   "sesame"
+  ],
+  [
+   "PHL-NV-0-4-001",
+   "Kare-Kare",
+   "fish"
+  ],
+  [
+   "PHL-NV-0-4-001",
+   "Kare-Kare",
+   "nuts"
+  ],
+  [
+   "SGP-NV-2-3-001",
+   "Hokkien Mee",
+   "fish"
+  ],
+  [
+   "SGP-NV-2-3-001",
+   "Hokkien Mee",
+   "soy"
+  ],
+  [
+   "VNM-NV-1-3-001",
+   "Cha Ca La Vong",
+   "nuts"
+  ],
+  [
+   "NOR-NV-2-4-001",
+   "Gaeng Hung Lay",
+   "fish"
+  ],
+  [
+   "NOR-NV-2-4-001",
+   "Gaeng Hung Lay",
+   "nuts"
+  ],
+  [
+   "NOR-NV-2-4-001",
+   "Gaeng Hung Lay",
+   "shellfish"
+  ],
+  [
+   "MMR-NV-2-3-001",
+   "Shan Noodles",
+   "nuts"
+  ],
+  [
+   "MMR-NV-2-3-001",
+   "Shan Noodles",
+   "soy"
+  ],
+  [
+   "MMR-V-1-3-001",
+   "Lahpet Thoke",
+   "nuts"
+  ],
+  [
+   "MMR-V-1-3-001",
+   "Lahpet Thoke",
+   "soy"
+  ],
+  [
+   "CAM-NV-1-4-001",
+   "Fish Amok",
+   "shellfish"
+  ],
+  [
+   "GBR-NV-1-5-002",
+   "Steak and Ale Pie",
+   "dairy"
+  ],
+  [
+   "GRK-NV-1-5-001",
+   "Pastitsio",
+   "egg"
+  ],
+  [
+   "NIG-NV-4-5-001",
+   "Egusi Soup",
+   "nuts"
+  ],
+  [
+   "IND-NV-3-2-277",
+   "Meen Peera",
+   "mustard"
+  ],
+  [
+   "THA-NV-4-2-005",
+   "Yum Woon Sen",
+   "soy"
+  ],
+  [
+   "MOD-EG-3-3-001",
+   "Chilli Crisp Eggs",
+   "peanut"
+  ],
+  [
+   "MOD-EG-3-3-001",
+   "Chilli Crisp Eggs",
+   "sesame"
+  ],
+  [
+   "MOD-V-3-5-001",
+   "Kimchi Grilled Cheese",
+   "soy"
+  ],
+  [
+   "MOD-V-2-3-003",
+   "Sticky Tempeh Lettuce Cups",
+   "sesame"
+  ],
+  [
+   "MOD-NV-0-3-001",
+   "Smoked Mackerel and Beetroot Salad",
+   "mustard"
+  ],
+  [
+   "MOD-NV-1-3-002",
+   "Ponzu Salmon Bowl",
+   "gluten"
+  ],
+  [
+   "MOD-V-3-2-002",
+   "Chilli Oil Silken Tofu",
+   "peanut"
+  ],
+  [
+   "MOD-V-3-2-002",
+   "Chilli Oil Silken Tofu",
+   "sesame"
+  ],
+  [
+   "MOD-V-2-4-001",
+   "Peanut Tofu with Greens",
+   "sesame"
+  ],
+  [
+   "MOD-V-1-3-002",
+   "Miso Aubergine with Edamame",
+   "gluten"
+  ],
+  [
+   "MOD-NV-3-3-003",
+   "Chilli Crisp Prawns",
+   "peanut"
+  ],
+  [
+   "MOD-NV-3-3-003",
+   "Chilli Crisp Prawns",
+   "sesame"
+  ],
+  [
+   "MOD-V-2-3-010",
+   "Cold Peanut Noodles",
+   "sesame"
+  ],
+  [
+   "FND-V-ALFAJORES",
+   "Alfajores",
+   "peanut"
+  ],
+  [
+   "FND-V-ALMOJBANASCOLO",
+   "Almojábanas (Colombian Cheese Bread)",
+   "gluten"
+  ],
+  [
+   "FND-V-ALMOJBANASCOLO",
+   "Almojábanas (Colombian Cheese Bread)",
+   "nuts"
+  ],
+  [
+   "FND-V-ALMOJBANASCOLO",
+   "Almojábanas (Colombian Cheese Bread)",
+   "peanut"
+  ],
+  [
+   "FND-V-ALMOJBANASCOLO",
+   "Almojábanas (Colombian Cheese Bread)",
+   "sesame"
+  ],
+  [
+   "FND-V-ALMOJBANASCOLO",
+   "Almojábanas (Colombian Cheese Bread)",
+   "soy"
+  ],
+  [
+   "FND-V-ANTIGUANBREAKF",
+   "Antiguan Breakfast (Chop Up and ‘Saltfish’)",
+   "egg"
+  ],
+  [
+   "FND-V-ANTIGUANBREAKF",
+   "Antiguan Breakfast (Chop Up and ‘Saltfish’)",
+   "peanut"
+  ],
+  [
+   "FND-V-ANZACBISCUITS",
+   "Anzac biscuits",
+   "peanut"
+  ],
+  [
+   "FND-V-APAMBALIK",
+   "Apam balik",
+   "mustard"
+  ],
+  [
+   "FND-V-APAMBALIK",
+   "Apam balik",
+   "nuts"
+  ],
+  [
+   "FND-V-APAMBALIK",
+   "Apam balik",
+   "sesame"
+  ],
+  [
+   "FND-V-APAMBALIK",
+   "Apam balik",
+   "soy"
+  ],
+  [
+   "FND-V-APPLEBLACKBERR",
+   "Apple & Blackberry Crumble",
+   "peanut"
+  ],
+  [
+   "FND-V-APPLECAKE",
+   "Apple cake",
+   "mustard"
+  ],
+  [
+   "FND-V-APPLECAKE",
+   "Apple cake",
+   "sesame"
+  ],
+  [
+   "FND-V-APPLEFRANGIPAN",
+   "Apple Frangipan Tart",
+   "peanut"
+  ],
+  [
+   "FND-NV-APPLEPOTATOMAS",
+   "Apple Potato Mash (Hete bliksem)",
+   "fish"
+  ],
+  [
+   "FND-NV-APPLEPOTATOMAS",
+   "Apple Potato Mash (Hete bliksem)",
+   "gluten"
+  ],
+  [
+   "FND-NV-APPLEPOTATOMAS",
+   "Apple Potato Mash (Hete bliksem)",
+   "mustard"
+  ],
+  [
+   "FND-NV-APPLEPOTATOMAS",
+   "Apple Potato Mash (Hete bliksem)",
+   "nuts"
+  ],
+  [
+   "FND-NV-APPLEPOTATOMAS",
+   "Apple Potato Mash (Hete bliksem)",
+   "peanut"
+  ],
+  [
+   "FND-NV-APPLEPOTATOMAS",
+   "Apple Potato Mash (Hete bliksem)",
+   "shellfish"
+  ],
+  [
+   "FND-NV-APPLEPOTATOMAS",
+   "Apple Potato Mash (Hete bliksem)",
+   "soy"
+  ],
+  [
+   "FND-V-AREPA",
+   "Arepa",
+   "gluten"
+  ],
+  [
+   "FND-V-ARROZCONLECHER",
+   "Arroz con Leche Recipe",
+   "nuts"
+  ],
+  [
+   "FND-V-ARROZCONLECHER",
+   "Arroz con Leche Recipe",
+   "peanut"
+  ],
+  [
+   "FND-V-ARROZCONLECHER",
+   "Arroz con Leche Recipe",
+   "soy"
+  ],
+  [
+   "FND-V-AUTHENTICLAOST",
+   "Authentic Laos Tapioca Pudding with Bananas",
+   "dairy"
+  ],
+  [
+   "FND-V-AVOCADODIPWITH",
+   "Avocado dip with new potatoes",
+   "sesame"
+  ],
+  [
+   "FND-V-BABAGHANOUSH",
+   "Baba Ghanoush",
+   "egg"
+  ],
+  [
+   "FND-V-BAGHLAWEKHANAG",
+   "Baghlaw-e-Khanagi",
+   "sesame"
+  ],
+  [
+   "FND-V-BAGHLAWEKHANAG",
+   "Baghlaw-e-Khanagi",
+   "soy"
+  ],
+  [
+   "FND-V-BAKEWELLTART",
+   "Bakewell tart",
+   "peanut"
+  ],
+  [
+   "FND-V-BANANAPANCAKES",
+   "Banana Pancakes",
+   "dairy"
+  ],
+  [
+   "FND-V-BANANAPANCAKES",
+   "Banana Pancakes",
+   "gluten"
+  ],
+  [
+   "FND-V-BANANAPANCAKES",
+   "Banana Pancakes",
+   "mustard"
+  ],
+  [
+   "FND-V-BANANAPANCAKES",
+   "Banana Pancakes",
+   "sesame"
+  ],
+  [
+   "FND-NV-BANGBANGPRAWNS",
+   "Bang bang prawn salad",
+   "dairy"
+  ],
+  [
+   "FND-NV-BANGBANGPRAWNS",
+   "Bang bang prawn salad",
+   "gluten"
+  ],
+  [
+   "FND-NV-BARBECUEPORKBU",
+   "Barbecue pork buns",
+   "dairy"
+  ],
+  [
+   "FND-NV-BARBECUEPORKBU",
+   "Barbecue pork buns",
+   "fish"
+  ],
+  [
+   "FND-NV-BARBECUEPORKBU",
+   "Barbecue pork buns",
+   "mustard"
+  ],
+  [
+   "FND-NV-BARBECUEPORKBU",
+   "Barbecue pork buns",
+   "nuts"
+  ],
+  [
+   "FND-NV-BARBECUEPORKBU",
+   "Barbecue pork buns",
+   "peanut"
+  ],
+  [
+   "FND-NV-BARBECUEPORKBU",
+   "Barbecue pork buns",
+   "sesame"
+  ],
+  [
+   "FND-NV-BARBECUEPORKBU",
+   "Barbecue pork buns",
+   "shellfish"
+  ],
+  [
+   "FND-V-BATTENBERGCAKE",
+   "Battenberg Cake",
+   "mustard"
+  ],
+  [
+   "FND-V-BATTENBERGCAKE",
+   "Battenberg Cake",
+   "peanut"
+  ],
+  [
+   "FND-V-BATTENBERGCAKE",
+   "Battenberg Cake",
+   "sesame"
+  ],
+  [
+   "FND-V-BEANSAUSAGEHOT",
+   "Bean & Sausage Hotpot",
+   "dairy"
+  ],
+  [
+   "FND-V-BEAVERTAILS",
+   "BeaverTails",
+   "mustard"
+  ],
+  [
+   "FND-V-BEAVERTAILS",
+   "BeaverTails",
+   "nuts"
+  ],
+  [
+   "FND-V-BEAVERTAILS",
+   "BeaverTails",
+   "peanut"
+  ],
+  [
+   "FND-V-BEAVERTAILS",
+   "BeaverTails",
+   "sesame"
+  ],
+  [
+   "FND-V-BEAVERTAILS",
+   "BeaverTails",
+   "soy"
+  ],
+  [
+   "FND-NV-BEEFANDMUSTARD",
+   "Beef and Mustard Pie",
+   "peanut"
+  ],
+  [
+   "FND-NV-BEEFANDOYSTERP",
+   "Beef and Oyster pie",
+   "peanut"
+  ],
+  [
+   "FND-NV-BEEFANDOYSTERP",
+   "Beef and Oyster pie",
+   "sesame"
+  ],
+  [
+   "FND-NV-BEEFASADO",
+   "Beef Asado",
+   "peanut"
+  ],
+  [
+   "FND-NV-BEEFCALDERETA",
+   "Beef Caldereta",
+   "dairy"
+  ],
+  [
+   "FND-NV-BEEFDUMPLINGST",
+   "Beef Dumpling Stew",
+   "peanut"
+  ],
+  [
+   "FND-NV-BEEFLOMEIN",
+   "Beef Lo Mein",
+   "dairy"
+  ],
+  [
+   "FND-NV-BEEFLOMEIN",
+   "Beef Lo Mein",
+   "fish"
+  ],
+  [
+   "FND-NV-BEEFLOMEIN",
+   "Beef Lo Mein",
+   "mustard"
+  ],
+  [
+   "FND-NV-BEEFLOMEIN",
+   "Beef Lo Mein",
+   "nuts"
+  ],
+  [
+   "FND-NV-BEEFLOMEIN",
+   "Beef Lo Mein",
+   "peanut"
+  ],
+  [
+   "FND-NV-BEEFPUMPKINSTE",
+   "Beef pumpkin Stew",
+   "peanut"
+  ],
+  [
+   "FND-NV-BEEFSUNDAYROAS",
+   "Beef Sunday Roast",
+   "nuts"
+  ],
+  [
+   "FND-NV-BEEFSUNDAYROAS",
+   "Beef Sunday Roast",
+   "sesame"
+  ],
+  [
+   "FND-NV-BEEFSUNDAYROAS",
+   "Beef Sunday Roast",
+   "soy"
+  ],
+  [
+   "FND-NV-BITTERBALLENDU",
+   "Bitterballen (Dutch meatballs)",
+   "peanut"
+  ],
+  [
+   "FND-NV-BITTERBALLENDU",
+   "Bitterballen (Dutch meatballs)",
+   "sesame"
+  ],
+  [
+   "FND-NV-BLACKBEANMEATS",
+   "Black bean & meat stew - feijoada",
+   "mustard"
+  ],
+  [
+   "FND-NV-BLACKBEANMEATS",
+   "Black bean & meat stew - feijoada",
+   "sesame"
+  ],
+  [
+   "FND-V-BLACKBERRYFOOL",
+   "Blackberry Fool",
+   "peanut"
+  ],
+  [
+   "FND-V-BOLITADIKESHI",
+   "Bolita di Keshi",
+   "gluten"
+  ],
+  [
+   "FND-V-BOLITADIKESHI",
+   "Bolita di Keshi",
+   "sesame"
+  ],
+  [
+   "FND-NV-BOXTYBREAKFAST",
+   "Boxty Breakfast",
+   "fish"
+  ],
+  [
+   "FND-NV-BOXTYBREAKFAST",
+   "Boxty Breakfast",
+   "mustard"
+  ],
+  [
+   "FND-NV-BOXTYBREAKFAST",
+   "Boxty Breakfast",
+   "nuts"
+  ],
+  [
+   "FND-NV-BOXTYBREAKFAST",
+   "Boxty Breakfast",
+   "peanut"
+  ],
+  [
+   "FND-NV-BOXTYBREAKFAST",
+   "Boxty Breakfast",
+   "sesame"
+  ],
+  [
+   "FND-NV-BOXTYBREAKFAST",
+   "Boxty Breakfast",
+   "shellfish"
+  ],
+  [
+   "FND-NV-BOXTYBREAKFAST",
+   "Boxty Breakfast",
+   "soy"
+  ],
+  [
+   "FND-V-BRAZILIANCARRO",
+   "Brazilian carrot cake",
+   "nuts"
+  ],
+  [
+   "FND-V-BRAZILIANCARRO",
+   "Brazilian carrot cake",
+   "sesame"
+  ],
+  [
+   "FND-V-BRAZILIANCARRO",
+   "Brazilian carrot cake",
+   "soy"
+  ],
+  [
+   "FND-V-BRAZILIANCHEES",
+   "Brazilian cheese bread (pão de queijo)",
+   "gluten"
+  ],
+  [
+   "FND-V-BRAZILIANCHEES",
+   "Brazilian cheese bread (pão de queijo)",
+   "mustard"
+  ],
+  [
+   "FND-V-BRAZILIANCHEES",
+   "Brazilian cheese bread (pão de queijo)",
+   "sesame"
+  ],
+  [
+   "FND-V-BREADANDBUTTER",
+   "Bread and Butter Pudding",
+   "nuts"
+  ],
+  [
+   "FND-V-BREADANDBUTTER",
+   "Bread and Butter Pudding",
+   "peanut"
+  ],
+  [
+   "FND-V-BREADANDBUTTER",
+   "Bread and Butter Pudding",
+   "sesame"
+  ],
+  [
+   "FND-V-BREADANDBUTTER",
+   "Bread and Butter Pudding",
+   "soy"
+  ],
+  [
+   "FND-NV-BREADEDSTEAKRE",
+   "Breaded Steak Recipe (Lomo de Res Apanado)",
+   "dairy"
+  ],
+  [
+   "FND-NV-BREADEDSTEAKRE",
+   "Breaded Steak Recipe (Lomo de Res Apanado)",
+   "mustard"
+  ],
+  [
+   "FND-NV-BREADEDSTEAKRE",
+   "Breaded Steak Recipe (Lomo de Res Apanado)",
+   "sesame"
+  ],
+  [
+   "FND-V-BREADFRUITINBU",
+   "Breadfruit in Butter Sauce",
+   "peanut"
+  ],
+  [
+   "FND-V-BRIEWRAPPEDINP",
+   "Brie wrapped in prosciutto & brioche",
+   "nuts"
+  ],
+  [
+   "FND-V-BRIEWRAPPEDINP",
+   "Brie wrapped in prosciutto & brioche",
+   "peanut"
+  ],
+  [
+   "FND-V-BRIEWRAPPEDINP",
+   "Brie wrapped in prosciutto & brioche",
+   "sesame"
+  ],
+  [
+   "FND-V-BRIEWRAPPEDINP",
+   "Brie wrapped in prosciutto & brioche",
+   "soy"
+  ],
+  [
+   "FND-V-BROCCOLISTILTO",
+   "Broccoli & Stilton soup",
+   "peanut"
+  ],
+  [
+   "FND-V-BROCCOLISTILTO",
+   "Broccoli & Stilton soup",
+   "sesame"
+  ],
+  [
+   "FND-NV-BROWNSTEWCHICK",
+   "Brown Stew Chicken",
+   "dairy"
+  ],
+  [
+   "FND-NV-BRYNDZOVHALUKY",
+   "Bryndzové Halušky",
+   "fish"
+  ],
+  [
+   "FND-NV-BRYNDZOVHALUKY",
+   "Bryndzové Halušky",
+   "mustard"
+  ],
+  [
+   "FND-NV-BRYNDZOVHALUKY",
+   "Bryndzové Halušky",
+   "nuts"
+  ],
+  [
+   "FND-NV-BRYNDZOVHALUKY",
+   "Bryndzové Halušky",
+   "peanut"
+  ],
+  [
+   "FND-NV-BRYNDZOVHALUKY",
+   "Bryndzové Halušky",
+   "sesame"
+  ],
+  [
+   "FND-NV-BRYNDZOVHALUKY",
+   "Bryndzové Halušky",
+   "shellfish"
+  ],
+  [
+   "FND-NV-BRYNDZOVHALUKY",
+   "Bryndzové Halušky",
+   "soy"
+  ],
+  [
+   "FND-V-BUDINODIRICOTT",
+   "Budino Di Ricotta",
+   "sesame"
+  ],
+  [
+   "FND-V-BULGARIANHONEY",
+   "Bulgarian Honey Cookies",
+   "sesame"
+  ],
+  [
+   "FND-V-CAFELALLAVEESP",
+   "CAFE LA LLAVE ESPRESSO ICE CREAM",
+   "nuts"
+  ],
+  [
+   "FND-V-CAFELALLAVEESP",
+   "CAFE LA LLAVE ESPRESSO ICE CREAM",
+   "soy"
+  ],
+  [
+   "FND-V-CAMBODIANWAFFL",
+   "Cambodian Waffles (Num Poum)",
+   "dairy"
+  ],
+  [
+   "FND-V-CAMBODIANWAFFL",
+   "Cambodian Waffles (Num Poum)",
+   "sesame"
+  ],
+  [
+   "FND-V-CANADIANBUTTER",
+   "Canadian Butter Tarts",
+   "mustard"
+  ],
+  [
+   "FND-V-CANADIANBUTTER",
+   "Canadian Butter Tarts",
+   "peanut"
+  ],
+  [
+   "FND-V-CANADIANBUTTER",
+   "Canadian Butter Tarts",
+   "sesame"
+  ],
+  [
+   "FND-V-CARROTANDBEANF",
+   "Carrot and Bean Fritters",
+   "mustard"
+  ],
+  [
+   "FND-V-CARROTANDBEANF",
+   "Carrot and Bean Fritters",
+   "sesame"
+  ],
+  [
+   "FND-V-CARROTCAKE",
+   "Carrot Cake",
+   "peanut"
+  ],
+  [
+   "FND-V-CARROTCAKE",
+   "Carrot Cake",
+   "sesame"
+  ],
+  [
+   "FND-V-CASSAVABREAD",
+   "Cassava bread",
+   "gluten"
+  ],
+  [
+   "FND-V-CASSAVACAKE",
+   "Cassava Cake",
+   "dairy"
+  ],
+  [
+   "FND-E-CAYMANSTYLEPOT",
+   "Cayman Style Potato Salad",
+   "dairy"
+  ],
+  [
+   "FND-E-CAYMANSTYLEPOT",
+   "Cayman Style Potato Salad",
+   "gluten"
+  ],
+  [
+   "FND-E-CAYMANSTYLEPOT",
+   "Cayman Style Potato Salad",
+   "sesame"
+  ],
+  [
+   "FND-V-CHAKCHOUKA",
+   "Chakchouka",
+   "dairy"
+  ],
+  [
+   "FND-V-CHAKCHOUKA",
+   "Chakchouka",
+   "gluten"
+  ],
+  [
+   "FND-V-CHAKCHOUKA",
+   "Chakchouka",
+   "sesame"
+  ],
+  [
+   "FND-V-CHELSEABUNS",
+   "Chelsea Buns",
+   "nuts"
+  ],
+  [
+   "FND-V-CHELSEABUNS",
+   "Chelsea Buns",
+   "peanut"
+  ],
+  [
+   "FND-V-CHELSEABUNS",
+   "Chelsea Buns",
+   "sesame"
+  ],
+  [
+   "FND-V-CHELSEABUNS",
+   "Chelsea Buns",
+   "soy"
+  ],
+  [
+   "FND-NV-CHICKENCHORIZO",
+   "Chicken & chorizo rice pot",
+   "mustard"
+  ],
+  [
+   "FND-NV-CHICKENCHORIZO",
+   "Chicken & chorizo rice pot",
+   "sesame"
+  ],
+  [
+   "FND-NV-CHICKENMUSHROO",
+   "Chicken & mushroom Hotpot",
+   "peanut"
+  ],
+  [
+   "FND-NV-CHICKENALFREDO",
+   "Chicken Alfredo Primavera",
+   "nuts"
+  ],
+  [
+   "FND-NV-CHICKENALFREDO",
+   "Chicken Alfredo Primavera",
+   "peanut"
+  ],
+  [
+   "FND-NV-CHICKENALFREDO",
+   "Chicken Alfredo Primavera",
+   "soy"
+  ],
+  [
+   "FND-NV-CHICKENBASQUAI",
+   "Chicken Basquaise",
+   "peanut"
+  ],
+  [
+   "FND-NV-CHICKENHAMANDL",
+   "Chicken Ham and Leek Pie",
+   "nuts"
+  ],
+  [
+   "FND-NV-CHICKENHAMANDL",
+   "Chicken Ham and Leek Pie",
+   "peanut"
+  ],
+  [
+   "FND-NV-CHICKENHAMANDL",
+   "Chicken Ham and Leek Pie",
+   "soy"
+  ],
+  [
+   "FND-NV-CHICKENLIVERPA",
+   "Chicken Liver Pate Recipe",
+   "nuts"
+  ],
+  [
+   "FND-NV-CHICKENLIVERPA",
+   "Chicken Liver Pate Recipe",
+   "soy"
+  ],
+  [
+   "FND-NV-CHICKENMANDI",
+   "Chicken Mandi",
+   "mustard"
+  ],
+  [
+   "FND-NV-CHICKENMANDI",
+   "Chicken Mandi",
+   "sesame"
+  ],
+  [
+   "FND-NV-CHICKENPARMENT",
+   "Chicken Parmentier",
+   "peanut"
+  ],
+  [
+   "FND-NV-CHICKENWITHSAF",
+   "Chicken with saffron, raisins & pine nuts",
+   "mustard"
+  ],
+  [
+   "FND-V-CHICKPEAFAJITA",
+   "Chickpea Fajitas",
+   "sesame"
+  ],
+  [
+   "FND-V-CHILEANDOBLADI",
+   "Chilean Dobladitas",
+   "nuts"
+  ],
+  [
+   "FND-V-CHILEANDOBLADI",
+   "Chilean Dobladitas",
+   "soy"
+  ],
+  [
+   "FND-V-CHINONAPPLETAR",
+   "Chinon Apple Tarts",
+   "mustard"
+  ],
+  [
+   "FND-NV-CHIVITOSANDWIC",
+   "Chivito sandwich",
+   "fish"
+  ],
+  [
+   "FND-NV-CHIVITOSANDWIC",
+   "Chivito sandwich",
+   "nuts"
+  ],
+  [
+   "FND-NV-CHIVITOSANDWIC",
+   "Chivito sandwich",
+   "peanut"
+  ],
+  [
+   "FND-NV-CHIVITOSANDWIC",
+   "Chivito sandwich",
+   "shellfish"
+  ],
+  [
+   "FND-NV-CHIVITOSANDWIC",
+   "Chivito sandwich",
+   "soy"
+  ],
+  [
+   "FND-NV-CHIVITOURUGUAY",
+   "Chivito uruguayo",
+   "fish"
+  ],
+  [
+   "FND-NV-CHIVITOURUGUAY",
+   "Chivito uruguayo",
+   "mustard"
+  ],
+  [
+   "FND-NV-CHIVITOURUGUAY",
+   "Chivito uruguayo",
+   "nuts"
+  ],
+  [
+   "FND-NV-CHIVITOURUGUAY",
+   "Chivito uruguayo",
+   "peanut"
+  ],
+  [
+   "FND-NV-CHIVITOURUGUAY",
+   "Chivito uruguayo",
+   "sesame"
+  ],
+  [
+   "FND-NV-CHIVITOURUGUAY",
+   "Chivito uruguayo",
+   "shellfish"
+  ],
+  [
+   "FND-NV-CHIVITOURUGUAY",
+   "Chivito uruguayo",
+   "soy"
+  ],
+  [
+   "FND-V-CHOCCHIPPECANP",
+   "Choc Chip Pecan Pie",
+   "peanut"
+  ],
+  [
+   "FND-V-CHOCCHIPPECANP",
+   "Choc Chip Pecan Pie",
+   "sesame"
+  ],
+  [
+   "FND-V-CHOCOLATECARAM",
+   "Chocolate Caramel Crispy",
+   "peanut"
+  ],
+  [
+   "FND-V-CHOCOLATECHURR",
+   "Chocolate churros with chocolate & salted caramel sauce",
+   "peanut"
+  ],
+  [
+   "FND-V-CHOCOLATEGATEA",
+   "Chocolate Gateau",
+   "nuts"
+  ],
+  [
+   "FND-V-CHOCOLATEGATEA",
+   "Chocolate Gateau",
+   "peanut"
+  ],
+  [
+   "FND-V-CHOCOLATEGATEA",
+   "Chocolate Gateau",
+   "sesame"
+  ],
+  [
+   "FND-V-CHOCOLATEGATEA",
+   "Chocolate Gateau",
+   "soy"
+  ],
+  [
+   "FND-V-CHOCOLATERASPB",
+   "Chocolate Raspberry Brownies",
+   "sesame"
+  ],
+  [
+   "FND-V-CHOCOLATESOUFF",
+   "Chocolate Souffle",
+   "peanut"
+  ],
+  [
+   "FND-V-CHORREADAS",
+   "Chorreadas",
+   "nuts"
+  ],
+  [
+   "FND-V-CHORREADAS",
+   "Chorreadas",
+   "peanut"
+  ],
+  [
+   "FND-V-CHORREADAS",
+   "Chorreadas",
+   "sesame"
+  ],
+  [
+   "FND-V-CHORREADAS",
+   "Chorreadas",
+   "soy"
+  ],
+  [
+   "FND-V-CHRISTMASCAKE",
+   "Christmas cake",
+   "mustard"
+  ],
+  [
+   "FND-V-CHRISTMASCAKE",
+   "Christmas cake",
+   "peanut"
+  ],
+  [
+   "FND-V-CHRISTMASCAKE",
+   "Christmas cake",
+   "sesame"
+  ],
+  [
+   "FND-V-CHURROS",
+   "Churros",
+   "nuts"
+  ],
+  [
+   "FND-V-CHURROS",
+   "Churros",
+   "peanut"
+  ],
+  [
+   "FND-V-CHURROS",
+   "Churros",
+   "soy"
+  ],
+  [
+   "FND-V-CLAMCHORIZOWHI",
+   "Clam, chorizo & white bean stew",
+   "dairy"
+  ],
+  [
+   "FND-V-CLASSICCHRISTM",
+   "Classic Christmas pudding",
+   "mustard"
+  ],
+  [
+   "FND-V-CLASSICCHRISTM",
+   "Classic Christmas pudding",
+   "peanut"
+  ],
+  [
+   "FND-V-CLASSICCHRISTM",
+   "Classic Christmas pudding",
+   "sesame"
+  ],
+  [
+   "FND-V-COCONUTNATILLA",
+   "Coconut Natilla Recipe",
+   "nuts"
+  ],
+  [
+   "FND-V-COCONUTNATILLA",
+   "Coconut Natilla Recipe",
+   "peanut"
+  ],
+  [
+   "FND-V-COCONUTNATILLA",
+   "Coconut Natilla Recipe",
+   "soy"
+  ],
+  [
+   "FND-V-COCONUTQUINDIM",
+   "Coconut quindim",
+   "peanut"
+  ],
+  [
+   "FND-NV-CODDLEDPORKWIT",
+   "Coddled pork with cider",
+   "peanut"
+  ],
+  [
+   "FND-E-CODFISHDEVILED",
+   "Codfish deviled eggs",
+   "dairy"
+  ],
+  [
+   "FND-E-CODFISHDEVILED",
+   "Codfish deviled eggs",
+   "gluten"
+  ],
+  [
+   "FND-E-CODFISHDEVILED",
+   "Codfish deviled eggs",
+   "sesame"
+  ],
+  [
+   "FND-V-CORBA",
+   "Corba",
+   "sesame"
+  ],
+  [
+   "FND-V-CORNONTHECOBWI",
+   "Corn on the cob with lime, green chilli and coconut butter",
+   "peanut"
+  ],
+  [
+   "FND-V-CREMACATALANA",
+   "Crema Catalana",
+   "gluten"
+  ],
+  [
+   "FND-V-CREMACATALANA",
+   "Crema Catalana",
+   "nuts"
+  ],
+  [
+   "FND-V-CREMACATALANA",
+   "Crema Catalana",
+   "soy"
+  ],
+  [
+   "FND-V-CRISPYEGGPLANT",
+   "Crispy Eggplant",
+   "dairy"
+  ],
+  [
+   "FND-V-CURRIEDSPINACH",
+   "Curried Spinach from Botswana",
+   "mustard"
+  ],
+  [
+   "FND-V-CURRIEDSPINACH",
+   "Curried Spinach from Botswana",
+   "sesame"
+  ],
+  [
+   "FND-V-DANISHRYEBREAD",
+   "Danish Rye Bread",
+   "mustard"
+  ],
+  [
+   "FND-V-DANISHRYEBREAD",
+   "Danish Rye Bread",
+   "sesame"
+  ],
+  [
+   "FND-V-DOMINICASCOCON",
+   "Dominica’s coconut rough cake",
+   "dairy"
+  ],
+  [
+   "FND-V-DOMINICASCOCON",
+   "Dominica’s coconut rough cake",
+   "mustard"
+  ],
+  [
+   "FND-V-DOMINICANBAKES",
+   "Dominican Bakes",
+   "nuts"
+  ],
+  [
+   "FND-V-DOMINICANBAKES",
+   "Dominican Bakes",
+   "peanut"
+  ],
+  [
+   "FND-V-DOMINICANBAKES",
+   "Dominican Bakes",
+   "soy"
+  ],
+  [
+   "FND-V-DULCEDELECHE",
+   "Dulce de Leche",
+   "nuts"
+  ],
+  [
+   "FND-V-DULCEDELECHE",
+   "Dulce de Leche",
+   "soy"
+  ],
+  [
+   "FND-V-DULCEDELECHECH",
+   "Dulce de Leche Cheesecake with a Maria Cookie Crust.",
+   "sesame"
+  ],
+  [
+   "FND-V-DUNDEECAKE",
+   "Dundee cake",
+   "peanut"
+  ],
+  [
+   "FND-V-DUNDEECAKE",
+   "Dundee cake",
+   "sesame"
+  ],
+  [
+   "FND-V-DUNDEECAKE",
+   "Dundee cake",
+   "soy"
+  ],
+  [
+   "FND-V-DUTCHAPPLEPIE",
+   "Dutch Apple Pie",
+   "mustard"
+  ],
+  [
+   "FND-V-DUTCHAPPLEPIE",
+   "Dutch Apple Pie",
+   "peanut"
+  ],
+  [
+   "FND-V-DUTCHDOUGHNUTS",
+   "Dutch doughnuts",
+   "nuts"
+  ],
+  [
+   "FND-V-DUTCHDOUGHNUTS",
+   "Dutch doughnuts",
+   "soy"
+  ],
+  [
+   "FND-V-DUTCHPOFFERTJE",
+   "Dutch poffertjes (mini pancakes)",
+   "nuts"
+  ],
+  [
+   "FND-V-DUTCHPOFFERTJE",
+   "Dutch poffertjes (mini pancakes)",
+   "peanut"
+  ],
+  [
+   "FND-V-DUTCHPOFFERTJE",
+   "Dutch poffertjes (mini pancakes)",
+   "sesame"
+  ],
+  [
+   "FND-V-DUTCHPOFFERTJE",
+   "Dutch poffertjes (mini pancakes)",
+   "soy"
+  ],
+  [
+   "FND-V-DUTCHSPICEDBRE",
+   "Dutch Spiced Breakfast Cake (Ontbijtkoek)",
+   "mustard"
+  ],
+  [
+   "FND-V-DUTCHSPICEDBRE",
+   "Dutch Spiced Breakfast Cake (Ontbijtkoek)",
+   "nuts"
+  ],
+  [
+   "FND-V-DUTCHSPICEDBRE",
+   "Dutch Spiced Breakfast Cake (Ontbijtkoek)",
+   "soy"
+  ],
+  [
+   "FND-V-ECCLESCAKES",
+   "Eccles Cakes",
+   "peanut"
+  ],
+  [
+   "FND-V-ECCLESCAKES",
+   "Eccles Cakes",
+   "sesame"
+  ],
+  [
+   "FND-NV-EGGFOOYOUNG",
+   "Egg Foo Young",
+   "dairy"
+  ],
+  [
+   "FND-NV-EGGFOOYOUNG",
+   "Egg Foo Young",
+   "fish"
+  ],
+  [
+   "FND-NV-EGGFOOYOUNG",
+   "Egg Foo Young",
+   "mustard"
+  ],
+  [
+   "FND-NV-EGGFOOYOUNG",
+   "Egg Foo Young",
+   "nuts"
+  ],
+  [
+   "FND-NV-EGGFOOYOUNG",
+   "Egg Foo Young",
+   "peanut"
+  ],
+  [
+   "FND-NV-EGGFOOYOUNG",
+   "Egg Foo Young",
+   "sesame"
+  ],
+  [
+   "FND-NV-EGYPTIANFATTEH",
+   "Egyptian Fatteh",
+   "peanut"
+  ],
+  [
+   "FND-NV-ENGLISHBREAKFA",
+   "English Breakfast",
+   "dairy"
+  ],
+  [
+   "FND-NV-ENGLISHBREAKFA",
+   "English Breakfast",
+   "sesame"
+  ],
+  [
+   "FND-V-FAIN",
+   "Fainá",
+   "gluten"
+  ],
+  [
+   "FND-V-FENNELDAUPHINO",
+   "Fennel Dauphinoise",
+   "nuts"
+  ],
+  [
+   "FND-V-FENNELDAUPHINO",
+   "Fennel Dauphinoise",
+   "peanut"
+  ],
+  [
+   "FND-V-FENNELDAUPHINO",
+   "Fennel Dauphinoise",
+   "soy"
+  ],
+  [
+   "FND-V-FETTUCINEALFRE",
+   "Fettucine alfredo",
+   "peanut"
+  ],
+  [
+   "FND-V-FIGGYDUFF",
+   "Figgy Duff",
+   "mustard"
+  ],
+  [
+   "FND-V-FISHFOFOS",
+   "Fish fofos",
+   "dairy"
+  ],
+  [
+   "FND-V-FISHFOFOS",
+   "Fish fofos",
+   "sesame"
+  ],
+  [
+   "FND-NV-FISKESUPPECREA",
+   "Fiskesuppe (Creamy Norwegian Fish Soup)",
+   "mustard"
+  ],
+  [
+   "FND-NV-FISKESUPPECREA",
+   "Fiskesuppe (Creamy Norwegian Fish Soup)",
+   "nuts"
+  ],
+  [
+   "FND-NV-FISKESUPPECREA",
+   "Fiskesuppe (Creamy Norwegian Fish Soup)",
+   "peanut"
+  ],
+  [
+   "FND-NV-FISKESUPPECREA",
+   "Fiskesuppe (Creamy Norwegian Fish Soup)",
+   "soy"
+  ],
+  [
+   "FND-V-FRENCHLENTILSW",
+   "French Lentils With Garlic and Thyme",
+   "sesame"
+  ],
+  [
+   "FND-V-FRENCHOMELETTE",
+   "French Omelette",
+   "gluten"
+  ],
+  [
+   "FND-V-FRENCHOMELETTE",
+   "French Omelette",
+   "peanut"
+  ],
+  [
+   "FND-V-FRENCHOMELETTE",
+   "French Omelette",
+   "sesame"
+  ],
+  [
+   "FND-V-FRIEDCOCOYBANA",
+   "Fried cocoy banana",
+   "dairy"
+  ],
+  [
+   "FND-V-FRIEDCOCOYBANA",
+   "Fried cocoy banana",
+   "sesame"
+  ],
+  [
+   "FND-V-FROGLEGSRECIPE",
+   "Frog Legs Recipe in Garlic Butter",
+   "nuts"
+  ],
+  [
+   "FND-V-FROGLEGSRECIPE",
+   "Frog Legs Recipe in Garlic Butter",
+   "peanut"
+  ],
+  [
+   "FND-V-FROGLEGSRECIPE",
+   "Frog Legs Recipe in Garlic Butter",
+   "soy"
+  ],
+  [
+   "FND-V-GRILLEDEGGPLAN",
+   "Grilled eggplant with coconut milk",
+   "dairy"
+  ],
+  [
+   "FND-V-GRILLEDEGGPLAN",
+   "Grilled eggplant with coconut milk",
+   "egg"
+  ],
+  [
+   "FND-V-GRILLEDMACANDC",
+   "Grilled Mac and Cheese Sandwich",
+   "peanut"
+  ],
+  [
+   "FND-V-HAFTMEWARECIPE",
+   "Haft Mewa Recipe",
+   "mustard"
+  ],
+  [
+   "FND-NV-HAMHOCKCOLCANN",
+   "Ham hock colcannon",
+   "gluten"
+  ],
+  [
+   "FND-NV-HAMHOCKCOLCANN",
+   "Ham hock colcannon",
+   "peanut"
+  ],
+  [
+   "FND-NV-HAMHOCKCOLCANN",
+   "Ham hock colcannon",
+   "sesame"
+  ],
+  [
+   "FND-V-HODGEPODGE",
+   "Hodge Podge",
+   "nuts"
+  ],
+  [
+   "FND-V-HODGEPODGE",
+   "Hodge Podge",
+   "peanut"
+  ],
+  [
+   "FND-V-HODGEPODGE",
+   "Hodge Podge",
+   "soy"
+  ],
+  [
+   "FND-V-HOMEMADEMANDAZ",
+   "Home-made Mandazi",
+   "mustard"
+  ],
+  [
+   "FND-V-HOMEMADEMANDAZ",
+   "Home-made Mandazi",
+   "nuts"
+  ],
+  [
+   "FND-V-HOMEMADEMANDAZ",
+   "Home-made Mandazi",
+   "sesame"
+  ],
+  [
+   "FND-V-HOMEMADEMANDAZ",
+   "Home-made Mandazi",
+   "soy"
+  ],
+  [
+   "FND-V-HONEYYOGURTCHE",
+   "Honey Yogurt Cheesecake",
+   "peanut"
+  ],
+  [
+   "FND-V-HONEYYOGURTCHE",
+   "Honey Yogurt Cheesecake",
+   "sesame"
+  ],
+  [
+   "FND-V-JAMROLYPOLY",
+   "Jam Roly-Poly",
+   "mustard"
+  ],
+  [
+   "FND-V-JAMROLYPOLY",
+   "Jam Roly-Poly",
+   "nuts"
+  ],
+  [
+   "FND-V-JAMROLYPOLY",
+   "Jam Roly-Poly",
+   "peanut"
+  ],
+  [
+   "FND-V-JAMROLYPOLY",
+   "Jam Roly-Poly",
+   "soy"
+  ],
+  [
+   "FND-V-JAMAICANBANANA",
+   "Jamaican Banana Fritters",
+   "mustard"
+  ],
+  [
+   "FND-V-JAMAICANBANANA",
+   "Jamaican Banana Fritters",
+   "sesame"
+  ],
+  [
+   "FND-V-JAMAICANCURRYG",
+   "Jamaican Curry Goat",
+   "mustard"
+  ],
+  [
+   "FND-V-JAMAICANCURRYG",
+   "Jamaican Curry Goat",
+   "sesame"
+  ],
+  [
+   "FND-V-JAMAICANFESTIV",
+   "Jamaican Festival (Sweet Dumpling)",
+   "mustard"
+  ],
+  [
+   "FND-V-JAMAICANFESTIV",
+   "Jamaican Festival (Sweet Dumpling)",
+   "nuts"
+  ],
+  [
+   "FND-V-JAMAICANFESTIV",
+   "Jamaican Festival (Sweet Dumpling)",
+   "sesame"
+  ],
+  [
+   "FND-V-JAMAICANFESTIV",
+   "Jamaican Festival (Sweet Dumpling)",
+   "soy"
+  ],
+  [
+   "FND-V-JAMAICANFRIEDD",
+   "Jamaican Fried Dumplings",
+   "mustard"
+  ],
+  [
+   "FND-V-JAMAICANFRIEDD",
+   "Jamaican Fried Dumplings",
+   "nuts"
+  ],
+  [
+   "FND-V-JAMAICANFRIEDD",
+   "Jamaican Fried Dumplings",
+   "sesame"
+  ],
+  [
+   "FND-V-JAMAICANFRIEDD",
+   "Jamaican Fried Dumplings",
+   "soy"
+  ],
+  [
+   "FND-V-JAMAICANINSTAN",
+   "Jamaican Instant Pot Rice and Beans",
+   "dairy"
+  ],
+  [
+   "FND-V-JAMAICANRICEAN",
+   "Jamaican Rice and Peas",
+   "dairy"
+  ],
+  [
+   "FND-V-JAMAICANSWEETP",
+   "Jamaican Sweet Potato Pudding",
+   "dairy"
+  ],
+  [
+   "FND-V-JAMAICANSWEETP",
+   "Jamaican Sweet Potato Pudding",
+   "mustard"
+  ],
+  [
+   "FND-NV-JAPANESEKATSUD",
+   "Japanese Katsudon",
+   "dairy"
+  ],
+  [
+   "FND-NV-JAPANESEKATSUD",
+   "Japanese Katsudon",
+   "sesame"
+  ],
+  [
+   "FND-NV-JIGGSDINNER",
+   "Jiggs Dinner",
+   "peanut"
+  ],
+  [
+   "FND-NV-KABSE",
+   "kabse",
+   "mustard"
+  ],
+  [
+   "FND-V-KADUBORANI",
+   "Kadu Borani",
+   "mustard"
+  ],
+  [
+   "FND-V-KADUBORANI",
+   "Kadu Borani",
+   "sesame"
+  ],
+  [
+   "FND-V-KAFTEJI",
+   "Kafteji",
+   "dairy"
+  ],
+  [
+   "FND-V-KAFTEJI",
+   "Kafteji",
+   "gluten"
+  ],
+  [
+   "FND-V-KAFTEJI",
+   "Kafteji",
+   "sesame"
+  ],
+  [
+   "FND-V-KASPRESSKNDELC",
+   "Kaspressknödel - Cheese Dumplings",
+   "nuts"
+  ],
+  [
+   "FND-V-KASPRESSKNDELC",
+   "Kaspressknödel - Cheese Dumplings",
+   "peanut"
+  ],
+  [
+   "FND-V-KASPRESSKNDELC",
+   "Kaspressknödel - Cheese Dumplings",
+   "sesame"
+  ],
+  [
+   "FND-V-KASPRESSKNDELC",
+   "Kaspressknödel - Cheese Dumplings",
+   "soy"
+  ],
+  [
+   "FND-NV-KELEYAZAARA",
+   "Keleya Zaara",
+   "peanut"
+  ],
+  [
+   "FND-NV-KENTUCKYFRIEDC",
+   "Kentucky Fried Chicken",
+   "mustard"
+  ],
+  [
+   "FND-NV-KENTUCKYFRIEDC",
+   "Kentucky Fried Chicken",
+   "sesame"
+  ],
+  [
+   "FND-V-KENYANBEEFCURR",
+   "Kenyan Beef Curry",
+   "mustard"
+  ],
+  [
+   "FND-V-KENYANBEEFCURR",
+   "Kenyan Beef Curry",
+   "sesame"
+  ],
+  [
+   "FND-V-KETOBANITSA",
+   "Keto Banitsa",
+   "gluten"
+  ],
+  [
+   "FND-V-KEYLIMEPIE",
+   "Key Lime Pie",
+   "peanut"
+  ],
+  [
+   "FND-V-KNAFEH",
+   "Knafeh",
+   "soy"
+  ],
+  [
+   "FND-V-KRISPYKREMEDON",
+   "Krispy Kreme Donut",
+   "nuts"
+  ],
+  [
+   "FND-V-KRISPYKREMEDON",
+   "Krispy Kreme Donut",
+   "peanut"
+  ],
+  [
+   "FND-V-KRISPYKREMEDON",
+   "Krispy Kreme Donut",
+   "sesame"
+  ],
+  [
+   "FND-V-KRISPYKREMEDON",
+   "Krispy Kreme Donut",
+   "soy"
+  ],
+  [
+   "FND-V-KUMPIR",
+   "Kumpir",
+   "peanut"
+  ],
+  [
+   "FND-V-KVFJORDCAKEVER",
+   "Kvæfjord Cake “Verdens Beste” (World’s Best Cake)",
+   "peanut"
+  ],
+  [
+   "FND-V-KVFJORDCAKEVER",
+   "Kvæfjord Cake “Verdens Beste” (World’s Best Cake)",
+   "soy"
+  ],
+  [
+   "FND-V-LAKRORMEKUNGUL",
+   "Lakror me Kungull Summer Squash Pie",
+   "dairy"
+  ],
+  [
+   "FND-V-LAKRORMEKUNGUL",
+   "Lakror me Kungull Summer Squash Pie",
+   "sesame"
+  ],
+  [
+   "FND-NV-LAMBPILAFPLOV",
+   "Lamb Pilaf (Plov)",
+   "peanut"
+  ],
+  [
+   "FND-NV-LANCASHIREHOTP",
+   "Lancashire hotpot",
+   "peanut"
+  ],
+  [
+   "FND-V-LAOSPLANTAINCO",
+   "Laos Plantain Coconut Bake (Flourless Muffin)",
+   "dairy"
+  ],
+  [
+   "FND-NV-LASAGNASANDWIC",
+   "Lasagna Sandwiches",
+   "peanut"
+  ],
+  [
+   "FND-NV-LASAGNE",
+   "Lasagne",
+   "mustard"
+  ],
+  [
+   "FND-V-LAYEREDMANGOCU",
+   "Layered mango custard",
+   "nuts"
+  ],
+  [
+   "FND-V-LAYEREDMANGOCU",
+   "Layered mango custard",
+   "soy"
+  ],
+  [
+   "FND-V-LECHEASADA",
+   "Leche Asada",
+   "gluten"
+  ],
+  [
+   "FND-V-LECHEASADA",
+   "Leche Asada",
+   "nuts"
+  ],
+  [
+   "FND-V-LECHEASADA",
+   "Leche Asada",
+   "sesame"
+  ],
+  [
+   "FND-V-LECHEASADA",
+   "Leche Asada",
+   "soy"
+  ],
+  [
+   "FND-NV-LIEGEOISESALAD",
+   "Liegeoise Salad",
+   "dairy"
+  ],
+  [
+   "FND-NV-LIEGEOISESALAD",
+   "Liegeoise Salad",
+   "gluten"
+  ],
+  [
+   "FND-NV-LIEGEOISESALAD",
+   "Liegeoise Salad",
+   "sesame"
+  ],
+  [
+   "FND-V-MACARONIPUDDIN",
+   "Macaroni Pudding",
+   "mustard"
+  ],
+  [
+   "FND-V-MACARONIPUDDIN",
+   "Macaroni Pudding",
+   "peanut"
+  ],
+  [
+   "FND-V-MACARONIPUDDIN",
+   "Macaroni Pudding",
+   "sesame"
+  ],
+  [
+   "FND-V-MADEIRACAKE",
+   "Madeira Cake",
+   "mustard"
+  ],
+  [
+   "FND-V-MADEIRACAKE",
+   "Madeira Cake",
+   "nuts"
+  ],
+  [
+   "FND-V-MADEIRACAKE",
+   "Madeira Cake",
+   "peanut"
+  ],
+  [
+   "FND-V-MADEIRACAKE",
+   "Madeira Cake",
+   "sesame"
+  ],
+  [
+   "FND-V-MADEIRACAKE",
+   "Madeira Cake",
+   "soy"
+  ],
+  [
+   "FND-V-MAMOULEIDBISCU",
+   "Mamoul (Eid biscuits)",
+   "nuts"
+  ],
+  [
+   "FND-V-MAMOULEIDBISCU",
+   "Mamoul (Eid biscuits)",
+   "soy"
+  ],
+  [
+   "FND-V-MANJARDULCEDEL",
+   "Manjar (Dulce de Leche)",
+   "nuts"
+  ],
+  [
+   "FND-V-MANJARDULCEDEL",
+   "Manjar (Dulce de Leche)",
+   "soy"
+  ],
+  [
+   "FND-NV-MANTUAFGHANDUM",
+   "Mantu Afghan Dumpling",
+   "mustard"
+  ],
+  [
+   "FND-NV-MASSAMANBEEFCU",
+   "Massaman Beef curry",
+   "dairy"
+  ],
+  [
+   "FND-V-MBUZICHOMAROAS",
+   "Mbuzi Choma (Roasted Goat)",
+   "gluten"
+  ],
+  [
+   "FND-V-MUSHROOMSOUPWI",
+   "Mushroom soup with buckwheat",
+   "gluten"
+  ],
+  [
+   "FND-V-MUSTARDCHAMP",
+   "Mustard champ",
+   "nuts"
+  ],
+  [
+   "FND-V-MUSTARDCHAMP",
+   "Mustard champ",
+   "peanut"
+  ],
+  [
+   "FND-V-MUSTARDCHAMP",
+   "Mustard champ",
+   "soy"
+  ],
+  [
+   "FND-V-NEWYORKCHEESEC",
+   "New York cheesecake",
+   "peanut"
+  ],
+  [
+   "FND-V-NEWYORKCHEESEC",
+   "New York cheesecake",
+   "sesame"
+  ],
+  [
+   "FND-V-NOCHURNRUMRAIS",
+   "No-Churn Rum Raisin Ice Cream",
+   "mustard"
+  ],
+  [
+   "FND-V-NORDICSMRREBRD",
+   "Nordic smørrebrød with asparagus and horseradish cream",
+   "mustard"
+  ],
+  [
+   "FND-V-NORDICSMRREBRD",
+   "Nordic smørrebrød with asparagus and horseradish cream",
+   "peanut"
+  ],
+  [
+   "FND-V-NORWEGIANPOTAT",
+   "Norwegian Potato Lefse",
+   "peanut"
+  ],
+  [
+   "FND-V-NUMANSOMSTICKY",
+   "Num Ansom – Sticky Rice Cake",
+   "dairy"
+  ],
+  [
+   "FND-V-NUMESTICKYRICE",
+   "Num E (Sticky Rice Balls in Sugar Syrup and Coconut Cream)",
+   "dairy"
+  ],
+  [
+   "FND-V-NUMESTICKYRICE",
+   "Num E (Sticky Rice Balls in Sugar Syrup and Coconut Cream)",
+   "gluten"
+  ],
+  [
+   "FND-V-OLDFASHIONEDDA",
+   "Old-fashioned Danish Apple Trifle",
+   "peanut"
+  ],
+  [
+   "FND-V-OYSTERMUSHROOM",
+   "Oyster Mushroom Soup",
+   "nuts"
+  ],
+  [
+   "FND-V-OYSTERMUSHROOM",
+   "Oyster Mushroom Soup",
+   "peanut"
+  ],
+  [
+   "FND-V-OYSTERMUSHROOM",
+   "Oyster Mushroom Soup",
+   "soy"
+  ],
+  [
+   "FND-V-PANDEYUCCA",
+   "Pan De Yucca",
+   "peanut"
+  ],
+  [
+   "FND-V-PANDEYUCCA",
+   "Pan De Yucca",
+   "sesame"
+  ],
+  [
+   "FND-V-PANCAKES",
+   "Pancakes",
+   "nuts"
+  ],
+  [
+   "FND-V-PANCAKES",
+   "Pancakes",
+   "sesame"
+  ],
+  [
+   "FND-V-PANCAKES",
+   "Pancakes",
+   "soy"
+  ],
+  [
+   "FND-NV-PASTELDECHOCLO",
+   "Pastel de Choclo",
+   "gluten"
+  ],
+  [
+   "FND-NV-PASTELDECHOCLO",
+   "Pastel de Choclo",
+   "mustard"
+  ],
+  [
+   "FND-NV-PASTELDECHOCLO",
+   "Pastel de Choclo",
+   "nuts"
+  ],
+  [
+   "FND-NV-PASTELDECHOCLO",
+   "Pastel de Choclo",
+   "peanut"
+  ],
+  [
+   "FND-NV-PASTELDECHOCLO",
+   "Pastel de Choclo",
+   "sesame"
+  ],
+  [
+   "FND-NV-PASTELDECHOCLO",
+   "Pastel de Choclo",
+   "soy"
+  ],
+  [
+   "FND-V-PEACHBLUEBERRY",
+   "Peach & Blueberry Grunt",
+   "mustard"
+  ],
+  [
+   "FND-V-PEACHBLUEBERRY",
+   "Peach & Blueberry Grunt",
+   "nuts"
+  ],
+  [
+   "FND-V-PEACHBLUEBERRY",
+   "Peach & Blueberry Grunt",
+   "peanut"
+  ],
+  [
+   "FND-V-PEACHBLUEBERRY",
+   "Peach & Blueberry Grunt",
+   "soy"
+  ],
+  [
+   "FND-V-PEANUTBUTTERCH",
+   "Peanut Butter Cheesecake",
+   "nuts"
+  ],
+  [
+   "FND-V-PEANUTBUTTERCH",
+   "Peanut Butter Cheesecake",
+   "soy"
+  ],
+  [
+   "FND-V-PEARTARTETATIN",
+   "Pear Tarte Tatin",
+   "peanut"
+  ],
+  [
+   "FND-V-PHAPHATHAFLATB",
+   "Phaphatha Flatbreads",
+   "nuts"
+  ],
+  [
+   "FND-V-PHAPHATHAFLATB",
+   "Phaphatha Flatbreads",
+   "soy"
+  ],
+  [
+   "FND-V-PIEROGIPOLISHD",
+   "Pierogi (Polish Dumplings)",
+   "peanut"
+  ],
+  [
+   "FND-V-PIEROGIPOLISHD",
+   "Pierogi (Polish Dumplings)",
+   "sesame"
+  ],
+  [
+   "FND-NV-PIRIPIRICHICKE",
+   "Piri-piri chicken and slaw",
+   "sesame"
+  ],
+  [
+   "FND-V-PISTACHIOKUNAF",
+   "Pistachio Kunafa Chocolate Cake and Cupcakes",
+   "soy"
+  ],
+  [
+   "FND-V-POLISHDOUGHNUT",
+   "Polish doughnuts (Pączki)",
+   "mustard"
+  ],
+  [
+   "FND-V-POLISHDOUGHNUT",
+   "Polish doughnuts (Pączki)",
+   "peanut"
+  ],
+  [
+   "FND-V-POLISHDOUGHNUT",
+   "Polish doughnuts (Pączki)",
+   "sesame"
+  ],
+  [
+   "FND-V-POLISHDOUGHNUT",
+   "Polish doughnuts (Pączki)",
+   "soy"
+  ],
+  [
+   "FND-V-POLSKIENALESNI",
+   "Polskie Nalesniki (Polish Pancakes)",
+   "nuts"
+  ],
+  [
+   "FND-V-POLSKIENALESNI",
+   "Polskie Nalesniki (Polish Pancakes)",
+   "peanut"
+  ],
+  [
+   "FND-V-POLSKIENALESNI",
+   "Polskie Nalesniki (Polish Pancakes)",
+   "sesame"
+  ],
+  [
+   "FND-V-POLSKIENALESNI",
+   "Polskie Nalesniki (Polish Pancakes)",
+   "soy"
+  ],
+  [
+   "FND-NV-PORKCASSOULET",
+   "Pork Cassoulet",
+   "mustard"
+  ],
+  [
+   "FND-NV-PORKCASSOULET",
+   "Pork Cassoulet",
+   "sesame"
+  ],
+  [
+   "FND-V-PORTUGUESECUST",
+   "Portuguese custard tarts",
+   "sesame"
+  ],
+  [
+   "FND-NV-POTATOGRATINWI",
+   "Potato Gratin with Chicken",
+   "mustard"
+  ],
+  [
+   "FND-E-POTATOSALADOLI",
+   "Potato Salad (Olivier Salad)",
+   "dairy"
+  ],
+  [
+   "FND-E-POTATOSALADOLI",
+   "Potato Salad (Olivier Salad)",
+   "sesame"
+  ],
+  [
+   "FND-V-POUDINGCHOMEUR",
+   "Pouding chomeur",
+   "nuts"
+  ],
+  [
+   "FND-V-POUDINGCHOMEUR",
+   "Pouding chomeur",
+   "peanut"
+  ],
+  [
+   "FND-V-POUDINGCHOMEUR",
+   "Pouding chomeur",
+   "sesame"
+  ],
+  [
+   "FND-V-POUDINGCHOMEUR",
+   "Pouding chomeur",
+   "soy"
+  ],
+  [
+   "FND-V-PROVENALOMELET",
+   "Provençal Omelette Cake",
+   "gluten"
+  ],
+  [
+   "FND-V-PROVENALOMELET",
+   "Provençal Omelette Cake",
+   "nuts"
+  ],
+  [
+   "FND-V-PROVENALOMELET",
+   "Provençal Omelette Cake",
+   "sesame"
+  ],
+  [
+   "FND-V-PROVENALOMELET",
+   "Provençal Omelette Cake",
+   "soy"
+  ],
+  [
+   "FND-V-PUMPKINPIE",
+   "Pumpkin Pie",
+   "nuts"
+  ],
+  [
+   "FND-V-PUMPKINPIE",
+   "Pumpkin Pie",
+   "peanut"
+  ],
+  [
+   "FND-V-PUMPKINPIE",
+   "Pumpkin Pie",
+   "sesame"
+  ],
+  [
+   "FND-V-PUMPKINPIE",
+   "Pumpkin Pie",
+   "soy"
+  ],
+  [
+   "FND-V-QUICKSALTPEPPE",
+   "Quick salt & pepper squid",
+   "mustard"
+  ],
+  [
+   "FND-V-RECHEADOMASALA",
+   "Recheado Masala Fish",
+   "mustard"
+  ],
+  [
+   "FND-V-RECHEADOMASALA",
+   "Recheado Masala Fish",
+   "sesame"
+  ],
+  [
+   "FND-NV-REDPEASSOUP",
+   "Red Peas Soup",
+   "dairy"
+  ],
+  [
+   "FND-V-RICEANDBEANS",
+   "Rice and Beans",
+   "dairy"
+  ],
+  [
+   "FND-V-ROASTEDEGGPLAN",
+   "Roasted Eggplant With Tahini, Pine Nuts, and Lentils",
+   "egg"
+  ],
+  [
+   "FND-V-ROASTEDEGGPLAN",
+   "Roasted Eggplant With Tahini, Pine Nuts, and Lentils",
+   "sesame"
+  ],
+  [
+   "FND-V-ROCKCAKES",
+   "Rock Cakes",
+   "mustard"
+  ],
+  [
+   "FND-V-ROCKCAKES",
+   "Rock Cakes",
+   "nuts"
+  ],
+  [
+   "FND-V-ROCKCAKES",
+   "Rock Cakes",
+   "peanut"
+  ],
+  [
+   "FND-V-ROCKCAKES",
+   "Rock Cakes",
+   "sesame"
+  ],
+  [
+   "FND-V-ROCKCAKES",
+   "Rock Cakes",
+   "soy"
+  ],
+  [
+   "FND-V-ROGALIKIPOLISH",
+   "Rogaliki (Polish Croissant Cookies)",
+   "peanut"
+  ],
+  [
+   "FND-V-RMMEGRTNORWEGI",
+   "Rømmegrøt – Norwegian Sour Cream Porridge",
+   "nuts"
+  ],
+  [
+   "FND-V-RMMEGRTNORWEGI",
+   "Rømmegrøt – Norwegian Sour Cream Porridge",
+   "peanut"
+  ],
+  [
+   "FND-V-RMMEGRTNORWEGI",
+   "Rømmegrøt – Norwegian Sour Cream Porridge",
+   "soy"
+  ],
+  [
+   "FND-V-ROSEMARYBRAISE",
+   "Rosemary braised red cabbage with kabanos",
+   "peanut"
+  ],
+  [
+   "FND-NV-RUNNERBEANMASH",
+   "Runner Bean Mash (Snijbonen Stamppot)",
+   "nuts"
+  ],
+  [
+   "FND-NV-RUNNERBEANMASH",
+   "Runner Bean Mash (Snijbonen Stamppot)",
+   "peanut"
+  ],
+  [
+   "FND-NV-RUNNERBEANMASH",
+   "Runner Bean Mash (Snijbonen Stamppot)",
+   "soy"
+  ],
+  [
+   "FND-V-SALMONNOODLEWR",
+   "Salmon noodle wraps",
+   "gluten"
+  ],
+  [
+   "FND-V-SALTEDCARAMELC",
+   "Salted Caramel Cheescake",
+   "peanut"
+  ],
+  [
+   "FND-V-SALTFISHANDACK",
+   "Saltfish and Ackee",
+   "mustard"
+  ],
+  [
+   "FND-NV-SATEE",
+   "Satee",
+   "mustard"
+  ],
+  [
+   "FND-NV-SATEE",
+   "Satee",
+   "sesame"
+  ],
+  [
+   "FND-V-SERIMUKAKUIH",
+   "Seri muka kuih",
+   "dairy"
+  ],
+  [
+   "FND-V-SERIMUKAKUIH",
+   "Seri muka kuih",
+   "sesame"
+  ],
+  [
+   "FND-V-SHAWARMABREAD",
+   "Shawarma bread",
+   "mustard"
+  ],
+  [
+   "FND-V-SHAWARMABREAD",
+   "Shawarma bread",
+   "sesame"
+  ],
+  [
+   "FND-V-SHENDETLIEHONE",
+   "Shendetlie Honey and Nut Cake",
+   "sesame"
+  ],
+  [
+   "FND-NV-SHRIMPCHOWFUN",
+   "Shrimp Chow Fun",
+   "dairy"
+  ],
+  [
+   "FND-NV-SHRIMPCHOWFUN",
+   "Shrimp Chow Fun",
+   "fish"
+  ],
+  [
+   "FND-NV-SHRIMPCHOWFUN",
+   "Shrimp Chow Fun",
+   "mustard"
+  ],
+  [
+   "FND-NV-SHRIMPCHOWFUN",
+   "Shrimp Chow Fun",
+   "nuts"
+  ],
+  [
+   "FND-NV-SHRIMPCHOWFUN",
+   "Shrimp Chow Fun",
+   "peanut"
+  ],
+  [
+   "FND-NV-SINGAPORENOODL",
+   "Singapore Noodles with Shrimp",
+   "dairy"
+  ],
+  [
+   "FND-NV-SINGAPORENOODL",
+   "Singapore Noodles with Shrimp",
+   "fish"
+  ],
+  [
+   "FND-NV-SINGAPORENOODL",
+   "Singapore Noodles with Shrimp",
+   "mustard"
+  ],
+  [
+   "FND-NV-SINGAPORENOODL",
+   "Singapore Noodles with Shrimp",
+   "nuts"
+  ],
+  [
+   "FND-NV-SINGAPORENOODL",
+   "Singapore Noodles with Shrimp",
+   "peanut"
+  ],
+  [
+   "FND-NV-SKILLETAPPLEPO",
+   "Skillet Apple Pork Chops with Roasted Sweet Potatoes & Zucchini",
+   "peanut"
+  ],
+  [
+   "FND-V-SLAGROOMTAART",
+   "Slagroomtaart",
+   "sesame"
+  ],
+  [
+   "FND-V-SMOKYLENTILCHI",
+   "Smoky Lentil Chili with Squash",
+   "sesame"
+  ],
+  [
+   "FND-NV-SPANISHMEATBAL",
+   "Spanish meatballs with clams, chorizo & squid",
+   "peanut"
+  ],
+  [
+   "FND-V-SPANISHSEAFOOD",
+   "Spanish seafood rice",
+   "fish"
+  ],
+  [
+   "FND-NV-SPICYTHAIPRAWN",
+   "Spicy Thai prawn noodles",
+   "dairy"
+  ],
+  [
+   "FND-NV-SPICYTHAIPRAWN",
+   "Spicy Thai prawn noodles",
+   "fish"
+  ],
+  [
+   "FND-NV-SPICYTHAIPRAWN",
+   "Spicy Thai prawn noodles",
+   "mustard"
+  ],
+  [
+   "FND-NV-SPICYTHAIPRAWN",
+   "Spicy Thai prawn noodles",
+   "nuts"
+  ],
+  [
+   "FND-V-SPINACHRICOTTA",
+   "Spinach & Ricotta Cannelloni",
+   "nuts"
+  ],
+  [
+   "FND-V-SPINACHRICOTTA",
+   "Spinach & Ricotta Cannelloni",
+   "soy"
+  ],
+  [
+   "FND-V-SPOTTEDDICK",
+   "Spotted Dick",
+   "mustard"
+  ],
+  [
+   "FND-V-SPOTTEDDICK",
+   "Spotted Dick",
+   "nuts"
+  ],
+  [
+   "FND-V-SPOTTEDDICK",
+   "Spotted Dick",
+   "soy"
+  ],
+  [
+   "FND-NV-SPRINGONIONAND",
+   "Spring onion and prawn empanadas",
+   "fish"
+  ],
+  [
+   "FND-NV-SPRINGONIONAND",
+   "Spring onion and prawn empanadas",
+   "mustard"
+  ],
+  [
+   "FND-NV-SPRINGONIONAND",
+   "Spring onion and prawn empanadas",
+   "nuts"
+  ],
+  [
+   "FND-NV-SPRINGONIONAND",
+   "Spring onion and prawn empanadas",
+   "peanut"
+  ],
+  [
+   "FND-NV-SPRINGONIONAND",
+   "Spring onion and prawn empanadas",
+   "sesame"
+  ],
+  [
+   "FND-NV-SPRINGONIONAND",
+   "Spring onion and prawn empanadas",
+   "soy"
+  ],
+  [
+   "FND-V-SQUASHLINGUINE",
+   "Squash linguine",
+   "dairy"
+  ],
+  [
+   "FND-V-STICKYTOFFEEPU",
+   "Sticky Toffee Pudding Ultimate",
+   "mustard"
+  ],
+  [
+   "FND-V-STICKYTOFFEEPU",
+   "Sticky Toffee Pudding Ultimate",
+   "nuts"
+  ],
+  [
+   "FND-V-STICKYTOFFEEPU",
+   "Sticky Toffee Pudding Ultimate",
+   "peanut"
+  ],
+  [
+   "FND-V-STICKYTOFFEEPU",
+   "Sticky Toffee Pudding Ultimate",
+   "sesame"
+  ],
+  [
+   "FND-V-STICKYTOFFEEPU",
+   "Sticky Toffee Pudding Ultimate",
+   "soy"
+  ],
+  [
+   "FND-V-STOVETOPEGGPLA",
+   "Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt",
+   "egg"
+  ],
+  [
+   "FND-V-STRAWBERRYRHUB",
+   "Strawberry Rhubarb Pie",
+   "nuts"
+  ],
+  [
+   "FND-V-STRAWBERRYRHUB",
+   "Strawberry Rhubarb Pie",
+   "peanut"
+  ],
+  [
+   "FND-V-STRAWBERRYRHUB",
+   "Strawberry Rhubarb Pie",
+   "soy"
+  ],
+  [
+   "FND-V-STRAWBERRYTART",
+   "Strawberry tart",
+   "peanut"
+  ],
+  [
+   "FND-V-STRAWBERRYTART",
+   "Strawberry tart",
+   "sesame"
+  ],
+  [
+   "FND-V-STRAWBERRYTART",
+   "Strawberry tart",
+   "soy"
+  ],
+  [
+   "FND-V-SUGARPIE",
+   "Sugar Pie",
+   "nuts"
+  ],
+  [
+   "FND-V-SUGARPIE",
+   "Sugar Pie",
+   "peanut"
+  ],
+  [
+   "FND-V-SUGARPIE",
+   "Sugar Pie",
+   "sesame"
+  ],
+  [
+   "FND-V-SUGARPIE",
+   "Sugar Pie",
+   "soy"
+  ],
+  [
+   "FND-V-LANCESMAKOM",
+   "Šúĺlance s Makom",
+   "peanut"
+  ],
+  [
+   "FND-NV-SWEETANDSOURPO",
+   "Sweet and Sour Pork",
+   "dairy"
+  ],
+  [
+   "FND-NV-SWEETANDSOURPO",
+   "Sweet and Sour Pork",
+   "fish"
+  ],
+  [
+   "FND-NV-SWEETANDSOURPO",
+   "Sweet and Sour Pork",
+   "mustard"
+  ],
+  [
+   "FND-NV-SWEETANDSOURPO",
+   "Sweet and Sour Pork",
+   "nuts"
+  ],
+  [
+   "FND-NV-SWEETANDSOURPO",
+   "Sweet and Sour Pork",
+   "peanut"
+  ],
+  [
+   "FND-NV-SWEETANDSOURPO",
+   "Sweet and Sour Pork",
+   "sesame"
+  ],
+  [
+   "FND-NV-SWEETANDSOURPO",
+   "Sweet and Sour Pork",
+   "shellfish"
+  ],
+  [
+   "FND-NV-SZECHUANBEEF",
+   "Szechuan Beef",
+   "mustard"
+  ],
+  [
+   "FND-V-TALLSKOLEBOLLE",
+   "Tall Skoleboller",
+   "nuts"
+  ],
+  [
+   "FND-V-TALLSKOLEBOLLE",
+   "Tall Skoleboller",
+   "peanut"
+  ],
+  [
+   "FND-V-TALLSKOLEBOLLE",
+   "Tall Skoleboller",
+   "soy"
+  ],
+  [
+   "FND-V-TAMALDEMAICENA",
+   "Tamal De Maicena",
+   "gluten"
+  ],
+  [
+   "FND-V-TAMALDEMAICENA",
+   "Tamal De Maicena",
+   "nuts"
+  ],
+  [
+   "FND-V-TAMALDEMAICENA",
+   "Tamal De Maicena",
+   "peanut"
+  ],
+  [
+   "FND-V-TAMALDEMAICENA",
+   "Tamal De Maicena",
+   "sesame"
+  ],
+  [
+   "FND-V-TAMALDEMAICENA",
+   "Tamal De Maicena",
+   "soy"
+  ],
+  [
+   "FND-V-TARTETATIN",
+   "Tarte Tatin",
+   "mustard"
+  ],
+  [
+   "FND-V-TARTETATIN",
+   "Tarte Tatin",
+   "peanut"
+  ],
+  [
+   "FND-NV-TAVKOSIBAKEDLA",
+   "Tavë Kosi Baked Lamb and Yogurt",
+   "peanut"
+  ],
+  [
+   "FND-NV-TAVKOSIBAKEDLA",
+   "Tavë Kosi Baked Lamb and Yogurt",
+   "sesame"
+  ],
+  [
+   "FND-V-THAICOCONUTVEG",
+   "Thai coconut & veg broth",
+   "dairy"
+  ],
+  [
+   "FND-V-THAIPUMPKINSOU",
+   "Thai pumpkin soup",
+   "dairy"
+  ],
+  [
+   "FND-V-THREEFISHPIE",
+   "Three Fish Pie",
+   "nuts"
+  ],
+  [
+   "FND-V-THREEFISHPIE",
+   "Three Fish Pie",
+   "peanut"
+  ],
+  [
+   "FND-V-THREEFISHPIE",
+   "Three Fish Pie",
+   "sesame"
+  ],
+  [
+   "FND-V-THREEFISHPIE",
+   "Three Fish Pie",
+   "soy"
+  ],
+  [
+   "FND-V-THREECHEESESOU",
+   "Three-cheese souffles",
+   "nuts"
+  ],
+  [
+   "FND-V-THREECHEESESOU",
+   "Three-cheese souffles",
+   "peanut"
+  ],
+  [
+   "FND-V-THREECHEESESOU",
+   "Three-cheese souffles",
+   "sesame"
+  ],
+  [
+   "FND-V-THREECHEESESOU",
+   "Three-cheese souffles",
+   "soy"
+  ],
+  [
+   "FND-V-TORRIJAS",
+   "Torrijas",
+   "sesame"
+  ],
+  [
+   "FND-NV-TORTADEFIAMBRE",
+   "Torta de fiambre",
+   "fish"
+  ],
+  [
+   "FND-NV-TORTADEFIAMBRE",
+   "Torta de fiambre",
+   "mustard"
+  ],
+  [
+   "FND-NV-TORTADEFIAMBRE",
+   "Torta de fiambre",
+   "nuts"
+  ],
+  [
+   "FND-NV-TORTADEFIAMBRE",
+   "Torta de fiambre",
+   "peanut"
+  ],
+  [
+   "FND-NV-TORTADEFIAMBRE",
+   "Torta de fiambre",
+   "sesame"
+  ],
+  [
+   "FND-NV-TORTADEFIAMBRE",
+   "Torta de fiambre",
+   "shellfish"
+  ],
+  [
+   "FND-NV-TORTADEFIAMBRE",
+   "Torta de fiambre",
+   "soy"
+  ],
+  [
+   "FND-V-TORTANGTALONG",
+   "Tortang Talong",
+   "dairy"
+  ],
+  [
+   "FND-V-TORTANGTALONG",
+   "Tortang Talong",
+   "gluten"
+  ],
+  [
+   "FND-V-TORTANGTALONG",
+   "Tortang Talong",
+   "sesame"
+  ],
+  [
+   "FND-V-TREACLETART",
+   "Treacle Tart",
+   "peanut"
+  ],
+  [
+   "FND-V-TREACLETART",
+   "Treacle Tart",
+   "sesame"
+  ],
+  [
+   "FND-V-TUNAANDEGGBRIK",
+   "Tuna and Egg Briks",
+   "dairy"
+  ],
+  [
+   "FND-V-TUNAANDEGGBRIK",
+   "Tuna and Egg Briks",
+   "sesame"
+  ],
+  [
+   "FND-V-TUNANICOISE",
+   "Tuna Nicoise",
+   "dairy"
+  ],
+  [
+   "FND-V-TUNANICOISE",
+   "Tuna Nicoise",
+   "gluten"
+  ],
+  [
+   "FND-V-TUNANICOISE",
+   "Tuna Nicoise",
+   "sesame"
+  ],
+  [
+   "FND-V-TUNISIANORANGE",
+   "Tunisian Orange Cake",
+   "dairy"
+  ],
+  [
+   "FND-V-TUNISIANORANGE",
+   "Tunisian Orange Cake",
+   "sesame"
+  ],
+  [
+   "FND-V-VEGANCHOCOLATE",
+   "Vegan Chocolate Cake",
+   "dairy"
+  ],
+  [
+   "FND-V-VEGANCHOCOLATE",
+   "Vegan Chocolate Cake",
+   "egg"
+  ],
+  [
+   "FND-V-VEGANCHOCOLATE",
+   "Vegan Chocolate Cake",
+   "mustard"
+  ],
+  [
+   "FND-V-VEGANLASAGNA",
+   "Vegan Lasagna",
+   "dairy"
+  ],
+  [
+   "FND-V-VEGANLASAGNA",
+   "Vegan Lasagna",
+   "sesame"
+  ],
+  [
+   "FND-V-VEGETABLESHEPH",
+   "Vegetable Shepherds Pie",
+   "sesame"
+  ],
+  [
+   "FND-V-VEGETARIANCASS",
+   "Vegetarian Casserole",
+   "sesame"
+  ],
+  [
+   "FND-V-VEGETARIANCHIL",
+   "Vegetarian Chilli",
+   "mustard"
+  ],
+  [
+   "FND-V-VIETNAMESESTYL",
+   "Vietnamese-style veggie hotpot",
+   "dairy"
+  ],
+  [
+   "FND-V-WALNUTROLLGUVA",
+   "Walnut Roll Gužvara",
+   "peanut"
+  ],
+  [
+   "FND-V-WALNUTROLLGUVA",
+   "Walnut Roll Gužvara",
+   "sesame"
+  ],
+  [
+   "FND-V-WALNUTROLLGUVA",
+   "Walnut Roll Gužvara",
+   "soy"
+  ],
+  [
+   "FND-NV-WONTONS",
+   "Wontons",
+   "mustard"
+  ],
+  [
+   "FND-NV-ZAPIEKANKI",
+   "Zapiekanki",
+   "peanut"
+  ],
+  [
+   "FND-NV-ARROZCONGAMBAS",
+   "Arroz con gambas y calamar",
+   "fish"
+  ],
+  [
+   "FND-NV-EGGPLANTADOBO",
+   "Eggplant Adobo",
+   "egg"
+  ],
+  [
+   "FND-NV-SICHUANEGGPLAN",
+   "Sichuan Eggplant",
+   "egg"
+  ],
+  [
+   "LST-V-BAJRERAAB-01",
+   "Bajre ki Raab",
+   "gluten"
+  ]
+ ],
+ "diet_conflicts": [
+  [
+   "JPN-V-1-1-217",
+   "Miso Soup",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "JPN-V-1-1-217",
+   "Miso Soup",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "VIE-V-1-1-262",
+   "Fresh Spring Rolls",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "VIE-V-1-1-262",
+   "Fresh Spring Rolls",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "JPN-V-1-2-001",
+   "Vegetable Tempura",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "JPN-V-1-2-001",
+   "Vegetable Tempura",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "JPN-V-1-2-002",
+   "Udon Noodle Soup",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "IND-V-0-3-013",
+   "Fruit Custard",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "IND-V-2-4-015",
+   "Radhaballabhi",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "ODI-V-1-1-001",
+   "Santula",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "JPN-V-0-3-001",
+   "Agedashi Tofu",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "GRK-V-0-2-001",
+   "Gemista",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "GRK-V-0-2-001",
+   "Gemista",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "JPN-V-0-1-002",
+   "Kenchinjiru",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-BARRAMUNDIWITH",
+   "Barramundi with Moroccan spices",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-BARRAMUNDIWITH",
+   "Barramundi with Moroccan spices",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "FND-V-CONCHSTEW",
+   "Conch Stew",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-CONCHSTEW",
+   "Conch Stew",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "FND-V-FROGLEGSRECIPE",
+   "Frog Legs Recipe in Garlic Butter",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-JAMROLYPOLY",
+   "Jam Roly-Poly",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-LAYEREDMANGOCU",
+   "Layered mango custard",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-MUSHROOMCHESTN",
+   "Mushroom & Chestnut Rotolo",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-MUSHROOMCHESTN",
+   "Mushroom & Chestnut Rotolo",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "FND-V-PILCHARDPUTTAN",
+   "Pilchard puttanesca",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-SPICYARRABIATA",
+   "Spicy Arrabiata Penne",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "FND-V-SPOTTEDDICK",
+   "Spotted Dick",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-VEGANLASAGNA",
+   "Vegan Lasagna",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-BREADFRUITTACO",
+   "Breadfruit Tacos",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-BREADFRUITTACO",
+   "Breadfruit Tacos",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "FND-V-PLANTAINROLLS",
+   "plantain rolls",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-PLANTAINROLLS",
+   "plantain rolls",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "FND-V-POTATOTOMATOAN-DE0D5",
+   "Potato, Tomato and Basil Salad",
+   "marked veg but has meat, fish or egg"
+  ],
+  [
+   "FND-V-POTATOTOMATOAN-DE0D5",
+   "Potato, Tomato and Basil Salad",
+   "marked vegan but has an animal product"
+  ],
+  [
+   "FND-V-HASSELBACKBUTT-8DA9D",
+   "Hasselback Butternut Squash with Tofu and Bean Ricotta",
+   "marked vegan but has an animal product"
+  ]
+ ],
+ "counts": {
+  "gf": {
+   "yes": 947,
+   "if": 303,
+   "no": 990
+  },
+  "halal": {
+   "if": 689,
+   "yes": 1252,
+   "no": 299
+  },
+  "kosher": {
+   "no": 532,
+   "if": 555,
+   "yes": 1153
+  },
+  "jain": {
+   "false": 1828,
+   "true": 412
+  },
+  "added_allergens": 239,
+  "jain_turned_off": 39,
+  "jain_maybe_on": 262,
+  "allergen_maybe_extra": 877,
+  "diet_conflicts": 34
+ }
+}
