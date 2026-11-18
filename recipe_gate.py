@@ -512,18 +512,21 @@ def main():
         # dietWhy = {field: [reasons]}. Merge only ever goes stricter, never relaxes.
         ORD = {"yes": 0, "if": 1, "no": 2}
         MAP = {"yes": "yes", "maybe": "if", "label": "if", "if": "if", "no": "no"}
-        old_why = r.get("dietWhy") if isinstance(r.get("dietWhy"), dict) else {}
-        why = {k: list(v) for k, v in old_why.items()}
+        # dietWhy belongs to diet_check.py and the apps turn its "ingredient (needs X)" lines
+        # into the "Use X" note, so it is never touched here. This gate's own reasons, which are
+        # free text, go to gateWhy.
+        if not isinstance(r.get("dietWhy"), dict):
+            r["dietWhy"] = {}
+        gate_why = {}
         for attr, wkey in (("gluten", "gf"), ("lactose", "lactose"), ("halal", "halal"), ("kosher", "kosher")):
-            for w in a["why"].get(attr, []):
-                lst = why.setdefault(wkey, [])
-                if not any(w.lower() in x.lower() or x.lower() in w.lower() for x in lst):
-                    lst.append(w)
+            ws = list(dict.fromkeys(a["why"].get(attr, [])))
+            if ws:
+                gate_why[wkey] = ws
         for fld, src in (("gf", "gf"), ("lactoseFree", "lactoseFree"), ("halal", "halal"), ("kosher", "kosher")):
             mine = MAP[a[src]]
             prev = MAP.get(r.get(fld), "yes") if fld in r else "yes"
             r[fld] = mine if ORD[mine] >= ORD[prev] else prev
-        r["dietWhy"] = why
+        r["gateWhy"] = gate_why
         r["checkAlerts"] = a["alerts"]
         r["checkedBy"] = "gate-v1"
         for al in a["alerts"]:
