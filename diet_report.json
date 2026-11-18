@@ -565,14 +565,6 @@
   [
    "IND-V-0-3-013",
    "Fruit Custard",
-   "egg",
-   [
-    "custard powder"
-   ]
-  ],
-  [
-   "IND-V-0-3-013",
-   "Fruit Custard",
    "gluten",
    [
     "custard powder"
@@ -656,6 +648,14 @@
    "gluten",
    [
     "rice sevai (idiyappam noodles)"
+   ]
+  ],
+  [
+   "IND-V-1-1-273",
+   "Kambu Koozh",
+   "gluten",
+   [
+    "pearl millet flour"
    ]
   ],
   [
@@ -835,14 +835,6 @@
    ]
   ],
   [
-   "JPN-V-0-3-001",
-   "Agedashi Tofu",
-   "fish",
-   [
-    "kombu and shiitake dashi"
-   ]
-  ],
-  [
    "PHL-NV-2-5-001",
    "Sisig",
    "gluten",
@@ -904,14 +896,6 @@
    "gluten",
    [
     "pav bhaji masala"
-   ]
-  ],
-  [
-   "JPN-V-0-1-002",
-   "Kenchinjiru",
-   "fish",
-   [
-    "kombu dashi"
    ]
   ],
   [
@@ -1001,6 +985,14 @@
    "gluten",
    [
     "soy sauce"
+   ]
+  ],
+  [
+   "IND-V-0-4-905",
+   "Singhare Ka Halwa",
+   "gluten",
+   [
+    "water chestnut flour"
    ]
   ],
   [
@@ -1213,14 +1205,6 @@
    ]
   ],
   [
-   "FND-NV-LASAGNE",
-   "Lasagne",
-   "egg",
-   [
-    "lasagne sheets"
-   ]
-  ],
-  [
    "FND-V-LAYEREDMANGOCU",
    "Layered mango custard",
    "egg",
@@ -1242,14 +1226,6 @@
    "gluten",
    [
     "farfalle"
-   ]
-  ],
-  [
-   "FND-V-MUSHROOMCHESTN",
-   "Mushroom & Chestnut Rotolo",
-   "egg",
-   [
-    "lasagne sheets"
    ]
   ],
   [
@@ -1446,14 +1422,6 @@
    "sesame",
    [
     "hummus"
-   ]
-  ],
-  [
-   "FND-V-VEGANLASAGNA",
-   "Vegan Lasagna",
-   "egg",
-   [
-    "lasagne sheets"
    ]
   ],
   [
@@ -2833,6 +2801,10 @@
    "Vegetable Daliya"
   ],
   [
+   "IND-V-0-3-013",
+   "Fruit Custard"
+  ],
+  [
    "IND-V-0-3-014",
    "Shrikhand"
   ],
@@ -3003,6 +2975,10 @@
   [
    "IDN-V-3-2-002",
    "Tempeh Stir Fry"
+  ],
+  [
+   "IND-V-2-3-156",
+   "Kanchipuram Idli"
   ],
   [
    "IND-V-2-2-183",
@@ -3560,6 +3536,11 @@
    "fish"
   ],
   [
+   "MYS-NV-4-4-001",
+   "Laksa",
+   "gluten"
+  ],
+  [
    "PHL-NV-2-2-001",
    "Sinigang",
    "fish"
@@ -3630,6 +3611,11 @@
    "soy"
   ],
   [
+   "MEX-NV-2-2-001",
+   "Fish Tacos",
+   "gluten"
+  ],
+  [
    "MEX-V-3-4-001",
    "Chiles Rellenos",
    "gluten"
@@ -3673,6 +3659,11 @@
    "VNM-NV-4-4-001",
    "Bun Bo Hue",
    "fish"
+  ],
+  [
+   "VNM-NV-4-4-001",
+   "Bun Bo Hue",
+   "gluten"
   ],
   [
    "VNM-NV-2-3-003",
@@ -3737,6 +3728,11 @@
   [
    "IND-V-0-4-004",
    "Rabri Falooda",
+   "gluten"
+  ],
+  [
+   "IND-V-0-4-004",
+   "Rabri Falooda",
    "nuts"
   ],
   [
@@ -3797,6 +3793,11 @@
   [
    "IND-NV-4-4-004",
    "Kori Rotti",
+   "gluten"
+  ],
+  [
+   "VNM-NV-2-3-004",
+   "Beef Pho",
    "gluten"
   ],
   [
@@ -4005,6 +4006,11 @@
    "nuts"
   ],
   [
+   "MMR-NV-3-3-001",
+   "Mohinga",
+   "gluten"
+  ],
+  [
    "MMR-V-2-2-001",
    "Tea Leaf Salad",
    "sesame"
@@ -4073,6 +4079,11 @@
    "INDC-NV-4-3-005",
    "Crispy Chilli Chicken Dry",
    "soy"
+  ],
+  [
+   "MEX-NV-3-3-002",
+   "Beef Tacos al Pastor",
+   "gluten"
   ],
   [
    "MEX-NV-3-5-001",
@@ -4198,6 +4209,11 @@
    "MYS-NV-4-4-002",
    "Laksa Lemak",
    "fish"
+  ],
+  [
+   "MYS-NV-4-4-002",
+   "Laksa Lemak",
+   "gluten"
   ],
   [
    "IDN-NV-2-2-001",
@@ -4360,6 +4376,11 @@
    "fish"
   ],
   [
+   "VNM-NV-3-3-002",
+   "Bún Riêu",
+   "gluten"
+  ],
+  [
    "VNM-NV-1-1-001",
    "Goi Cuon Platter",
    "peanut"
@@ -4383,6 +4404,11 @@
    "THA-NV-4-3-001",
    "Drunken Noodles (Pad Kee Mao)",
    "fish"
+  ],
+  [
+   "THA-NV-4-3-001",
+   "Drunken Noodles (Pad Kee Mao)",
+   "gluten"
   ],
   [
    "THA-NV-4-3-001",
@@ -4472,6 +4498,11 @@
   [
    "VNM-V-2-2-001",
    "Vegetable Pho",
+   "gluten"
+  ],
+  [
+   "VNM-V-2-2-001",
+   "Vegetable Pho",
    "soy"
   ],
   [
@@ -4488,6 +4519,11 @@
    "SGP-NV-3-3-001",
    "Singapore Noodles",
    "egg"
+  ],
+  [
+   "SGP-NV-3-3-001",
+   "Singapore Noodles",
+   "gluten"
   ],
   [
    "SGP-NV-3-3-001",
@@ -4512,6 +4548,11 @@
   [
    "SWI-V-0-2-001",
    "Bircher Muesli",
+   "gluten"
+  ],
+  [
+   "MEX-EG-3-3-002",
+   "Huevos Divorciados",
    "gluten"
   ],
   [
@@ -4637,6 +4678,11 @@
   [
    "VNM-NV-1-3-001",
    "Cha Ca La Vong",
+   "gluten"
+  ],
+  [
+   "VNM-NV-1-3-001",
+   "Cha Ca La Vong",
    "nuts"
   ],
   [
@@ -4718,6 +4764,11 @@
    "MOD-V-3-5-001",
    "Kimchi Grilled Cheese",
    "soy"
+  ],
+  [
+   "MOD-V-2-3-001",
+   "Paneer Tacos with Pickled Onion",
+   "gluten"
   ],
   [
    "MOD-V-2-3-003",
@@ -7677,11 +7728,6 @@
    "marked veg but has meat, fish or egg"
   ],
   [
-   "IND-V-0-3-013",
-   "Fruit Custard",
-   "marked veg but has meat, fish or egg"
-  ],
-  [
    "IND-V-2-4-015",
    "Radhaballabhi",
    "marked vegan but has an animal product"
@@ -7690,26 +7736,6 @@
    "ODI-V-1-1-001",
    "Santula",
    "marked vegan but has an animal product"
-  ],
-  [
-   "JPN-V-0-3-001",
-   "Agedashi Tofu",
-   "marked veg but has meat, fish or egg"
-  ],
-  [
-   "GRK-V-0-2-001",
-   "Gemista",
-   "marked veg but has meat, fish or egg"
-  ],
-  [
-   "GRK-V-0-2-001",
-   "Gemista",
-   "marked vegan but has an animal product"
-  ],
-  [
-   "JPN-V-0-1-002",
-   "Kenchinjiru",
-   "marked veg but has meat, fish or egg"
   ],
   [
    "FND-V-BARRAMUNDIWITH",
@@ -7747,16 +7773,6 @@
    "marked veg but has meat, fish or egg"
   ],
   [
-   "FND-V-MUSHROOMCHESTN",
-   "Mushroom & Chestnut Rotolo",
-   "marked veg but has meat, fish or egg"
-  ],
-  [
-   "FND-V-MUSHROOMCHESTN",
-   "Mushroom & Chestnut Rotolo",
-   "marked vegan but has an animal product"
-  ],
-  [
    "FND-V-PILCHARDPUTTAN",
    "Pilchard puttanesca",
    "marked veg but has meat, fish or egg"
@@ -7772,11 +7788,6 @@
    "marked veg but has meat, fish or egg"
   ],
   [
-   "FND-V-VEGANLASAGNA",
-   "Vegan Lasagna",
-   "marked veg but has meat, fish or egg"
-  ],
-  [
    "FND-V-BREADFRUITTACO",
    "Breadfruit Tacos",
    "marked veg but has meat, fish or egg"
@@ -7794,16 +7805,6 @@
   [
    "FND-V-PLANTAINROLLS",
    "plantain rolls",
-   "marked vegan but has an animal product"
-  ],
-  [
-   "FND-V-POTATOTOMATOAN-DE0D5",
-   "Potato, Tomato and Basil Salad",
-   "marked veg but has meat, fish or egg"
-  ],
-  [
-   "FND-V-POTATOTOMATOAN-DE0D5",
-   "Potato, Tomato and Basil Salad",
    "marked vegan but has an animal product"
   ],
   [
@@ -7814,28 +7815,115 @@
  ],
  "counts": {
   "gf": {
-   "yes": 947,
-   "if": 303,
-   "no": 990
+   "yes": 955,
+   "if": 308,
+   "no": 977
   },
   "halal": {
-   "if": 689,
-   "yes": 1252,
+   "if": 687,
+   "yes": 1254,
    "no": 299
   },
   "kosher": {
    "no": 532,
-   "if": 555,
-   "yes": 1153
+   "if": 553,
+   "yes": 1155
   },
   "jain": {
-   "false": 1828,
-   "true": 412
+   "false": 1826,
+   "true": 414
   },
-  "added_allergens": 239,
+  "added_allergens": 235,
   "jain_turned_off": 39,
-  "jain_maybe_on": 262,
-  "allergen_maybe_extra": 877,
-  "diet_conflicts": 34
- }
+  "jain_maybe_on": 264,
+  "allergen_maybe_extra": 892,
+  "diet_conflicts": 24
+ },
+ "diet_fixed": [
+  [
+   "IDN-V-2-2-253",
+   "Gado Gado",
+   "now nonveg"
+  ],
+  [
+   "JPN-V-1-2-001",
+   "Vegetable Tempura",
+   "no longer vegan"
+  ],
+  [
+   "JPN-V-1-2-002",
+   "Udon Noodle Soup",
+   "now nonveg"
+  ],
+  [
+   "SGP-V-2-3-001",
+   "Roti Prata with Curry",
+   "now nonveg"
+  ],
+  [
+   "CHN-EG-1-2-002",
+   "Egg Drop Soup",
+   "now nonveg"
+  ],
+  [
+   "IND-V-2-4-015",
+   "Radhaballabhi",
+   "no longer vegan"
+  ],
+  [
+   "JPN-EG-0-2-001",
+   "Tamagoyaki",
+   "now nonveg"
+  ],
+  [
+   "MOD-EG-0-3-001",
+   "Furikake Scrambled Eggs",
+   "now nonveg"
+  ],
+  [
+   "FND-V-BARRAMUNDIWITH",
+   "Barramundi with Moroccan spices",
+   "now nonveg"
+  ],
+  [
+   "FND-V-CONCHSTEW",
+   "Conch Stew",
+   "now nonveg"
+  ],
+  [
+   "FND-V-FROGLEGSRECIPE",
+   "Frog Legs Recipe in Garlic Butter",
+   "now nonveg"
+  ],
+  [
+   "FND-V-PILCHARDPUTTAN",
+   "Pilchard puttanesca",
+   "now nonveg"
+  ],
+  [
+   "FND-V-SPICYARRABIATA",
+   "Spicy Arrabiata Penne",
+   "no longer vegan"
+  ],
+  [
+   "FND-V-BREADFRUITTACO",
+   "Breadfruit Tacos",
+   "now nonveg"
+  ],
+  [
+   "FND-V-CONCHFRITTERS",
+   "Conch Fritters",
+   "now nonveg"
+  ],
+  [
+   "FND-V-PLANTAINROLLS",
+   "plantain rolls",
+   "now nonveg"
+  ],
+  [
+   "FND-V-HASSELBACKBUTT-8DA9D",
+   "Hasselback Butternut Squash with Tofu and Bean Ricotta",
+   "no longer vegan"
+  ]
+ ]
 }

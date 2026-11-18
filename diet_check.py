@@ -59,7 +59,7 @@ MEAT = rx(["chicken.*", "mutton.*", "lamb.*", "beef.*", "veal.*", "goat meat", "
            "fish cake", "mutton chaap", "goose fat"])
 NOT_MEAT = rx(["vegetable stock.*", "veg(?:etable)? broth", "soya chunks", "mince pies?", "mincemeat", "meat masala",
                "chicken masala", "tata sampann chicken masala", "minced garlic", "garlic minced", "ginger minced",
-               "shallot minced", "minced ginger", "turkish delight", "keema masala", "vegan.*", "jackfruit"])
+               "shallot minced", "minced ginger", "turkish delight", "keema masala", "vegan.*", "jackfruit", "beef ?(?:heart )?tomato(?:es)?", "beefheart tomato(?:es)?"])
 NONKOSHER_SEA = rx(["prawns?", "shrimps?", "king prawns", "tiger prawns", "raw king prawns", "raw tiger prawns", "jumbo shrimp",
                     "crab.*", "lobster", "clams?", "mussels?", "oysters?", "oyster sauce", "oystersauce", "squid", "baby squid",
                     "calamari", "octopus", "scallops?", "crayfish", "crawfish", "conchs?", "shrimp ?paste", "salted ?shrimp",
@@ -75,11 +75,11 @@ FISH = rx(["fish.*", "salmon", "smoked salmon", "hot smoked flaked salmon", "tun
            "smoked haddock", "hake", "trout", "rainbow trout", "sea bass.*", "barramundi", "pilchards", "monkfish", "white fish",
            "fish fillet", "fish sauce", "fishsauce", "fish stock", "dashi", "bonito", "katsuobushi", "worcestershire.*",
            "caesar dressing", "garum", "prahok", "furikake", "anchovystock", "goraka fish"])
-NOT_FISH = rx(["fish ?cake mix", "goraka"])
+NOT_FISH = rx(["fish ?cake mix", "goraka", "kombu(?: and shiitake)? dashi", "shiitake dashi", "kombu", "veg(?:etable)? dashi"])
 EGG = rx(["eggs?", "egg yolks?", "egg whites?", "egg wash", "whole eggs?", "free range eggs?.*", "eggs room temperature",
           "hard boiled egg.*", "boiled egg.*", "eggs boiled.*", "mayo(?:nnaise)?", "meringue.*", "custard", "egg noodles",
           "egg rolls?", "egg roll wrappers", "aioli", "a oli", "smoky a oli", "brioche.*", "tempura flour", "marzipan",
-          "nougatine", "caesar dressing", "pasta.*egg", "lasagne sheets", "fresh pasta"])
+          "nougatine", "caesar dressing", "fresh egg pasta", "fresh pasta"])
 NOT_EGG = rx(["eggplants?", "egg plants?", "flax eggs?", "vegan.*", "baby eggplants", "custard powder"])
 DAIRY = rx(["milk", "whole milk", "milk powder", "butter", "unsalted butter", "salted butter", "melted butter", "chilled butter",
             "butter melted", "plain butter", "oil butter", "butter or oil", "ghee.*", "pure ghee", "cream", "double cream",
@@ -228,11 +228,14 @@ def text_of(ing):
 def hit(pat, neg, t):
     if not pat.search(t):
         return False
-    if neg is not None:
-        # remove the excluded phrases, then look again
-        t2 = neg.sub(" ", t)
-        return bool(pat.search(t2))
-    return True
+    if neg is None:
+        return True
+    key, _, name = t.partition(" | ")
+    # the full name decides first ("custard | custard powder" is custard powder); the short key counts only when the
+    # name holds no excluded phrase
+    if pat.search(neg.sub(" ", name)):
+        return True
+    return bool(pat.search(neg.sub(" ", key))) and not neg.search(name)
 
 
 def check_dish(d):
@@ -378,7 +381,6 @@ def main():
         print("diet check: %d dishes, %d problems%s" % (len(R), len(bad), (": " + " | ".join(bad[:5])) if bad else ""))
         sys.exit(1 if bad else 0)
 
-    json.dump(rep, open("diet_report.json", "w"), indent=1, ensure_ascii=False)
     print(json.dumps(rep["counts"], indent=1))
     if "--apply" in sys.argv:
         for d in R:
@@ -388,9 +390,17 @@ def main():
                 d["jain"] = False
             d["gf"] = r["gf"]; d["halal"] = r["halal"]; d["kosher"] = r["kosher"]
             d["dietWhy"] = {k: v[:4] for k, v in r["why"].items() if k != "allergens" and v}
+            # a dish marked veg/vegan whose ingredient is definitely animal (no "x/y" or "x or y" choice) is corrected
+            sure = lambda t: not re.search(r"/| or ", t.split(" | ")[-1])
+            ts = [text_of(i) for i in d["ingredients"]]
+            if d.get("diet") in ("veg", "egg") and any(sure(t) and (hit(MEAT, NOT_MEAT, t) or hit(FISH, NOT_FISH, t) or hit(SHELLFISH, None, t)) for t in ts):
+                d["diet"] = "nonveg"; d["vegan"] = False; d["jain"] = False; rep.setdefault("diet_fixed", []).append([d["id"], d["name"], "now nonveg"])
+            if d.get("vegan") and any(sure(t) and (hit(DAIRY, NOT_DAIRY, t) or hit(EGG, NOT_EGG, t) or re.search(r"honey|gelatin", t)) for t in ts):
+                d["vegan"] = False; rep.setdefault("diet_fixed", []).append([d["id"], d["name"], "no longer vegan"])
         c["version"] = c["version"] + 1
         json.dump(c, open(CAT, "w"), ensure_ascii=False, separators=(",", ":"))
-        print("applied -> version", c["version"])
+        print("applied -> version", c["version"], "| diet fixed:", rep.get("diet_fixed"))
+    json.dump(rep, open("diet_report.json", "w"), indent=1, ensure_ascii=False)
 
 
 if __name__ == "__main__":

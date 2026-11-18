@@ -2,21 +2,41 @@
 
 Every ingredient of all 2240 dishes was read against written rules (diet_check.py). Tags were not trusted.
 
-The checker only makes dishes stricter. It never removes an allergen or turns Jain on by itself.
+The checker only makes dishes stricter. It never removes an allergen or turns Jain or veg on by itself.
 
 ## Result
 
 | Check | yes | only with a swap ("if") | no |
 |---|---|---|---|
-| Gluten-free | 947 | 303 | 990 |
-| Halal | 1252 | 689 | 299 |
-| Kosher | 1153 | 555 | 532 |
+| Gluten-free | 955 | 308 | 977 |
+| Halal | 1254 | 687 | 299 |
+| Kosher | 1155 | 553 | 532 |
 
-"if" examples: halal or kosher meat, gluten-free hing, kosher wine, certified cheese or gelatin.
+"if" means: fits only with halal or kosher meat, gluten-free hing, kosher wine, or certified cheese or gelatin. The app shows the swap as a note.
 
-- Missing allergens added: 239 dishes-allergen pairs
-- Jain turned off: 39 dishes that an ingredient breaks
-- Marked veg or vegan but an ingredient says otherwise: 24 (listed below for a person to rule; not changed)
+- Missing allergens added: 235
+- Jain turned off: 39 dishes
+- Diet corrected (marked veg or vegan, but an ingredient is surely animal): 17
+
+## Diet corrected
+
+- Gado Gado: now nonveg
+- Vegetable Tempura: no longer vegan
+- Udon Noodle Soup: now nonveg
+- Roti Prata with Curry: now nonveg
+- Egg Drop Soup: now nonveg
+- Radhaballabhi: no longer vegan
+- Tamagoyaki: now nonveg
+- Furikake Scrambled Eggs: now nonveg
+- Barramundi with Moroccan spices: now nonveg
+- Conch Stew: now nonveg
+- Frog Legs Recipe in Garlic Butter: now nonveg
+- Pilchard puttanesca: now nonveg
+- Spicy Arrabiata Penne: no longer vegan
+- Breadfruit Tacos: now nonveg
+- Conch Fritters: now nonveg
+- plantain rolls: now nonveg
+- Hasselback Butternut Squash with Tofu and Bean Ricotta: no longer vegan
 
 ## Jain turned off
 
@@ -59,40 +79,3 @@ The checker only makes dishes stricter. It never removes an allergen or turns Ja
 - Basic Sourdough Loaf: sourdough starter (honey, yeast, alcohol, gelatin or many-seeded vegetable)
 - Hobbs House Sourdough Bread: sourdough starter (honey, yeast, alcohol, gelatin or many-seeded vegetable)
 - Iru Puli Kuzhambu: brinjal, cubed (honey, yeast, alcohol, gelatin or many-seeded vegetable)
-
-## Veg / vegan conflicts to rule on (not changed)
-
-- Miso Soup (JPN-V-1-1-217): marked veg but has meat, fish or egg
-- Miso Soup (JPN-V-1-1-217): marked vegan but has an animal product
-- Fresh Spring Rolls (VIE-V-1-1-262): marked veg but has meat, fish or egg
-- Fresh Spring Rolls (VIE-V-1-1-262): marked vegan but has an animal product
-- Vegetable Tempura (JPN-V-1-2-001): marked veg but has meat, fish or egg
-- Vegetable Tempura (JPN-V-1-2-001): marked vegan but has an animal product
-- Udon Noodle Soup (JPN-V-1-2-002): marked veg but has meat, fish or egg
-- Fruit Custard (IND-V-0-3-013): marked veg but has meat, fish or egg
-- Radhaballabhi (IND-V-2-4-015): marked vegan but has an animal product
-- Santula (ODI-V-1-1-001): marked vegan but has an animal product
-- Agedashi Tofu (JPN-V-0-3-001): marked veg but has meat, fish or egg
-- Gemista (GRK-V-0-2-001): marked veg but has meat, fish or egg
-- Gemista (GRK-V-0-2-001): marked vegan but has an animal product
-- Kenchinjiru (JPN-V-0-1-002): marked veg but has meat, fish or egg
-- Barramundi with Moroccan spices (FND-V-BARRAMUNDIWITH): marked veg but has meat, fish or egg
-- Barramundi with Moroccan spices (FND-V-BARRAMUNDIWITH): marked vegan but has an animal product
-- Conch Stew (FND-V-CONCHSTEW): marked veg but has meat, fish or egg
-- Conch Stew (FND-V-CONCHSTEW): marked vegan but has an animal product
-- Frog Legs Recipe in Garlic Butter (FND-V-FROGLEGSRECIPE): marked veg but has meat, fish or egg
-- Jam Roly-Poly (FND-V-JAMROLYPOLY): marked veg but has meat, fish or egg
-- Layered mango custard (FND-V-LAYEREDMANGOCU): marked veg but has meat, fish or egg
-- Mushroom & Chestnut Rotolo (FND-V-MUSHROOMCHESTN): marked veg but has meat, fish or egg
-- Mushroom & Chestnut Rotolo (FND-V-MUSHROOMCHESTN): marked vegan but has an animal product
-- Pilchard puttanesca (FND-V-PILCHARDPUTTAN): marked veg but has meat, fish or egg
-- Spicy Arrabiata Penne (FND-V-SPICYARRABIATA): marked vegan but has an animal product
-- Spotted Dick (FND-V-SPOTTEDDICK): marked veg but has meat, fish or egg
-- Vegan Lasagna (FND-V-VEGANLASAGNA): marked veg but has meat, fish or egg
-- Breadfruit Tacos (FND-V-BREADFRUITTACO): marked veg but has meat, fish or egg
-- Breadfruit Tacos (FND-V-BREADFRUITTACO): marked vegan but has an animal product
-- plantain rolls (FND-V-PLANTAINROLLS): marked veg but has meat, fish or egg
-- plantain rolls (FND-V-PLANTAINROLLS): marked vegan but has an animal product
-- Potato, Tomato and Basil Salad (FND-V-POTATOTOMATOAN-DE0D5): marked veg but has meat, fish or egg
-- Potato, Tomato and Basil Salad (FND-V-POTATOTOMATOAN-DE0D5): marked vegan but has an animal product
-- Hasselback Butternut Squash with Tofu and Bean Ricotta (FND-V-HASSELBACKBUTT-8DA9D): marked vegan but has an animal product
