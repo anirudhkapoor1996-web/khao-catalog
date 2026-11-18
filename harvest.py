@@ -788,6 +788,18 @@ def main():
                  f"refuse v{ver}; nothing written")
     json.dump({"format": 1, "version": ver, "recipes": merged},
               open(a.catalog, "w"), ensure_ascii=False, separators=(",", ":"))
+    # Every harvested dish passes the recipe gate (gluten, lactose, halal, kosher, Jain,
+    # veg, vegan, alerts) before anything is pushed. A failing gate fails the step.
+    import subprocess, os as _os
+    g = subprocess.run([sys.executable, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "recipe_gate.py"), a.catalog, "--apply"], capture_output=True, text=True)
+    if g.returncode != 0:
+        sys.exit("RECIPE_GATE=FAILED " + (g.stderr or g.stdout)[-300:])
+    again = json.load(open(a.catalog))["recipes"]
+    fails = feed_failures(again)
+    if fails:
+        for f in fails[:20]:
+            print("REFUSED", f)
+        sys.exit(f"FEED_CHECK=REFUSED after recipe gate — {len(fails)} dish(es)")
     print(f"harvested {len(added)} new, dropped {dropped} unsafe; "
           f"catalogue {len(existing)} -> {len(merged)}, feed v{ver}; FEED_CHECK=ACCEPTED")
 
