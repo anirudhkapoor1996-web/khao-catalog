@@ -1,0 +1,5 @@
+{
+  "_note": "Remote switches read by the Khao apps (SwiftUI RemoteFlags / Android). Missing or false = off. swiggy_live: in-app Swiggy ordering, turn on only after Swiggy Builders Club approval and production redirect whitelisting. ondc: magicpin handoff button.",
+  "swiggy_live": false,
+  "ondc": false
+}
